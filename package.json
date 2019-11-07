@@ -1,0 +1,19 @@
+{
+  "name": "itu-autoskola",
+  "version": "1.0.0",
+  "description": "Aplikace pro studenty autoškoly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rybaris/ITU-Autoskola.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rybaris/ITU-Autoskola/issues"
+  },
+  "homepage": "https://github.com/rybaris/ITU-Autoskola#readme"
+}
