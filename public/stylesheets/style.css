@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.index {
+    min-height: calc(100vh - 156px);
+}
 header {
     border: 1px solid black;
     box-sizing: border-box;
@@ -14,14 +17,16 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
+    min-height: calc(100vh - 156px);
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 .wrapper div {
-    width: 500px;
+    width: 400px;
     box-sizing: border-box;
-    padding: 20px;
-    margin: 10px 0px;
+    padding: 40px 20px;
+    margin: 20px;
     border: 1px solid black;
     text-align: center;
 }
