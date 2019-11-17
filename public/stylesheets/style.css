@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
 }
-.index {
+.index, .skupina {
     min-height: calc(100vh - 156px);
 }
+/* LAYOUT - HEADER */
 header {
     border: 1px solid black;
     box-sizing: border-box;
@@ -13,36 +14,60 @@ header {
 header h1 {
     text-align: center;
 }
-.wrapper {
+
+/* INDEX - HOMEPAGE */
+.index .wrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
     min-height: calc(100vh - 156px);
+    width: 80%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
-.wrapper div {
-    width: 400px;
+.index .wrapper div {
+    width: 350px;
     box-sizing: border-box;
     padding: 40px 20px;
     margin: 20px;
     border: 1px solid black;
     text-align: center;
 }
-.wrapper div h2 {
+.index .wrapper div h2 {
     margin-bottom: 20px;
 }
-.wrapper div a {
+.index .wrapper div a {
     border: 1px solid black;
     display: block;
     padding: 20px;
 }
-.wrapper div .test-link {
+.index .wrapper div .test-link {
     margin-top: 10px;
 }
+
+/* GROUP */
+.group .wrapper {
+    display: flex;
+    justify-content: center;
+}
+.group .wrapper ul li {
+    display: block;
+}
+.group .wrapper ul li a {
+    padding: 20px;
+    display: block;
+    border: 1px solid black;
+    min-width: 200px;
+}
+
+/* LAYOUT - FOOTER */
 footer {
     border: 1px solid black;
     box-sizing: border-box;
     padding: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        width: 95%;
+    }
 }
