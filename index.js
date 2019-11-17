@@ -8,6 +8,9 @@ const autoskola = express();
 autoskola.set('views', path.join(__dirname, 'views'));
 autoskola.set('view engine', 'pug');
 
+// Setting up public folder for stylesheet
+autoskola.use(express.static(__dirname + '/public'));
+
 // Port
 const PORT = process.env.PORT || 5000;
 
