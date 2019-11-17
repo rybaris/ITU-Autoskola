@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .index, .skupina {
     min-height: calc(100vh - 156px);
 }
@@ -66,8 +67,17 @@ footer {
     box-sizing: border-box;
     padding: 20px;
 }
+
 @media screen and (max-width: 1000px) {
-    .wrapper {
+    .index .wrapper {
         width: 95%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .index .wrapper {
+        width: 99%;
+    }
+    .index .wrapper div {
+        width: 100%;
     }
 }
