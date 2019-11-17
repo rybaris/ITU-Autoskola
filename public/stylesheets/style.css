@@ -1,8 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 header {
     border: 1px solid black;
     box-sizing: border-box;
+    padding: 20px;
+}
+header h1 {
+    text-align: center;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.wrapper div {
+    width: 500px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px 0px;
+    border: 1px solid black;
+    text-align: center;
+}
+.wrapper div h2 {
+    margin-bottom: 20px;
+}
+.wrapper div a {
+    border: 1px solid black;
+    display: block;
+    padding: 20px;
+}
+.wrapper div .test-link {
+    margin-top: 10px;
 }
 footer {
     border: 1px solid black;
     box-sizing: border-box;
+    padding: 20px;
 }
