@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 
 // Init app
 const autoskola = express();
@@ -13,6 +14,10 @@ autoskola.use(express.static(__dirname + '/public'));
 
 // Port
 const PORT = process.env.PORT || 5000;
+
+// JSON
+let rawdata = fs.readFileSync('models/questions.json');
+let student = JSON.parse(rawdata);
 
 // Homepage route
 autoskola.get('/', (req, res) => {

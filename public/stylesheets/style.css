@@ -11,11 +11,14 @@ header {
     border: 1px solid black;
     box-sizing: border-box;
     padding: 20px;
+    background-color: lightblue;
 }
 header h1 {
     text-align: center;
 }
-
+.wrapper {
+    min-height: calc(100vh - 156px);
+}
 /* INDEX - HOMEPAGE */
 .index .wrapper {
     display: flex;
@@ -34,6 +37,9 @@ header h1 {
     border: 1px solid black;
     text-align: center;
 }
+.index .wrapper div:nth-of-type(1) {
+    background-color: #ffe0e0;
+}
 .index .wrapper div h2 {
     margin-bottom: 20px;
 }
@@ -42,8 +48,13 @@ header h1 {
     display: block;
     padding: 20px;
 }
-.index .wrapper div .test-link {
+.theory-link {
+    background-color: #d6f1d6;
+}
+.test-link {
     margin-top: 10px;
+    background-color: #ffd487;
+
 }
 
 /* GROUP */
@@ -55,17 +66,23 @@ header h1 {
     display: block;
 }
 .group .wrapper ul li a {
-    padding: 20px;
+    padding: 10px 20px;
     display: block;
+    margin: 3px 0px;
     border: 1px solid black;
     min-width: 200px;
+}
+.group .wrapper ul li a:nth-last-of-type() {
+    background-color: #ffe0e0;
 }
 
 /* LAYOUT - FOOTER */
 footer {
     border: 1px solid black;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 30px;
+    text-align: center;
+    background-color: lightblue;
 }
 
 @media screen and (max-width: 1000px) {
