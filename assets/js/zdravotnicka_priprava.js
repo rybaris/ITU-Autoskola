@@ -4,11 +4,11 @@ $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
 var queSrc = [
-    "Jak budete postupovat, jste-li sami a opakovaně se Vám nedaří zajistit dýchací cesty:",
-    "Zraněný si po dopravní nehodě stěžuje na bolesti břicha a pocit žízně:",
-    "Po zahájení resuscitace je nejdůležitější:",
-    "Při zevní srdeční masáži:",
-    "Poraněný je při vědomí a stěžuje si na silnou bolest v oblasti zad, eventuálně na brnění nebo necitlivost dolních končetin. Jaké by mohl mít poranění?"
+    "<p>Jak budete postupovat, jste-li sami a opakovaně se Vám nedaří zajistit dýchací cesty:</p>",
+    "<p>Zraněný si po dopravní nehodě stěžuje na bolesti břicha a pocit žízně:</p>",
+    "<p>Po zahájení resuscitace je nejdůležitější:</p>",
+    "<p>Při zevní srdeční masáži:</p>",
+    "<p>Poraněný je při vědomí a stěžuje si na silnou bolest v oblasti zad, eventuálně na brnění nebo necitlivost dolních končetin. Jaké by mohl mít poranění?</p>"
 ]
 
 var ansSrc = [

@@ -1,5 +1,10 @@
+<!-------------------------
+-- Author: Ondrej Sebesta -
+-- Login: xsebes22        -
+-------------------------->
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +13,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
+
 <body>
+    <!-- HEADER -->
     <header>
-        <h1>Autoškola</h1>
-        <h2>Zdravotnická příprava</h2>
+        <h1>
+            <a href="index.html">Autoškola</a>
+        </h1>
         <div class="progress">
             <div class="progress-bar bg-dark progress-bar-striped" id="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
     </header>
+
+    <!-- MAIN CONTENT -->
     <main>
         <a href="teorie_b.html" class="btn btn-warning btn-back">Zpět</a>
         <div class="wrapper mygray col-xl-9 col-lg-9 col-md-11 col-sm-12 col-xs-12 border">
@@ -35,14 +45,23 @@
                 </li>
             </ul>
         </div>
-
     </main>
+
+    <!-- FOOTER -->
     <footer class="text-center">
         <p>&copy; 2019</p>
     </footer>
+
+    <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <!-- Popper.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap.min.js CDN -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Custom scripts -->
     <script src="assets/js/zdravotnicka_priprava.js"></script>
     <script>
         let isChange = 0;
@@ -55,4 +74,5 @@
         })
     </script>
 </body>
+
 </html>

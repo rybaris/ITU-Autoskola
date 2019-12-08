@@ -4,19 +4,19 @@ $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
 var queSrc = [
-    "Nesvítí-li potkávací světlo na straně přivrácené do středu vozovky:",
-    "K pravidelné technické prohlídce může přistavit vozidlo:",
-    "Na tabulku registrační značky:",
-    "Vozidlo je technicky nezpůsobilé k provozu na pozemních komunikacích, pokud:",
-    "Používání pneumatik s protiskluzovými hroty:",
-    "Lhůta pro přistavení silničního vozidla k pravidelné technické prohlídce se počítá ode dne:",
-    "V těsné blízkosti tabulky registrační značky:",
-    "Za přestavbu silničního vozidla se považuje:",
-    "Úprava barvy světla vyzařovaného světelným zařízením vozidla je:",
-    "Na vozidle mohou být použita jen taková světelná zařízení:",
-    "Lhůta pro přistavení silničního motorového vozidla k pravidelné technické prohlídce se počítá:",
-    "Tabulku registrační značky umístí vlastník nebo provozovatel vozidla:",
-    "Činná plocha pláště pneumatiky v provozu musí mít po celém obvodu a v celé šíři vrchního běhounu jasně viditelný dezén s hloubkou hlavních dezénových drážek:",
+    "<p>Nesvítí-li potkávací světlo na straně přivrácené do středu vozovky:</p>",
+    "<p>K pravidelné technické prohlídce může přistavit vozidlo:",
+    "<p>Na tabulku registrační značky:</p>",
+    "<p>Vozidlo je technicky nezpůsobilé k provozu na pozemních komunikacích, pokud:</p>",
+    "<p>Používání pneumatik s protiskluzovými hroty:</p>",
+    "<p>Lhůta pro přistavení silničního vozidla k pravidelné technické prohlídce se počítá ode dne:</p>",
+    "<p>V těsné blízkosti tabulky registrační značky:</p>",
+    "<p>Za přestavbu silničního vozidla se považuje:</p>",
+    "<p>Úprava barvy světla vyzařovaného světelným zařízením vozidla je:</p>",
+    "<p>Na vozidle mohou být použita jen taková světelná zařízení:</p>",
+    "<p>Lhůta pro přistavení silničního motorového vozidla k pravidelné technické prohlídce se počítá:</p>",
+    "<p>Tabulku registrační značky umístí vlastník nebo provozovatel vozidla:</p>",
+    "<p>Činná plocha pláště pneumatiky v provozu musí mít po celém obvodu a v celé šíři vrchního běhounu jasně viditelný dezén s hloubkou hlavních dezénových drážek:</p>",
 
 ]
 

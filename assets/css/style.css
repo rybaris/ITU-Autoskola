@@ -19,6 +19,7 @@ body {
     box-sizing: border-box;
     background-color: #f9fbfd !important;
 }
+
 /* Header style */
 header {
     width: 100%;
@@ -34,6 +35,12 @@ header h1, h2 {
 }
 header h2 {
     color: yellow;
+}
+header h1 a {
+    color: white;
+}
+header h1 a, header h1 a:hover {
+    color: white;
 }
 
 /* Main style */
@@ -106,6 +113,12 @@ main {
 .question img {
     height: 100%;
     width: auto;
+}
+.question p {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 .answers {
     display: flex;

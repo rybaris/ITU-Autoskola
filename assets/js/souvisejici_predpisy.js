@@ -4,13 +4,13 @@ $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
 var queSrc = [
-    "Zdravotně způsobilý k řízení motorových vozidel není ten:",
-    "Místní komunikace jsou sjízdné, jestliže umožňují bezpečný pohyb silničních a jiných vozidel:",
-    "Provozovatel motorového vozidla odpovídá:",
-    "Silnice jsou sjízdné, jestliže umožňují bezpečný pohyb silničních a jiných vozidel přizpůsobený:",
-    "Je-li důvodné podezření, že motorové vozidlo bylo užito při nepovolené sportovní akci na pozemní komunikaci:",
-    "Zelená karta:",
-    "Policista může zabránit v jízdě motorovému vozidlu použitím technického prostředku (tzv. botičky) nebo odtažením vozidla, jestliže:"
+    "<p>Zdravotně způsobilý k řízení motorových vozidel není ten:</p>",
+    "<p>Místní komunikace jsou sjízdné, jestliže umožňují bezpečný pohyb silničních a jiných vozidel:</p>",
+    "<p>Provozovatel motorového vozidla odpovídá:</p>",
+    "<p>Silnice jsou sjízdné, jestliže umožňují bezpečný pohyb silničních a jiných vozidel přizpůsobený:</p>",
+    "<p>Je-li důvodné podezření, že motorové vozidlo bylo užito při nepovolené sportovní akci na pozemní komunikaci:</p>",
+    "<p>Zelená karta:</p>",
+    "<p>Policista může zabránit v jízdě motorovému vozidlu použitím technického prostředku (tzv. botičky) nebo odtažením vozidla, jestliže:</p>"
 
 ]
 
