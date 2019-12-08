@@ -4,13 +4,15 @@
 -------------------------->
 <!DOCTYPE html>
 <html lang="cs">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Autoškola</title>
+    <!-- Vlastni CSS styly -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- bootstrap.min.css CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
@@ -20,20 +22,27 @@
         <h1>
             <a href="index.html">Autoškola</a>
         </h1>
+        <div class="progress">
+            <div class="progress-bar bg-dark progress-bar-striped" id="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
-        <div class="wrapper mygray col-xl-9 col-lg-9 col-md-11 col-sm-12 col-xs-12 rounded">
+        <a href="teorie_b.html" class="btn btn-warning btn-back">Zpět</a>
+        <div class="wrapper mygray col-xl-9 col-lg-9 col-md-11 col-sm-12 col-xs-12 border">
             <div class="question rounded-top col-md-10 text-center">
-                <p>Pokud hustota provozu na silnici pro motorová vozidla o dvou jízdních pruzích v jednom směru jízdy vyvolá vznik kolony stojících vozidel, jsou řidiči souběžně jedoucích vozidel povinni: </p>
             </div>
-            <div class="answers col-md-10 rounded-bottom">
-                <p>Vytvořit mezi jízdními pruhy prostor pro průjezd vozidel s právem přednostní jízdy</p>
+            <div class="answers col-md-10 rounded-bottom border">
+                <p id="rightAnswer"></p>
             </div>
             <ul class="pagination col-md-10">
-                <li class="page-item text-center"><a class="page-link" href="">Předchozí</a></li>
-                <li class="page-item text-center"><a class="page-link" href="">Další</a></li>
+                <li class="page-item text-center">
+                    <a class="text-dark btn btn-warning" href="" id="prevTheory">Předchozí</a>
+                </li>
+                <li class="page-item text-center">
+                    <a class="text-dark btn btn-warning" href="" id="nextTheory">Další</a>
+                </li>
             </ul>
         </div>
     </main>
@@ -53,9 +62,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- Custom scripts -->
+    <script src="assets/js/ostatni_ustanoveni.js"></script>
     <script>
+        let isChange = 0;
         $('.napoveda').popover({
             trigger: 'focus'
+        });
+        $(document).ready( function() {
+            render();
         })
     </script>
 </body>

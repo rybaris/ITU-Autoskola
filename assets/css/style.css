@@ -176,5 +176,5 @@ footer {
 .progress {
     border-radius: 0 !important;
     background-color: #313131 !important;
-    height: 5px !important;
+    margin: 5px 0px;
 }
