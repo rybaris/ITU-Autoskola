@@ -14,7 +14,7 @@ var ansSrc = [
     "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.",
     "Zakazuje jízdu (nikoli jen vjezd) pro určená vozidla v území, pro které byla vyhlášena smogová situace podle zvláštního právního předpisu.",
     "Zakazuje vjezdu autobusům.",
-    "Zákaz vjezdu&nbsp;<b>VŠECH</b>&nbsp;motorových vozidel"
+    'Zákaz vjezdu <span type="button" class="example-popover" data-container="body" data-toggle="popover" data-placement="top" data-content="To znamená aut, autobusů, motocyklů, nákladních automobilů, ...">všech</span> motorových vozidel'
 ]
 
 function render() {
