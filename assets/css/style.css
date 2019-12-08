@@ -1,3 +1,7 @@
+/**************************
+* Author: Ondrej Sebesta  * 
+* Login: xsebes22         *
+**************************/
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +19,7 @@ body {
     box-sizing: border-box;
     background-color: #f9fbfd !important;
 }
+/* Header style */
 header {
     width: 100%;
     min-height: 83px;
@@ -22,6 +27,16 @@ header {
     background-color: #313131;
     padding: 5px 0px;
 }
+header h1, h2 {
+    display: inline;
+    color: white;
+    margin: 0px 10px;
+}
+header h2 {
+    color: yellow;
+}
+
+/* Main style */
 main {
     width: 100%;
     min-height: calc(100vh - 120px);
@@ -79,9 +94,8 @@ main {
 .question {
     padding: 20px;
     background-color: white;
-    max-height: 50vh !important;
+    max-height: 40vh !important;
     margin: 4px 0px;
-    min-height: 343px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +121,7 @@ main {
     text-align: center;
     padding: 20px;
     margin: 0px;
-    height: 150px;
+    min-height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,4 +159,5 @@ footer {
 .progress {
     border-radius: 0 !important;
     background-color: #313131 !important;
+    height: 5px !important;
 }
