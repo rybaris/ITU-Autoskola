@@ -93,10 +93,14 @@ main {
 }
 .theory h2 {
     margin: 20px 0px;
+    color: black;
 }
 .theory a {
     padding: 10px 20px;
     box-sizing: border-box;
+}
+.theory ul {
+    margin-top: 20px;
 }
 .question {
     padding: 20px;
