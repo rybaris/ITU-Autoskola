@@ -1,5 +1,10 @@
+/* 
+ */
+
+/* Current counter */
 var current = 0;
 
+/* Control buttons */
 $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
