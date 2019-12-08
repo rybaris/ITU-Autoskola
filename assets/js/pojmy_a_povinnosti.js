@@ -4,7 +4,7 @@ $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
 var queSrc = [
-    "<p>'Krajnice':</p>",
+    '<p><a class="napoveda" href="#" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Jedná se o okraj silnice, často bývá ohraničen bílou souvislou čárou. Na tento okraj by řidič neměl najíždět, jelikož může být krajnice nezpevněna">Krajnice:</a></p>',
     "<p>'Zastavit vozidlo' znamená:</p>",
     "<p>'Dálnice'</p>",
     "<p>Nesmět omezit znamená povinnost:</p>",
@@ -44,6 +44,8 @@ function render() {
     console.log(queSrc.length);
     let progress = 100 / (queSrc.length-1);
     $('#progress-bar').width((current * progress) + "%");
+
+    $("[data-toggle=popover]").popover();
 
 }
     

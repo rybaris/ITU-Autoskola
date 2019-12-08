@@ -68,3 +68,9 @@ function next_q(){
 function konec(){
   window.location.replace("test-end.html");
 }
+
+/*
+window.onbeforeunload = function(){
+  return 'Chcete test opravdu ukončit?';
+};
+*/
