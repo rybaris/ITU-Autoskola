@@ -1,4 +1,4 @@
-
+let count=1800;
 let pom=1;
 let counter=2;
 function next_q(){
@@ -68,9 +68,18 @@ function next_q(){
 function konec(){
   window.location.replace("test-end.html");
 }
-
-/*
-window.onbeforeunload = function(){
-  return 'Chcete test opravdu ukončit?';
-};
-*/
+function timer(){
+  let minute = parseInt(count/60);
+  let sec = count % 60;
+    count=count-1;
+    
+    if (count > 0)
+    {
+     // console.log(minute);
+      $(".min").html(minute);
+      $(".sec").html(sec);
+    }else{
+      console.log("KONEC");
+    }
+    setTimeout(timer, 1000);
+}

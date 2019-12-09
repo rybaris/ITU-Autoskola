@@ -77,3 +77,10 @@ a{
     background-color: rgba(36, 35, 35, 0.671);
     color: #ffc107;
 }
+.nodec{
+    color: black;
+    text-decoration: none !important; 
+ }
+ .wrapper{
+    align-content: flex-start !important;
+}

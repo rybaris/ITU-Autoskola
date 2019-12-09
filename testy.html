@@ -15,7 +15,7 @@
     <script src="assets/js/testy.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body onload="timer()">
     <header>
         <h1>
             <a href="index.html">Autoškola</a>
@@ -25,18 +25,18 @@
         <div class="wrapper">
             <div class="page">
                 <div class="bar">
-                    <div class="timer">Čas: 15:05</div>
+                    <div class="timer">Čas: <span class="min">30</span>:<span class="sec">00</span> </div>
                     <div class="counter">Otázka: 1/50</div>
                 </div>
                 <div class="test">
                         <div class="otazka">V provozu na pozemních komunikacích je zakázáno</div>
                         <div class="odpovedi">            
-                            <a href="#" id="od1" onclick="next_q()"><div class="change1">Troubit</div></a>
-                            <a href="#" id="od2" onclick="next_q()"><div class="change2">Neoprávněně užívat zvláštních výstražných světel a zvláštního zvukového výstražného znamení, které užívá vozidlo s právem přednostní jízdy.</div></a>
-                            <a href="#" id="od3" onclick="next_q()"><div class="change3">Svítit za nesnížené viditelnosti.</div></a>
+                            <a href="#" id="od1" class="nodec" onclick="next_q()"><div class="change1">Troubit</div></a>
+                            <a href="#" id="od2" class="nodec" onclick="next_q()"><div class="change2">Neoprávněně užívat zvláštních výstražných světel a zvláštního zvukového výstražného znamení, které užívá vozidlo s právem přednostní jízdy.</div></a>
+                            <a href="#" id="od3" class="nodec" onclick="next_q()"><div class="change3">Svítit za nesnížené viditelnosti.</div></a>
                         </div>
                         <div class="nav-btn">
-                            <a href="#" class="prev" onclick="konec()"><div>Ukončit test</div></a>                    
+                            <a href="#" class="prev nodec" onclick="konec()"><div>Ukončit test</div></a>                    
                         </div>
                 </div>         
             </div>
