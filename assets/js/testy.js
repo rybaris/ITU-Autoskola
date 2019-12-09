@@ -123,3 +123,17 @@ function timer(){
 function modal_window(){
   $(".modal_w").css("display", "block");
 }
+function size_img(){
+  if(window.innerWidth < 600 && window.innerWidth>=290)
+  {
+    $("#stopka").attr("src", "assets/img/stop2.png");
+  }
+  else if(window.innerWidth < 290){
+    $("#stopka").attr("src", "assets/img/stop3.png");
+  }
+  else
+  {
+    $("#stopka").attr("src", "assets/img/stop.png");
+  }
+  setTimeout(size_img, 10);
+}

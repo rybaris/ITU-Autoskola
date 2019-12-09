@@ -11,7 +11,7 @@
     <script src="assets/js/testy.js"></script>
     <title>Document</title>
 </head>
-<body onload="end_time2()">
+<body onload="end_time2(),size_img()">
     <!-- HEADER -->
     <header>
         <h1>
@@ -22,9 +22,9 @@
         <div class="wrapper">
             <div class="page">
                 <div class="test">
-                        <div class="konec"><div>Test ukončen!</div></div>
+                        <div class="konec"><div class="nadpis">Test ukončen!</div></div>
                         <div class="vyhodnoceni">
-                            <img src="assets/img/stop.png" alt="">            
+                            <img id="stopka" src="assets/img/stop.png" alt="">            
                             <div class="usp">Počet bodů:10/50</div>
                             <div class="time usp">Čas: <span class="final_time"></span></div>
                             <div class="usp">Úspěšnost: <span class="red_c">Neprošel</span></div>
