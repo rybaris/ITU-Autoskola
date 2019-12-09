@@ -36,12 +36,21 @@
                             <a href="#" id="od3" class="nodec" onclick="next_q()"><div class="change3">Svítit za nesnížené viditelnosti.</div></a>
                         </div>
                         <div class="nav-btn">
-                            <a href="#" class="prev nodec" onclick="konec()"><div>Ukončit test</div></a>                    
+                            <a href="#" class="prev nodec" onclick="modal_konec()"><div>Ukončit test</div></a>                    
                         </div>
                 </div>         
             </div>
+            <div class="modal_w">
+                <div class="modal_cont">
+                  <p>Chcete opravdu ukončit test předčasně?</p>
+                  <div class="odp">
+                    <div class="ano" onclick="konec()">Ano</div>
+                    <div class="ne" onclick="modal_close()">Ne,pokračovat v testu</div>    
+                  </div>                  
+                </div>              
+            </div>
         </div>
-
+        
     </main>
     <footer class="text-center">
         <p>&copy; 2019</p>

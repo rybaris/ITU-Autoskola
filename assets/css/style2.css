@@ -99,3 +99,54 @@ a{
 .wrapper{
     align-content: flex-start !important;
 }
+.modal_w{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 20px;
+    padding-top: 20%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.664); /* Black w/ opacity */
+}
+.modal_cont{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.modal_cont p{
+    flex: 100%;
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.odp{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;    
+}
+.odp div{
+    flex: 40%;
+    padding: 5px;
+    background-color: rgb(15, 255, 255);
+    border: solid 1px black; 
+    border-radius: 5px;
+    margin: 2px;
+}
+
+
+.odp div:hover{
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+}
+

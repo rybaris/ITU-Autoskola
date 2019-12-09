@@ -65,8 +65,14 @@ function next_q(){
 
 
 }
-function konec(){
+function konec(){  
   window.location.replace("test-end.html");
+}
+function modal_konec(){
+  modal_window();
+}
+function modal_close(){
+  $(".modal_w").css("display","none");
 }
 function timer(){
   let minute = parseInt(count/60);
@@ -89,4 +95,8 @@ function timer(){
       konec();
     }
     setTimeout(timer, 1000);
+}
+
+function modal_window(){
+  $(".modal_w").css("display", "block");
 }
