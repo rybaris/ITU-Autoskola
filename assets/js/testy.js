@@ -73,13 +73,20 @@ function timer(){
   let sec = count % 60;
     count=count-1;
     
-    if (count > 0)
+    if (count >= 0)
     {
      // console.log(minute);
-      $(".min").html(minute);
-      $(".sec").html(sec);
+      $(".min").html(minute);      
+      if(sec.toString().length == 1) //řešení nuly navíc u jednociferného čísla
+      {
+        $(".sec").html("0"+sec);
+      }
+      else{
+        $(".sec").html(sec);
+      }
+      //console.log(sec.toString().length);
     }else{
-      console.log("KONEC");
+      konec();
     }
     setTimeout(timer, 1000);
 }
