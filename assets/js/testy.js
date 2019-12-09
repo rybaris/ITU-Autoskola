@@ -65,8 +65,31 @@ function next_q(){
 
 
 }
-function konec(){  
-  window.location.replace("test-end.html");
+function konec(){
+  let konec_cas,konec_cas2;
+  konec_cas=end_time(konec_cas);
+  localStorage.setItem("konec_cas2", konec_cas); //uložení času
+
+  ///NACTENI STRANKY S HODNOCENIM
+  window.location.replace("test-end.html");  
+
+}
+function end_time(konec_cas){
+  let minute = parseInt(count/60);
+  let sec = count % 60;
+  $(".min2").html(minute); 
+  if(sec.toString().length == 1) //řešení nuly navíc u jednociferného čísla
+  {
+    konec_cas= minute+":0"+sec;
+  }
+  else{
+    konec_cas= minute+":"+sec;    
+  }
+  return konec_cas;
+}
+function end_time2(){
+  let konec_cas = localStorage.getItem("konec_cas2");
+  $(".final_time").html(konec_cas);
 }
 function modal_konec(){
   modal_window();
