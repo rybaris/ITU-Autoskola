@@ -1,8 +1,11 @@
+/* Current counter */
 var current = 0;
 
+/* Prev, Next control */
 $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
+/* Question array */
 var queSrc = [
     "<p>Zdravotně způsobilý k řízení motorových vozidel není ten:</p>",
     "<p>Místní komunikace jsou sjízdné, jestliže umožňují bezpečný pohyb silničních a jiných vozidel:</p>",
@@ -14,6 +17,7 @@ var queSrc = [
 
 ]
 
+/* Answer array */
 var ansSrc = [
     "Kdo má podle posudku o zdravotní způsobilosti poruchy chování způsobené závislostí na alkoholu nebo jiných psychoaktivních látkách.",
     "Přizpůsobený stavebnímu stavu a dopravně technickému stavu silnic a povětrnostním situacím a jejich důsledkům.",
@@ -25,6 +29,7 @@ var ansSrc = [
 
 ]
 
+/* Rendering Question and Answer */
 function render() {
 
     var img = $(".question").innerHTML = queSrc[current];
@@ -33,12 +38,15 @@ function render() {
     $('.question').html(img);
     $('#rightAnswer').html(text);
 
-    console.log(queSrc.length);
     let progress = 100 / (queSrc.length-1);
     $('#progress-bar').width((current * progress) + "%");
 
+    /* Hint popover */
+    $("[data-toggle=popover]").popover();
+
 }
-    
+
+/* Previous button function */
 function prevRender() {
 
     event.preventDefault()
@@ -54,6 +62,7 @@ function prevRender() {
 
 }
 
+/* Next button function*/
 function nextRender() {
 
     event.preventDefault()

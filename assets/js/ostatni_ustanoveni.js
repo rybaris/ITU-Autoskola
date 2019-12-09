@@ -1,8 +1,11 @@
+/* Current counter */
 var current = 0;
 
+/* Prev, Next control */
 $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
+/* Question array */
 var queSrc = [
     "<p>V prostoru čerpací stanice pohonných hmot je zakázáno:</p>",
     "<p>Z jedoucího vozidla dává policista ve stejnokroji znamení k zastavení vozidla:</p></p>",
@@ -13,6 +16,7 @@ var queSrc = [
 
 ]
 
+/* Answer array */
 var ansSrc = [
     "Seřizovat motor vozidla.",
     "Kýváním paže nahoru a dolů nebo vysunutým zastavovacím terčem, popřípadě rozsvícením nápisu 'STOP'.",
@@ -23,6 +27,7 @@ var ansSrc = [
 
 ]
 
+/* Main render function - renders question and answer */
 function render() {
 
     if (queSrc[current].startsWith('assets')) {
@@ -43,12 +48,15 @@ function render() {
     $('.question').html(img);
     $('#rightAnswer').html(text);
 
-    console.log(queSrc.length);
     let progress = 100 / (queSrc.length-1);
     $('#progress-bar').width((current * progress) + "%");
 
+    /* Hint popover */
+    $("[data-toggle=popover]").popover();
+
 }
-    
+
+/* Previous button function */
 function prevRender() {
 
     event.preventDefault()
@@ -64,6 +72,7 @@ function prevRender() {
 
 }
 
+/* Next button function*/
 function nextRender() {
 
     event.preventDefault()

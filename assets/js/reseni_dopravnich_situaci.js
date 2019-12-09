@@ -1,8 +1,11 @@
+/* Current counter */
 var current = 0;
 
+/* Prev, Next control */
 $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
+/* Question array */
 var imgSrc = [
     "assets/img/prejezd.png",
     "assets/img/krizovatka1.png",
@@ -12,6 +15,7 @@ var imgSrc = [
     "assets/img/prejezd2.png"
 ]
 
+/* Answer array */
 var ansSrc = [
     "Přes tento železniční přejezd lze přejíždět nejvýše 50 km/h.",
     "Touto křižovatkou projíždíte jako poslední.",
@@ -22,6 +26,7 @@ var ansSrc = [
     
 ]
 
+/* Rendering Question and Answer */
 function render() {
 
     var img = $("<img>").attr({
@@ -34,12 +39,15 @@ function render() {
     $('.question').html(img);
     $('#rightAnswer').html(text);
 
-    console.log(imgSrc.length);
     let progress = 100 / (imgSrc.length-1);
     $('#progress-bar').width((current * progress) + "%");
 
+    /* Hint popover */
+    $("[data-toggle=popover]").popover();
+
 }
-    
+
+/* Previous button function */
 function prevRender() {
 
     event.preventDefault()
@@ -55,6 +63,7 @@ function prevRender() {
 
 }
 
+/* Next button function*/
 function nextRender() {
 
     event.preventDefault()

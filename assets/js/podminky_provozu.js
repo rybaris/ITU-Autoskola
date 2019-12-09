@@ -1,8 +1,11 @@
+/* Current counter */
 var current = 0;
 
+/* Prev, Next control */
 $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
+/* Question array */
 var queSrc = [
     "<p>Nesvítí-li potkávací světlo na straně přivrácené do středu vozovky:</p>",
     "<p>K pravidelné technické prohlídce může přistavit vozidlo:",
@@ -20,6 +23,7 @@ var queSrc = [
 
 ]
 
+/* Answer array */
 var ansSrc = [
     "vozidlo nesmí být užito v provozu na pozemních komunikacích, s výjimkou nouzového dojetí.",
     "Jakákoliv osoba, které je vozidlo svěřeno.",
@@ -37,6 +41,7 @@ var ansSrc = [
 
 ]
 
+/* Rendering Question and Answer */
 function render() {
 
     var img = $(".question").innerHTML = queSrc[current];
@@ -45,12 +50,15 @@ function render() {
     $('.question').html(img);
     $('#rightAnswer').html(text);
 
-    console.log(queSrc.length);
     let progress = 100 / (queSrc.length-1);
     $('#progress-bar').width((current * progress) + "%");
 
+    /* Hint popover */
+    $("[data-toggle=popover]").popover();
+
 }
-    
+
+/* Previous button function */    
 function prevRender() {
 
     event.preventDefault()
@@ -66,6 +74,7 @@ function prevRender() {
 
 }
 
+/* Next button function*/
 function nextRender() {
 
     event.preventDefault()

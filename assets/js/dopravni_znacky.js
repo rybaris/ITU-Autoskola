@@ -1,8 +1,11 @@
+/* Current counter */
 var current = 0;
 
+/* Prev, Next control */
 $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
+/* Question array */
 var imgSrc = [
     "assets/img/dej_prednost_v_jizde.jpg",
     "assets/img/smog.jpg",
@@ -10,13 +13,15 @@ var imgSrc = [
     "assets/img/zakaz_vjezdu_vsech_motorovych_vozidel.jpg"
 ]
 
+/* Answer array */
 var ansSrc = [
     "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.",
     "Zakazuje jízdu (nikoli jen vjezd) pro určená vozidla v území, pro které byla vyhlášena smogová situace podle zvláštního právního předpisu.",
     "Zakazuje vjezdu autobusům.",
-    'Zákaz vjezdu <a href="" id="napoveda" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a> motorových vozidel'
+    'Zákaz vjezdu všech motorových vozidel'
 ]
 
+/* Rendering Question and Answer */
 function render() {
 
     var img = $("<img>").attr({
@@ -29,12 +34,15 @@ function render() {
     $('.question').html(img);
     $('#rightAnswer').html(text);
 
-    console.log(imgSrc.length);
     let progress = 100 / (imgSrc.length-1);
     $('#progress-bar').width((current * progress) + "%");
 
+    /* Hint popover */
+    $("[data-toggle=popover]").popover();
+
 }
-    
+
+/* Previous button function */
 function prevRender() {
 
     event.preventDefault()
@@ -50,6 +58,7 @@ function prevRender() {
 
 }
 
+/* Next button function*/
 function nextRender() {
 
     event.preventDefault()

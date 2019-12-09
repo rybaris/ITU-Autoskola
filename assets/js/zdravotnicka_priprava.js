@@ -1,8 +1,11 @@
+/* Current counter */
 var current = 0;
 
+/* Prev, Next control */
 $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
+/* Question array */
 var queSrc = [
     "<p>Jak budete postupovat, jste-li sami a opakovaně se Vám nedaří zajistit dýchací cesty:</p>",
     "<p>Zraněný si po dopravní nehodě stěžuje na bolesti břicha a pocit žízně:</p>",
@@ -11,6 +14,7 @@ var queSrc = [
     "<p>Poraněný je při vědomí a stěžuje si na silnou bolest v oblasti zad, eventuálně na brnění nebo necitlivost dolních končetin. Jaké by mohl mít poranění?</p>"
 ]
 
+/* Answer array */
 var ansSrc = [
     "Přeruším snažení po 3-4 pokusech a zahájím zevní srdeční masáž",
     "Nepodáváme mu žádné nápoje",
@@ -19,6 +23,7 @@ var ansSrc = [
     "poranění páteře, při změně citlivosti také poranění míchy"
 ]
 
+/* Rendering Question and Answer */
 function render() {
 
     var img = $(".question").innerHTML = queSrc[current];
@@ -27,12 +32,15 @@ function render() {
     $('.question').html(img);
     $('#rightAnswer').html(text);
 
-    console.log(queSrc.length);
     let progress = 100 / (queSrc.length-1);
     $('#progress-bar').width((current * progress) + "%");
 
+    /* Hint popover */
+    $("[data-toggle=popover]").popover();
+
 }
-    
+
+/* Previous button function */
 function prevRender() {
 
     event.preventDefault()
@@ -48,6 +56,7 @@ function prevRender() {
 
 }
 
+/* Next button function*/
 function nextRender() {
 
     event.preventDefault()
