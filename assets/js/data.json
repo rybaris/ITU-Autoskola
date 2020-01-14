@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "type": "img",
+        "title": "Tato dopravní značka znamená:",
+        "question": "../img/dej_prednost_v_jizde.jpg",
+        "answer1": "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.",
+        "answer2": "Zákaz vjezdu všech motorových vozidel",
+        "answer3": "Cyklisto, sesedni z kola!"
+    },
+    {
+        "id": 2,
+        "type": "img",
+        "title": "Tato dopravní značka znamená:",
+        "question": "../img/smog.jpg",
+        "answer1": "Zakazuje jízdu (nikoli jen vjezd) pro určená vozidla v území, pro které byla vyhlášena smogová situace podle zvláštního právního předpisu.",
+        "answer2": "Dej přednost v jízdě",
+        "answer3": "Cyklisto, sesedni z kola!"
+    },
+    {
+        "id": 3,
+        "type": "img",
+        "title": "Tato dopravní značka znamená:",
+        "question": "../img/zakaz_vjezdu_autobusu.jpg",
+        "answer1": "Dej přednost v jízdě",
+        "answer2": "Zakazuje vjezdu autobusům.",
+        "answer3": "Cyklisto, sesedni z kola!"
+    },
+    {
+        "id": 4,
+        "type": "img",
+        "title": "Tato dopravní značka znamená:",
+        "question": "assets/img/zakaz_vjezdu_vsech_motorovych_vozidel.jpg",
+        "answer1": "Zákaz vjezdu všech motorových vozidel",
+        "answer2": "Zakazuje vjezdu autobusům.",
+        "answer3": "Cyklisto, sesedni z kola!"
+    }
+]
