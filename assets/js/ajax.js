@@ -14,8 +14,16 @@ function ajaxFunction() {
             p = JSON.parse(req.responseText);
             console.log(p)
             question.innerHTML = p[1].id;
+            checkType();
             answers.innerHTML = ""
 
+        }
+    }
+    function checkType() {
+        if(p[0].type == "img") {
+            question.innerHTML = '<img id="imaged"></img>'
+            document.getElementById('imaged').src = p[0].question;
+            console.log("stastny novy rok")
         }
     }
     req.send()
