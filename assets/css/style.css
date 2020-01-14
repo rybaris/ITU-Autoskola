@@ -136,6 +136,7 @@ main {
     justify-content: center;
     background-color: lightcyan;
     align-items: center;
+    flex-direction: column;
     margin-bottom: 4px;
     font-size: 18px;
     min-height: 30vh;
@@ -144,9 +145,17 @@ main {
 .answers p {
     text-align: center;
     padding: 20px;
-    margin: 0px;
+    margin: 1px 0px;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+.answers p:hover {
+    background-color: gray;
+    color: white;
 }
 .pagination {
     margin: 20px 0px 0px 0px !important;
