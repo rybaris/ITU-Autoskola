@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "type": "img",
         "title": "Tato dopravní značka znamená:",
         "question": "../img/dej_prednost_v_jizde.jpg",
@@ -9,7 +9,7 @@
         "answer3": "Cyklisto, sesedni z kola!"
     },
     {
-        "id": 2,
+        "id": 1,
         "type": "img",
         "title": "Tato dopravní značka znamená:",
         "question": "../img/smog.jpg",
@@ -18,7 +18,7 @@
         "answer3": "Cyklisto, sesedni z kola!"
     },
     {
-        "id": 3,
+        "id": 2,
         "type": "img",
         "title": "Tato dopravní značka znamená:",
         "question": "../img/zakaz_vjezdu_autobusu.jpg",
@@ -27,7 +27,7 @@
         "answer3": "Cyklisto, sesedni z kola!"
     },
     {
-        "id": 4,
+        "id": 3,
         "type": "img",
         "title": "Tato dopravní značka znamená:",
         "question": "assets/img/zakaz_vjezdu_vsech_motorovych_vozidel.jpg",
