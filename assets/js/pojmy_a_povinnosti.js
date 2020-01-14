@@ -3,6 +3,7 @@ var current = 0;
 $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
+/*
 var queSrc = [
     '<p><a class="napoveda" href="#" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Jedná se o okraj silnice, často bývá ohraničen bílou souvislou čárou. Na tento okraj by řidič neměl najíždět, jelikož může být krajnice nezpevněna">Krajnice:</a></p>',
     "<p>'Zastavit vozidlo' znamená:</p>",
@@ -11,7 +12,8 @@ var queSrc = [
     "<p>Po pozemní komunikaci jde osoba, která vede psa. Vztahují se na ni povinnosti průvodce vedených zvířat?</p>"
 
 ]
-
+*/
+/*
 var ansSrc = [
     "je část povrchu pozemní komunikace ležící mezi okrajem přilehlého jízdního pruhu a hranou koruny pozemní komunikace, skládá se zpravidla ze zpevněné a nezpevněné části.",
     "přerušit jízdu z důvodu nezávislého na vůli řidiče.",
@@ -20,6 +22,9 @@ var ansSrc = [
     "NE"
 
 ]
+*/
+
+
 
 function render() {
 
