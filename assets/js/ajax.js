@@ -11,12 +11,12 @@ $("#nextTheory").click(nextRender);
 
 // Vytvoreni AJAX pozadavku
 function ajaxFunction() {
-    let req = new XMLHttpRequest();
-    req.open("GET", "https://raw.githubusercontent.com/rybaris/ITU-Autoskola/master/assets/js/data.json", true)
-    req.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-    req.onreadystatechange = () => {
-        if (req.readyState == 4 && req.status == 200) {
-            let p = JSON.parse(req.responseText);
+    let xmlHttp = new XMLHttpRequest();
+    
+    xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+    xmlHttp.onreadystatechange = () => {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            let p = JSON.parse(xmlHttp.responseText);
             getQuestionByType(p, current);
             getChoices(p, current);
             buttonDisabler(current);
@@ -24,12 +24,13 @@ function ajaxFunction() {
             //$('#progress-bar').width((current * progress) + "%");
         }
     }
-    req.send()
+    xmlHttp.open("GET", "https://raw.githubusercontent.com/rybaris/ITU-Autoskola/master/assets/js/data.json", true)
+    xmlHttp.send()
 }
 
 // Funkce porovna datovy typ a dle nej sestavi HTML otazky
 function getQuestionByType(item, index) {
-    if(item[index].type == "img") {
+    if(item[index].data.type == "img") {
         question.innerHTML = '<img id="image-data"></img>';
         document.getElementById('image-data').src = item[index].question;
     } else {
