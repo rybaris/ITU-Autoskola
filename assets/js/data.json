@@ -49,12 +49,246 @@
             "title": "",
             "question": "Železniční přejezd:",
             "answers": [
-                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-                "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
+                "Je místo, kde se úrovňově kříží pozemní komunikace se železnicí, popřípadě s jinou dráhou ležící na samostatném tělese, a označené příslušnou dopravní značkou.", 
+                "Je místo, kde se úrovňově kříží pozemní komunikace se železnicí a příslušnou dopravní značkou se neoznačuje", 
+                "Je místo, kde se úrovňově kříží pozemní komunikace se železnicí a je vždy označeno dopravní značkou 'Stůj, dej přednost v jízdě'"
+            ],
+            "correct_answer": 0,
+            "points": 0
+        },
+        {
+            "id": 4,
+            "type": "text",
+            "title": "",
+            "question": "Řidič nesmí při jízdě vozidlem:",
+            "answers": [
+                "Mít nasazeny ochranné brýle.", 
+                "Prudce zrychlovat", 
+                "Držet v ruce nebo jiným způsobem telefonní přístroj nebo jiné hovorové nebo záznamové zařízení"
+            ],
+            "correct_answer": 2,
+            "points": 0
+        },
+        {
+            "id": 5,
+            "type": "text",
+            "title": "",
+            "question": "'Stát' znamená:",
+            "answers": [
+                "Zastavit na dobu přesahující 10minut", 
+                "Zastavit vozidlo na vyhrazeném parkovišti", 
+                "Uvést vozidlo do klidu nad dobu povolenou pro zastavení"
+            ],
+            "correct_answer": 2,
+            "points": 0
+        },
+        {
+            "id": 5,
+            "type": "text",
+            "title": "",
+            "question": "'Stát' znamená:",
+            "answers": [
+                "Zastavit na dobu přesahující 10minut", 
+                "Zastavit vozidlo na vyhrazeném parkovišti", 
+                "Uvést vozidlo do klidu nad dobu povolenou pro zastavení"
+            ],
+            "correct_answer": 2,
+            "points": 0
+        },
+        {
+            "id": 6,
+            "type": "text",
+            "title": "",
+            "question": "'Řidič' je:",
+            "answers": [
+                "Pouze ten, kdo řídí motorové vozidlo.", 
+                "Ten, kdo řídí motorové nebo nemotorové vozidlo, ne však tramvaj.",
+                "Ten, kdo řídí motorové nebo nemotorové vozidlo anebo tramvaj."
+            ],
+            "correct_answer": 2,
+            "points": 0
+        },
+        {
+            "id": 7,
+            "type": "text",
+            "title": "",
+            "question": "Řidič smí v provozu na pozemních komunikacích užít:",
+            "answers": [
+                "Jen vozidlo, které splňuje technické podmínky stanovené zvláštním předpisem.", 
+                "I vozidlo, které sice nesplňuje technické podmínky, ale majitel vozidla dovolí vozidlo užít nebo jeho užití přikáže.",
+                "I vozidlo, které splňuje jen některé technické podmínky stanovené zvláštním předpisem, pokud řidič dbá při jízdě zvýšené opatrnosti."
+            ],
+            "correct_answer": 0,
+            "points": 0
+        },
+        {
+            "id": 8,
+            "type": "text",
+            "title": "",
+            "question": "'Obec':",
+            "answers": [
+                "Je území vyznačené v mapě, musí mít název a je označeno dopravní značkou 'Nejvyšší dovolená rychlost'", 
+                "Je zastavěné území, jehož začátek a konec je na pozemní komunikaci označen příslušnými dopravními značkami, které se vždy umisťují na účelových komunikacích.",
+                "Je zastavěné území, jehož začátek a konec je na pozemní komunikaci označen příslušnými dopravními značkami. Na účelových komunikacích se značky neosazují."
+            ],
+            "correct_answer": 2,
+            "points": 0
+        },
+        {
+            "id": 9,
+            "type": "text",
+            "title": "",
+            "question": "'Zastavit vozidlo znamená':",
+            "answers": [
+                "Přerušit jízdu z důvodu vyvolaných provozem na pozemních komunikacích, maximálně však na dobu 3 minut", 
+                "Přerušit jízdu z důvodu nezávislého na vůli řidiče.",
+                "Uvést vozidlo do klidu nad dobu povolenou pro stání."
             ],
             "correct_answer": 1,
-            "points": 2
+            "points": 0
+        },
+        {
+            "id": 10,
+            "type": "text",
+            "title": "",
+            "question": "Po pozemní komunikaci jde osoba, která vede psa. Vztahují se na ni povinnosti průvodce vedených zvířat?",
+            "answers": [
+                "Ano", 
+                "Ne",
+                ""
+            ],
+            "correct_answer": 1,
+            "points": 0
+        },
+        {
+            "id": 11,
+            "type": "text",
+            "title": "",
+            "question": "'Křižovatka':",
+            "answers": [
+                "Je místo, v němž se protínají nebo spojují pozemní komunikace, za křižovatku se považuje i vyústění polní nebo lesní cesty.", 
+                "Je místo, v němž se pozemní komunikace protínají nebo spojují, za křižovatku se nepovažuje vyústění polní nebo lesní cesty nebo jiné účelové komunikace na jinou pozemní komunikaci",
+                "Je místo, v němž se protínají nebo spojují dvě pozemní komunikace. Za křižovatku se nepovažuje místo, které není označeno dopravní značkou 'Křižovatka'"
+            ],
+            "correct_answer": 1,
+            "points": 0
+        },
+        {
+            "id": 12,
+            "type": "text",
+            "title": "",
+            "question": "Patří k povinnostem účastníka provozu na pozemních komunikacích řídit se pokyny strážníků obecní policie?",
+            "answers": [
+                "Ano", 
+                "Ne",
+                ""
+            ],
+            "correct_answer": 0,
+            "points": 0
+        },
+        {
+            "id": 13,
+            "type": "text",
+            "title": "",
+            "question": "Řidič motorového vozidla je povinen:",
+            "answers": [
+                "Být za jízdy připoután na sedadle bezpečnostním pásem, pokud jím je sedadlo povinně vybaveno podle zvláštního právního předpisu.", 
+                "Být připoután na sedadle bezpečnostním pásem, pokud jím je sedadlo povinně vybaveno podle zvláštního právního předpisu, jen za jízdy mimo obec.",
+                "Se za jízdy připoutat bezpečnostními pásy"
+            ],
+            "correct_answer": 0,
+            "points": 0
+        },
+        {
+            "id": 14,
+            "type": "text",
+            "title": "",
+            "question": "'Řidič' je:",
+            "answers": [
+                "Ten, kdo řídí motorové nebo nemotorové vozidlo anebo tramvaj", 
+                "Ten, kdo řídí pouze motorové vozidlo a trolejbus",
+                "Ten, kdo řídí motorové nebo nemotorové vozidlo, ne však tramvaj nebo trolejbus"
+            ],
+            "correct_answer": 0,
+            "points": 0
+        },
+        {
+            "id": 15,
+            "type": "text",
+            "title": "",
+            "question": "'Krajnice':",
+            "answers": [
+                "Je část povrchu pozemní komunikace určená výhradně pro jízdu nemotorových vozidel.",
+                "Je část povrchu pozemní komunikace ležící mezi okrajem přilehlého jízdního pruhu a hranou koruny pozemní komunikace, skládá se zpravidla ze zpevněné a nezpevněné části.",
+                "Je vždy zpevněná část vozovky mezi okrajem přilehlého jízdního pruhu a hranou koruny vozovky, určená pro zastavení, otáčení a předjíždění vpravo"
+            ],
+            "correct_answer": 1,
+            "points": 0
+        },
+        {
+            "id": 16,
+            "type": "text",
+            "title": "",
+            "question": "'Přechod pro chodce':",
+            "answers": [
+                "Je místo na pozemní komunikaci určené pro přecházení chodců, vyznačené příslušnou dopravní značkou",
+                "Je místo na pozemní komunikaci určené pro přecházení chodců, které nesmí být řízeno akustickými signály",
+                "Je místo na pozemní komunikaci určené pro přecházení chodců, které musí být vždy označeno přerušovaně svítícím světelným signálem ve tvaru kráčejícího chodce."
+            ],
+            "correct_answer": 0,
+            "points": 0
+        },
+        {
+            "id": 17,
+            "type": "text",
+            "title": "",
+            "question": "'Stát' znamená:",
+            "answers": [
+                "Uvést vozidlo do klidu na dobu více než 30 minut.",
+                "Uvést vozidlo do klidu na dobu neurčitou",
+                "Uvést vozidlo do klidu nad dobu povolenou pro zastavení."
+            ],
+            "correct_answer": 2,
+            "points": 0
+        },
+        {
+            "id": 17,
+            "type": "text",
+            "title": "",
+            "question": "Je jezdec na koni, který se pohybuje po pozemní komunikaci, řidičem a platí pro něj povinnosti a práva účastníků provozu na pozemních komunikacích?",
+            "answers": [
+                "Ano",
+                "Ne",
+                ""
+            ],
+            "correct_answer": 0,
+            "points": 0
+        },
+        {
+            "id": 18,
+            "type": "text",
+            "title": "",
+            "question": "'Účastník provozu na pozemních komunikacích':",
+            "answers": [
+                "Je pouze řidič motorových vozidel a chodec.",
+                "Je každý, kdo se přímým způsobem účastní provozu na pozemních komunikacích.",
+                "Je každý, kdo se účastní provozu na pozemních komunikacích s výjimkou dětí"
+            ],
+            "correct_answer": 1,
+            "points": 0
+        },
+        {
+            "id": 18,
+            "type": "text",
+            "title": "",
+            "question": "'Jízdní souprava':",
+            "answers": [
+                "Je souprava složená z jednoho nebo více motorových vozidel a jednoho nebo více přípojných vozidel.",
+                "Je složená z jednoho motorového vozidla s tažným zařízením.",
+                "Je souprava více přípojných vozidel"
+            ],
+            "correct_answer": 0,
+            "points": 0
         }
     ]
 },
