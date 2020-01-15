@@ -3,6 +3,10 @@ let rightAnswer;
 let question = document.getElementById('question');
 let answers = document.getElementById('answers');
 
+let answer1 = document.getElementById('answer1');
+let answer2 = document.getElementById('answer2');
+let answer3 = document.getElementById('answer3');
+
 $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
 
@@ -18,7 +22,7 @@ function ajaxFunction() {
     xmlHttp.onreadystatechange = () => {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             let p = JSON.parse(xmlHttp.responseText);
-            rightAnswer = p[current].right;
+            rightAnswer = p[current].correct_answer;
             getQuestionByType(p, current);
             getChoices(p, current);
             buttonDisabler(current);
@@ -43,17 +47,15 @@ function getQuestionByType(item, index) {
 // Funkce vlozi mozne odpovedi na otazku
 function getChoices(item, index) {
 
-    document.getElementById('answer1').innerHTML = item[index].answer1;
-    document.getElementById('answer2').innerHTML = item[index].answer2;
-    document.getElementById('answer3').innerHTML = item[index].answer3;
+    answer1.innerHTML = item[index].answers[0];
+    answer2.innerHTML = item[index].answers[1];
+    answer3.innerHTML = item[index].answers[2];
 
 }
 
 function checkAnswer() {
 
-    let answer1 = document.getElementById('answer1');
-    let answer2 = document.getElementById('answer2');
-    let answer3 = document.getElementById('answer3');
+    
 
     if (rightAnswer == "answer1") {
         answer1.setAttribute('style', 'background-color:#61ea618c !important')
@@ -94,9 +96,9 @@ function nextRender() {
 }
 
 function reset() {
-    document.getElementById('answer1').style.backgroundColor = "#f7f7f7";
-    document.getElementById('answer2').style.backgroundColor = "#f7f7f7";
-    document.getElementById('answer3').style.backgroundColor = "#f7f7f7";
+    answer1.style.backgroundColor = "#f7f7f7";
+    answer2.style.backgroundColor = "#f7f7f7";
+    answer3.style.backgroundColor = "#f7f7f7";
 }
 
 // Funkce skryva/zobrazuje navigacni tlacitka dle hodnoty indexu
