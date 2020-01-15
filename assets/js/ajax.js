@@ -1,5 +1,5 @@
 let current = 0;
-let categoryIndex = 1;
+let categoryIndex = 0;
 let rightAnswer;
 let question = document.getElementById('question');
 let answers = document.getElementById('answers');
@@ -24,10 +24,12 @@ function ajaxFunction() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             let p = JSON.parse(xmlHttp.responseText);
             rightAnswer = p[categoryIndex].questions[current].correct_answer;
+
             getQuestionByType(p, current);
             getChoices(p, current);
-            buttonDisabler(current);
-            let progress = 100 / (p[categoryIndex].category.count);
+            buttonDisabler(p, current);
+
+            let progress = 100 / (p[categoryIndex].category.count - 1);
             $('#progress-bar').width((current * progress) + "%");
         }
     }
@@ -103,11 +105,11 @@ function reset() {
 }
 
 // Funkce skryva/zobrazuje navigacni tlacitka dle hodnoty indexu
-function buttonDisabler(index) {
+function buttonDisabler(item, index) {
 
     if (index === 0) {
         document.getElementById('prevTheory').style.display = "none";
-    } else if (index === 3) {
+    } else if (index === item[categoryIndex].category.count-1) {
         document.getElementById('nextTheory').style.display = "none";
     } else {
         document.getElementById('prevTheory').style.display = "block";

@@ -1,57 +1,53 @@
 [{
     "category": {
-        "name": "dopravni_znacky",
+        "name": "pojmy_a_povinnosti",
         "count": 3
     },
     "questions": [ 
         {
             "id": 0,
-            "type": "img",
-            "category": "dopravni_znacky",
-            "title": "Tato dopravní značka znamená:",
-            "question": "assets/img/smog.jpg",
+            "type": "text",
+            "title": "",
+            "question": "Jízdní pruh je část vozovky:",
             "answers": [
-                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-                "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
+                "Vždy vyznačená vodorovnou dopravní značkou.", 
+                "Široká nejméně 3.5m.", 
+                "Dovolující jízdu vozidel v jednom jízdním pruhu za sebou"
             ],
-            "correct_answer": 0,
-            "points": 2
+            "correct_answer": 2,
+            "points": 0
         },
         {
             "id": 1,
-            "type": "img",
-            "category": "dopravni_znacky",
-            "title": "Tato dopravní značka znamená:",
-            "question": "assets/img/smog.jpg",
+            "type": "text",
+            "title": "",
+            "question": "Řidič nesmí požít alkoholický nápoj:",
             "answers": [
-                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-                "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
+                "Bezprostředně po skončení jízdy", 
+                "Ještě hodinu po skončení jízdy", 
+                "Během jízdy"
             ],
-            "correct_answer": 1,
-            "points": 2
+            "correct_answer": 2,
+            "points": 0
         },
         {
             "id": 2,
-            "type": "img",
-            "category": "dopravni_znacky",
-            "title": "Tato dopravní značka znamená:",
-            "question": "assets/img/smog.jpg",
+            "type": "text",
+            "title": "",
+            "question": "Zastavit znamená:",
             "answers": [
-                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-                "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
+                "Uvést vozidlo do klidu na dobu nezbytně nutnou k neprodlenému nastoupení nebo vystoupení přepravovaných osob anebo k neprodlenému naložení nebo složení nákladu", 
+                "Povinnost řidiče nezahájit jízdní úkon nebo v něm nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy", 
+                "Přerušit jízdu z důvodu nezávislého na vůli řidiče, například při poruše vozidla."
             ],
-            "correct_answer": 2,
-            "points": 2
+            "correct_answer": 0,
+            "points": 0
         },
         {
             "id": 3,
-            "type": "img",
-            "category": "dopravni_znacky",
-            "title": "Tato dopravní značka znamená:",
-            "question": "assets/img/smog.jpg",
+            "type": "text",
+            "title": "",
+            "question": "Železniční přejezd:",
             "answers": [
                 "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
                 "Zákaz vjezdu všech motorových vozidel", 
@@ -71,7 +67,6 @@
         {
             "id": 0,
             "type": "img",
-            "category": "dopravni_znacky",
             "title": "Tato dopravní značka znamená:",
             "question": "assts/img/smog.jpg",
             "answers": [
@@ -85,7 +80,6 @@
         {
             "id": 1,
             "type": "img",
-            "category": "dopravni_znacky",
             "title": "Tato dopravní značka znamená:",
             "question": "assets/img/smog.jpg",
             "answers": [
@@ -99,7 +93,6 @@
         {
             "id": 2,
             "type": "img",
-            "category": "dopravni_znacky",
             "title": "Tato dopravní značka znamená:",
             "question": "assets/img/smog.jpg",
             "answers": [
@@ -113,7 +106,6 @@
         {
             "id": 3,
             "type": "img",
-            "category": "dopravni_znacky",
             "title": "Tato dopravní značka znamená:",
             "question": "assets/img/smog.jpg",
             "answers": [
