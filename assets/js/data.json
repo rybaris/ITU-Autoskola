@@ -1,58 +1,64 @@
-[ 
-    {
-        "id": 0,
-        "type": "img",
-        "category": "dopravni_znacky",
-        "title": "Tato dopravní značka znamená:",
-        "question": "assets/img/smog.jpg",
-        "answers": [
-            "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-            "Zákaz vjezdu všech motorových vozidel", 
-            "Cyklisto, sesedni z kola!"
-        ],
-        "correct_answer": 0,
-        "points": 2
+{
+    "questionizer": {
+        "name": "dopravni_znacky",
+        "count": 3
     },
-    {
-        "id": 1,
-        "type": "img",
-        "category": "dopravni_znacky",
-        "title": "Tato dopravní značka znamená:",
-        "question": "assets/img/smog.jpg",
-        "answers": [
-            "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-            "Zákaz vjezdu všech motorových vozidel", 
-            "Cyklisto, sesedni z kola!"
-        ],
-        "correct_answer": 1,
-        "points": 2
-    },
-    {
-        "id": 2,
-        "type": "img",
-        "category": "dopravni_znacky",
-        "title": "Tato dopravní značka znamená:",
-        "question": "assets/img/smog.jpg",
-        "answers": [
-            "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-            "Zákaz vjezdu všech motorových vozidel", 
-            "Cyklisto, sesedni z kola!"
-        ],
-        "correct_answer": 2,
-        "points": 2
-    },
-    {
-        "id": 3,
-        "type": "img",
-        "category": "dopravni_znacky",
-        "title": "Tato dopravní značka znamená:",
-        "question": "assets/img/smog.jpg",
-        "answers": [
-            "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-            "Zákaz vjezdu všech motorových vozidel", 
-            "Cyklisto, sesedni z kola!"
-        ],
-        "correct_answer": 1,
-        "points": 2
-    }
-]
+    "questions": [ 
+        {
+            "id": 0,
+            "type": "img",
+            "category": "dopravni_znacky",
+            "title": "Tato dopravní značka znamená:",
+            "question": "assets/img/smog.jpg",
+            "answers": [
+                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
+                "Zákaz vjezdu všech motorových vozidel", 
+                "Cyklisto, sesedni z kola!"
+            ],
+            "correct_answer": 0,
+            "points": 2
+        },
+        {
+            "id": 1,
+            "type": "img",
+            "category": "dopravni_znacky",
+            "title": "Tato dopravní značka znamená:",
+            "question": "assets/img/smog.jpg",
+            "answers": [
+                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
+                "Zákaz vjezdu všech motorových vozidel", 
+                "Cyklisto, sesedni z kola!"
+            ],
+            "correct_answer": 1,
+            "points": 2
+        },
+        {
+            "id": 2,
+            "type": "img",
+            "category": "dopravni_znacky",
+            "title": "Tato dopravní značka znamená:",
+            "question": "assets/img/smog.jpg",
+            "answers": [
+                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
+                "Zákaz vjezdu všech motorových vozidel", 
+                "Cyklisto, sesedni z kola!"
+            ],
+            "correct_answer": 2,
+            "points": 2
+        },
+        {
+            "id": 3,
+            "type": "img",
+            "category": "dopravni_znacky",
+            "title": "Tato dopravní značka znamená:",
+            "question": "assets/img/smog.jpg",
+            "answers": [
+                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
+                "Zákaz vjezdu všech motorových vozidel", 
+                "Cyklisto, sesedni z kola!"
+            ],
+            "correct_answer": 1,
+            "points": 2
+        }
+    ]
+}
