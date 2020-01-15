@@ -15,7 +15,7 @@
     <script src="assets/js/testy.js"></script>
     <title>Document</title>
 </head>
-<body onload="timer()">
+<body onload="timer(), first()">
     <header>
         <h1>
             <a href="index.html">Autoškola</a>
@@ -29,11 +29,11 @@
                     <div class="counter">Otázka: 1/50</div>
                 </div>
                 <div class="test">
-                        <div class="otazka">V provozu na pozemních komunikacích je zakázáno</div>
+                        <div class="otazka"></div>
                         <div class="odpovedi">            
-                            <a href="#" id="od1" class="nodec" onclick="next_q()"><div class="change1">Troubit</div></a>
-                            <a href="#" id="od2" class="nodec" onclick="next_q()"><div class="change2">Neoprávněně užívat zvláštních výstražných světel a zvláštního zvukového výstražného znamení, které užívá vozidlo s právem přednostní jízdy.</div></a>
-                            <a href="#" id="od3" class="nodec" onclick="next_q()"><div class="change3">Svítit za nesnížené viditelnosti.</div></a>
+                            <a href="#" id="od1" class="nodec" onclick="next_q(), odp1()"><div class="change1"></div></a>
+                            <a href="#" id="od2" class="nodec" onclick="next_q(), odp2()"><div class="change2"></div></a>
+                            <a href="#" id="od3" class="nodec" onclick="next_q(), odp3()"><div class="change3"></div></a>
                         </div>
                         <div class="nav-btn">
                             <a href="#" class="prev nodec" onclick="modal_konec()"><div>Ukončit test</div></a>                    
