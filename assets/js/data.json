@@ -1,7 +1,7 @@
 [{
     "category": {
         "name": "pojmy_a_povinnosti",
-        "count": 3
+        "count": 20
     },
     "questions": [ 
         {
@@ -278,7 +278,7 @@
             "points": 0
         },
         {
-            "id": 18,
+            "id": 19,
             "type": "text",
             "title": "",
             "question": "'Jízdní souprava':",
