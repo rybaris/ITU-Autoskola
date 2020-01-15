@@ -28,7 +28,7 @@ function ajaxFunction() {
     xmlHttp.send()
 }
 
-// Funkce porovna datovy typ a dle nej sestavi HTML otazky
+// OK Funkce porovna datovy typ a dle nej sestavi HTML otazky
 function getQuestionByType(item, index) {
 
     if(item[index].type == "img") {
@@ -51,13 +51,13 @@ function getChoices(item, index) {
 }
 
 function checkAnswer(item, index) {
-    console.log(item[index].right-answer);
+    console.log(item[index].right);
 
-    if (item[index].right-answer == "answer1") {
+    if (item[index].right == "answer1") {
         document.getElementById('answer1').style.background = "green";
         document.getElementById('answer2').style.background = "red";
         document.getElementById('answer3').style.background = "red";
-    } else if (item[index].right-answer == "answer2") {
+    } else if (item[index].right == "answer2") {
         document.getElementById('answer1').style.background = "red";
         document.getElementById('answer2').style.background = "green";
         document.getElementById('answer3').style.background = "red";
