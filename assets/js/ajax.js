@@ -51,6 +51,7 @@ function getChoices(item, index) {
 }
 
 function checkAnswer(item, index) {
+    console.log(item[index].right-answer);
 
     if (item[index].right-answer == "answer1") {
         document.getElementById('answer1').style.background = "green";

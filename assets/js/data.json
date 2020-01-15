@@ -17,7 +17,8 @@
         "question": "assets/img/krizovatka1.png",
         "answer1": "Zakazuje jízdu (nikoli jen vjezd) pro určená vozidla v území, pro které byla vyhlášena smogová situace podle zvláštního právního předpisu.",
         "answer2": "Dej přednost v jízdě",
-        "answer3": "Cyklisto, sesedni z kola!"
+        "answer3": "Cyklisto, sesedni z kola!",
+        "right-answer": "answer1"
     },
     {
         "id": 2,
@@ -26,7 +27,8 @@
         "question": "assets/img/zakaz_vjezdu_autobusu.jpg",
         "answer1": "Dej přednost v jízdě",
         "answer2": "Zakazuje vjezdu autobusům.",
-        "answer3": "Cyklisto, sesedni z kola!"
+        "answer3": "Cyklisto, sesedni z kola!",
+        "right-answer": "answer1"
     },
     {
         "id": 3,
@@ -35,6 +37,7 @@
         "question": "assets/img/zakaz_vjezdu_vsech_motorovych_vozidel.jpg",
         "answer1": "Zákaz vjezdu všech motorových vozidel",
         "answer2": "Zakazuje vjezdu autobusům.",
-        "answer3": "Cyklisto, sesedni z kola!"
+        "answer3": "Cyklisto, sesedni z kola!",
+        "right-answer": "answer1"
     }
 ]
