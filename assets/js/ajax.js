@@ -1,4 +1,5 @@
 let current = 0;
+let rightAnswer;
 let question = document.getElementById('question');
 let answers = document.getElementById('answers');
 
@@ -17,12 +18,10 @@ function ajaxFunction() {
     xmlHttp.onreadystatechange = () => {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             let p = JSON.parse(xmlHttp.responseText);
+            rightAnswer = p[current].right;
             getQuestionByType(p, current);
             getChoices(p, current);
             buttonDisabler(current);
-            checkAnswer(p, current);
-            //let progress = 100 / (queSrc.length-1);
-            //$('#progress-bar').width((current * progress) + "%");
         }
     }
     xmlHttp.send()
@@ -50,21 +49,26 @@ function getChoices(item, index) {
 
 }
 
-function checkAnswer(item, index) {
-    console.log(item[index].right);
+function checkAnswer() {
 
-    if (item[index].right == "answer1") {
-        document.getElementById('answer1').style.background = "green";
-        document.getElementById('answer2').style.background = "red";
-        document.getElementById('answer3').style.background = "red";
-    } else if (item[index].right == "answer2") {
-        document.getElementById('answer1').style.background = "red";
-        document.getElementById('answer2').style.background = "green";
-        document.getElementById('answer3').style.background = "red";
+    let answer1 = document.getElementById('answer1');
+    let answer2 = document.getElementById('answer2');
+    let answer3 = document.getElementById('answer3');
+
+    if (rightAnswer == "answer1") {
+        answer1.setAttribute('style', 'background-color:#61ea618c !important')
+        answer2.setAttribute('style', 'background-color:#ff000069 !important')
+        answer3.setAttribute('style', 'background-color:#ff000069 !important')
+
+    } else if (rightAnswer == "answer2") {
+        answer1.setAttribute('style', 'background-color:#ff000069 !important')
+        answer2.setAttribute('style', 'background-color:#61ea618c !important')
+        answer3.setAttribute('style', 'background-color:#ff000069 !important')
+
     } else {
-        document.getElementById('answer1').style.background = "red";
-        document.getElementById('answer2').style.background = "red";
-        document.getElementById('answer3').style.background = "green";
+        answer1.setAttribute('style', 'background-color:#ff000069 !important')
+        answer2.setAttribute('style', 'background-color:#ff000069 !important')
+        answer3.setAttribute('style', 'background-color:#61ea618c !important')
     }
 
 }
@@ -74,6 +78,7 @@ function prevRender() {
 
     event.preventDefault();
     current = current - 1;
+    reset();
     ajaxFunction();
 
 }
@@ -83,8 +88,15 @@ function nextRender() {
 
     event.preventDefault();
     current = current + 1;
+    reset();
     ajaxFunction();
 
+}
+
+function reset() {
+    document.getElementById('answer1').style.backgroundColor = "#f7f7f7";
+    document.getElementById('answer2').style.backgroundColor = "#f7f7f7";
+    document.getElementById('answer3').style.backgroundColor = "#f7f7f7";
 }
 
 // Funkce skryva/zobrazuje navigacni tlacitka dle hodnoty indexu

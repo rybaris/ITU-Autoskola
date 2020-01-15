@@ -108,6 +108,15 @@ main {
     margin-top: 20px;
 }
 
+
+
+.boxis {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+}
+
+
 /* Theory learning page */
 .question {
     padding: 20px;
@@ -132,12 +141,11 @@ main {
 }
 .answers {
     display: flex;
-    padding: 0 20%;
+    padding: 0 !important;
     justify-content: center;
-    background-color: lightcyan;
+    background-color: #f7f7f7;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 4px;
     font-size: 18px;
     min-height: 30vh;
 
@@ -154,8 +162,7 @@ main {
     cursor: pointer;
 }
 .answers p:hover {
-    background-color: gray;
-    color: white;
+    background-color: lightgray !important;
 }
 .pagination {
     margin: 20px 0px 0px 0px !important;
