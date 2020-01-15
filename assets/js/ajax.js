@@ -1,4 +1,5 @@
 let current = 0;
+let categoryIndex = 0;
 let rightAnswer;
 let question = document.getElementById('question');
 let answers = document.getElementById('answers');
@@ -22,10 +23,12 @@ function ajaxFunction() {
     xmlHttp.onreadystatechange = () => {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             let p = JSON.parse(xmlHttp.responseText);
-            rightAnswer = p.questions[current].correct_answer;
+            rightAnswer = p[categoryIndex].questions[current].correct_answer;
             getQuestionByType(p, current);
             getChoices(p, current);
             buttonDisabler(current);
+            let progress = 100 / (p[categoryIndex].category.count);
+            $('#progress-bar').width((current * progress) + "%");
         }
     }
     xmlHttp.send()
@@ -34,12 +37,12 @@ function ajaxFunction() {
 // OK Funkce porovna datovy typ a dle nej sestavi HTML otazky
 function getQuestionByType(item, index) {
 
-    if(item.questions[index].type == "img") {
+    if(item[categoryIndex].questions[index].type == "img") {
         question.innerHTML = '<img id="image-data"></img>';
-        document.getElementById('image-data').src = item.questions[index].question;
+        document.getElementById('image-data').src = item[categoryIndex].questions[index].question;
     } else {
         question.innerHTML = '<p id="text-data"></p>';
-        document.getElementById('text-data').innerHTML = item[index].question;
+        document.getElementById('text-data').innerHTML = item[categoryIndex].questions[index].question;
     }
 
 }
@@ -47,9 +50,9 @@ function getQuestionByType(item, index) {
 // Funkce vlozi mozne odpovedi na otazku
 function getChoices(item, index) {
 
-    answer0.innerHTML = item.questions[index].answers[0];
-    answer1.innerHTML = item.questions[index].answers[1];
-    answer2.innerHTML = item.questions[index].answers[2];
+    answer0.innerHTML = item[categoryIndex].questions[index].answers[0];
+    answer1.innerHTML = item[categoryIndex].questions[index].answers[1];
+    answer2.innerHTML = item[categoryIndex].questions[index].answers[2];
 
 }
 
