@@ -2,6 +2,7 @@ let current = 0;
 let categoryIndex = 0;
 let rightAnswer;
 let thirdAnswerEmpty = false;
+let count;
 
 //let answers = document.getElementById('answers');
 let question = document.getElementById('question');
@@ -21,6 +22,14 @@ function ajaxFunction() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             let p = JSON.parse(xmlHttp.responseText);
             rightAnswer = p[categoryIndex].questions[current].correct_answer;
+            count = p[categoryIndex].category.count;
+
+            //for (let o = 0; o <= count; o++) {
+            //    let linka = document.createElement("a");
+            //    let linkd = document.createTextNode(o);
+            //    linka.appendChild(linkd)
+            //    document.getElementById('sidebar').appendChild(linka)
+            //}
 
             getQuestionByType(p, current);
             getChoices(p, current);
