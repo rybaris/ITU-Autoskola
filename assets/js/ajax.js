@@ -3,9 +3,9 @@ let rightAnswer;
 let question = document.getElementById('question');
 let answers = document.getElementById('answers');
 
+let answer0 = document.getElementById('answer0');
 let answer1 = document.getElementById('answer1');
 let answer2 = document.getElementById('answer2');
-let answer3 = document.getElementById('answer3');
 
 $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
@@ -47,30 +47,28 @@ function getQuestionByType(item, index) {
 // Funkce vlozi mozne odpovedi na otazku
 function getChoices(item, index) {
 
-    answer1.innerHTML = item[index].answers[0];
-    answer2.innerHTML = item[index].answers[1];
-    answer3.innerHTML = item[index].answers[2];
+    answer0.innerHTML = item[index].answers[0];
+    answer1.innerHTML = item[index].answers[1];
+    answer2.innerHTML = item[index].answers[2];
 
 }
 
 function checkAnswer() {
 
-    
+    if (rightAnswer == 0) {
+        answer0.setAttribute('style', 'background-color:#61ea618c !important')
+        answer1.setAttribute('style', 'background-color:#ff000069 !important')
+        answer2.setAttribute('style', 'background-color:#ff000069 !important')
 
-    if (rightAnswer == "answer1") {
+    } else if (rightAnswer == 1) {
+        answer0.setAttribute('style', 'background-color:#ff000069 !important')
         answer1.setAttribute('style', 'background-color:#61ea618c !important')
         answer2.setAttribute('style', 'background-color:#ff000069 !important')
-        answer3.setAttribute('style', 'background-color:#ff000069 !important')
-
-    } else if (rightAnswer == "answer2") {
-        answer1.setAttribute('style', 'background-color:#ff000069 !important')
-        answer2.setAttribute('style', 'background-color:#61ea618c !important')
-        answer3.setAttribute('style', 'background-color:#ff000069 !important')
 
     } else {
+        answer0.setAttribute('style', 'background-color:#ff000069 !important')
         answer1.setAttribute('style', 'background-color:#ff000069 !important')
-        answer2.setAttribute('style', 'background-color:#ff000069 !important')
-        answer3.setAttribute('style', 'background-color:#61ea618c !important')
+        answer2.setAttribute('style', 'background-color:#61ea618c !important')
     }
 
 }
@@ -96,9 +94,9 @@ function nextRender() {
 }
 
 function reset() {
+    answer0.style.backgroundColor = "#f7f7f7";
     answer1.style.backgroundColor = "#f7f7f7";
     answer2.style.backgroundColor = "#f7f7f7";
-    answer3.style.backgroundColor = "#f7f7f7";
 }
 
 // Funkce skryva/zobrazuje navigacni tlacitka dle hodnoty indexu
