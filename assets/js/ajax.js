@@ -22,7 +22,7 @@ function ajaxFunction() {
     xmlHttp.onreadystatechange = () => {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             let p = JSON.parse(xmlHttp.responseText);
-            rightAnswer = p[current].correct_answer;
+            rightAnswer = p.questions[current].correct_answer;
             getQuestionByType(p, current);
             getChoices(p, current);
             buttonDisabler(current);
@@ -34,9 +34,9 @@ function ajaxFunction() {
 // OK Funkce porovna datovy typ a dle nej sestavi HTML otazky
 function getQuestionByType(item, index) {
 
-    if(item[index].type == "img") {
+    if(item.questions[index].type == "img") {
         question.innerHTML = '<img id="image-data"></img>';
-        document.getElementById('image-data').src = item[index].question;
+        document.getElementById('image-data').src = item.questions[index].question;
     } else {
         question.innerHTML = '<p id="text-data"></p>';
         document.getElementById('text-data').innerHTML = item[index].question;
@@ -47,9 +47,9 @@ function getQuestionByType(item, index) {
 // Funkce vlozi mozne odpovedi na otazku
 function getChoices(item, index) {
 
-    answer0.innerHTML = item[index].answers[0];
-    answer1.innerHTML = item[index].answers[1];
-    answer2.innerHTML = item[index].answers[2];
+    answer0.innerHTML = item.questions[index].answers[0];
+    answer1.innerHTML = item.questions[index].answers[1];
+    answer2.innerHTML = item.questions[index].answers[2];
 
 }
 
