@@ -1,5 +1,5 @@
 let current = 0;
-let categoryIndex = 0;
+let categoryIndex = 1;
 let rightAnswer;
 let question = document.getElementById('question');
 let answers = document.getElementById('answers');
