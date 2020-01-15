@@ -28,11 +28,14 @@
     <!-- MAIN CONTENT -->
     <main>
         <a href="teorie_b.html" class="btn btn-warning btn-back">Zpět</a>
+        <div class="wrapper boxis col-xl-3 col-lg-3 col-md-1"></div>
         <div class="wrapper mygray col-xl-9 col-lg-9 col-md-11 col-sm-12 col-xs-12 border">
-            <div class="question rounded-top col-md-10 text-center">
+            <div class="question col-md-10 text-center" id="question">
             </div>
-            <div class="answers col-md-10 rounded-bottom border">
-                <p id="rightAnswer"></p>
+            <div class="answers col-md-10 rounded-bottom" id="answers">
+                <p id="answer0" onclick="checkAnswer()"></p>
+                <p id="answer1" onclick="checkAnswer()"></p>
+                <p id="answer2" onclick="checkAnswer()"></p>
             </div>
             <ul class="pagination col-md-10">
                 <li class="page-item text-center">
@@ -67,7 +70,7 @@
         categoryIndex = 0;
         ajaxFunction();
     </script>
-    
+
 </body>
 
 </html>

@@ -1,19 +1,16 @@
 let current = 0;
 let categoryIndex = 0;
 let rightAnswer;
-let question = document.getElementById('question');
-let answers = document.getElementById('answers');
+let thirdAnswerEmpty = false;
 
+//let answers = document.getElementById('answers');
+let question = document.getElementById('question');
 let answer0 = document.getElementById('answer0');
 let answer1 = document.getElementById('answer1');
 let answer2 = document.getElementById('answer2');
 
 $("#prevTheory").click(prevRender);
 $("#nextTheory").click(nextRender);
-
-// TODO DATA 
-// BODY
-// SPRAVNA ODPOVED
 
 // Vytvoreni AJAX pozadavku
 function ajaxFunction() {
@@ -54,7 +51,14 @@ function getChoices(item, index) {
 
     answer0.innerHTML = item[categoryIndex].questions[index].answers[0];
     answer1.innerHTML = item[categoryIndex].questions[index].answers[1];
-    answer2.innerHTML = item[categoryIndex].questions[index].answers[2];
+    if (item[categoryIndex].questions[index].answers[2] == "") {
+        thirdAnswerEmpty = true;
+        answer2.style.display = "none";
+    } else {
+        thirdAnswerEmpty = false;
+        answer2.style.display = "block";
+        answer2.innerHTML = item[categoryIndex].questions[index].answers[2];
+    }
 
 }
 
@@ -63,17 +67,32 @@ function checkAnswer() {
     if (rightAnswer == 0) {
         answer0.setAttribute('style', 'background-color:#61ea618c !important')
         answer1.setAttribute('style', 'background-color:#ff000069 !important')
-        answer2.setAttribute('style', 'background-color:#ff000069 !important')
+        if (thirdAnswerEmpty) {
+            answer2.style.display = "none";
+        } else {
+            answer2.style.display = "block";
+            answer2.setAttribute('style', 'background-color:#ff000069 !important')
+        }
 
     } else if (rightAnswer == 1) {
         answer0.setAttribute('style', 'background-color:#ff000069 !important')
         answer1.setAttribute('style', 'background-color:#61ea618c !important')
-        answer2.setAttribute('style', 'background-color:#ff000069 !important')
+        if (thirdAnswerEmpty) {
+            answer2.style.display = "none";
+        } else {
+            answer2.style.display = "block";
+            answer2.setAttribute('style', 'background-color:#ff000069 !important')
+        }
 
     } else {
         answer0.setAttribute('style', 'background-color:#ff000069 !important')
         answer1.setAttribute('style', 'background-color:#ff000069 !important')
-        answer2.setAttribute('style', 'background-color:#61ea618c !important')
+        if (thirdAnswerEmpty) {
+            answer2.style.display = "none";
+        } else {
+            answer2.style.display = "block";
+            answer2.setAttribute('style', 'background-color:#61ea618c !important')
+        }
     }
 
 }
