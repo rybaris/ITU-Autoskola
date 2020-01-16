@@ -298,7 +298,7 @@ function color_answers(){
   }
 }
 function display_q(numb){  
-  $(".disp_q").css("display", "flex");
+  $(".disp_q").css("display", "block");
     
   //console.log(index);
   ajax_end(numb); 
@@ -406,63 +406,6 @@ function ajax_end(numb){
               $(".third").css('background-color','red');
             }
           }
-          /*
-          let x = localStorage.getItem("index_answ"+(numb-1));
-          console.log("LOOOOOG: "+json_data2[index[0]].questions[index[2]].correct_answer);
-          if(x==undefined){
-            if(json_data2[index[0]].questions[index[2]].correct_answer==0)
-            {
-              $(".first").css('background-color','green');
-            }
-            else if(json_data2[index[0]].questions[index[2]].correct_answer==1)
-            {
-              $(".second").css('background-color','green');
-            }
-            else{
-              $(".third").css('background-color','green');
-            }
-          }
-          else if(x[0]==x[2])
-          {
-            if(x[0]=="0")
-            {
-              $(".first").css('background-color','green');
-            }
-            else if(x[0]=="1")
-            {
-              $(".second").css('background-color','green');
-            }
-            else{
-              $(".third").css('background-color','green');
-            }            
-          }
-          else{
-            if(x[0]=="0")
-            {
-              $(".first").css('background-color','green');
-            }
-            else if(x[0]=="1")
-            {
-              $(".second").css('background-color','green');
-            }
-            else{
-              $(".third").css('background-color','green');
-            }
-            if(x[2]!=undefined || x[2]!=null){
-              if(x[2]=="0")
-              {
-                $(".first").css('background-color','red');
-              }
-              else if(x[0]=="1")
-              {
-                $(".second").css('background-color','red');
-              }
-              else{
-                $(".third").css('background-color','red');
-              }
-            }
-          }
-          */
       }      
   }
   

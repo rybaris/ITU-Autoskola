@@ -114,8 +114,8 @@ a{
     }
 }
 
-.disp_qq{
-    
+.disp_q{
+    display: none;
     position: absolute;
     width: 600px;
     height: auto;
