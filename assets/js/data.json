@@ -650,5 +650,185 @@
             "correct_answer": 2            
         }
     ]
+},
+
+{
+    "category": {
+        "name": "souvisejici_predpisy",
+        "count": 6,
+        "count_test": 1,
+        "points": 1
+    },
+    "questions": [ 
+        {
+            "id": 0,
+            "type": "text",
+            "title": "",
+            "question": "Řidičské oprávnění může být uděleno:",
+            "answers": [
+                "Pouze osobě, která není ve výkonu sankce zákazu řízení motorových vozidel a plní ostatní podmínky pro udělení řidičského oprávnění.",
+                "Osobě, která je odborně způsobilá, i když je ve výkonu sankce zákazu činnosti spočívajícího v zákazu řízení motorových vozidel.",
+                "Osobě, která je starší 18 let, pokud o udělení řidičského oprávnění požádá."
+            ],
+            "correct_answer": 0      
+        },
+        {
+            "id": 1,
+            "type": "text",
+            "title": "",
+            "question": "Dálnice, silnice a místní komunikace jsou sjízdné, jestliže umožňují bezpečný pohyb silničních a jiných vozidel přizpůsobený:",
+            "answers": [
+                "Stavebnímu stavu a dopravně technickému stavu těchto pozemních komunikací a povětrnostním situacím a jejich důsledkům.", 
+                "Schopnostem řidiče reagovat na nenadálé situace v silničním provozu", 
+                "Jízdním vlastnostem vozidla užitého řidičem v silničním provozu."
+            ],
+            "correct_answer": 0            
+        },
+        {
+            "id": 2,
+            "type": "text",
+            "title": "",
+            "question": "Policista smí řidiči na místě zadržet řidičský průkaz:",
+            "answers": [
+                "Kdykoli.", 
+                "Pouze v případě, že řidič požil před jízdou alkohol nebo jinou návykovou látku.", 
+                "Pouze v případech daných zákonem"
+            ],
+            "correct_answer": 2            
+        },
+        {
+            "id": 3,
+            "type": "text",
+            "title": "",
+            "question": "Policista může zabránit v jízdě motorovému vozidlu použitím technického prostředku (tzv. botičky) nebo odtažením vozidla, jestliže:",
+            "answers": [ 
+                "Je důvodné podezření, že vozidlo bylo odcizeno.", 
+                "Na vozidle není umístěna státní poznávací značka",
+                "Řidič při kontrole nepředloží osvědčení o registraci vozidla a doklad o pojištění odpovědnosti z provozu vozidla."
+            ],
+            "correct_answer": 0      
+        },
+        {
+            "id": 4,
+            "type": "text",
+            "title": "",
+            "question": "Řidič, který dosáhl 12 bodů a pozbyl řidičské oprávnění, je oprávněn požádat o vrácení řidiřského oprávnění nejdříve po uplynutí:",
+            "answers": [
+                "Půl roku ode dne pozbytí řidičského oprávnění.", 
+                "1 roku ode dne pozbytí řidičského oprávnění", 
+                "1 roku ode dne právní moci rozhodnutí o zákazu činnosti spočívající v zákazu řízení všech motorových vozidel."
+            ],
+            "correct_answer": 1            
+        },
+        {
+            "id": 5,
+            "type": "text",
+            "title": "",
+            "question": "Pojištění odpovědnosti z provozu vozidla se vztahuje:",
+            "answers": [ 
+                "Na každou osobu, která odpovídá za škodu způsobenou provozem vozidla uvedeného v pojistné smlouvě.", 
+                "Na škodu způsobenou pouze provozovatelem tohoto vozidla a jeho rodinnými příslušníky.",
+                "Na škodu způsobenou výlučně provozovatelem tohoto vozidla."
+            ],
+            "correct_answer": 0            
+        }
+    ]
+},
+
+{
+    "category": {
+        "name": "zasady_bezpecne_jizdy",
+        "count": 7,
+        "count_test": 1,
+        "points": 1
+    },
+    "questions": [ 
+        {
+            "id": 0,
+            "type": "text",
+            "title": "",
+            "question": "Ve výhledu z motorového vozidla vidíte děti, které si hrají na chodníku, jak se zachováte?",
+            "answers": [
+                "Budete s ohledem na možné vběhnutí dětí do vozovky připraveni brzdit a podle okolností snížíte rychlost jízdy.",
+                "Protože jsou děti na chodníku, nemáte důvod ke zvýšení opatrnosti ani ke změne způsobu jízdy.",
+                "Z dostatečné vzdálenosti upozorníte hrající si děti na možné nebezpečí zvukovým výstražným znamením."
+            ],
+            "correct_answer": 0      
+        },
+        {
+            "id": 1,
+            "type": "text",
+            "title": "",
+            "question": "Při jízdě vozidla po krajnici:",
+            "answers": [
+                "Je nutno dbát zvýšené opatrnosti, vzhledem k možnosti porušená její nezpevněné části a převrácení vozidla.", 
+                "Není nutno dbát zvýšené opatrnosti.", 
+                "Musí být uvedeno v činnost výstražné světelné zařízení"
+            ],
+            "correct_answer": 0            
+        },
+        {
+            "id": 2,
+            "type": "text",
+            "title": "",
+            "question": "Co se rozumí aktivní bezpečností vozidla?",
+            "answers": [
+                "Vlastnosti vozidla minimalizující škody v průběhu dopravní nehody.", 
+                "Vlastnosti vozidla minimalizující příčiny vzniku dopravní nehody.", 
+                "Vlastnosti vozidla minimalizující následky dopravní nehody po jejím vzniku"
+            ],
+            "correct_answer": 1            
+        },
+        {
+            "id": 3,
+            "type": "text",
+            "title": "",
+            "question": "Při prudkém sešlápnutí brzdového pedálu vozidla bez protiblokovacího systému brzd ABS na náledí dojde:",
+            "answers": [ 
+                "K zablokování kol vozidla a vozidlo se stává neříditelným", 
+                "K maximálnímu brzdému účinku, při němž vozidlo zastaví s nejkratší brzdnou dráhou",
+                "K zablokování kol zadní nápravy vozidla, při němž vozidlo zůstává říditelným."
+            ],
+            "correct_answer": 0      
+        },
+        {
+            "id": 4,
+            "type": "text",
+            "title": "",
+            "question": "Co může vést ke smyku vozidla při průjezdu zatáčkami?",
+            "answers": [
+                "Jízda při středové dělící čáře.", 
+                "Nízký tlak v pneumatikách.", 
+                "Nedostatečná rychlost jízdy."
+            ],
+            "correct_answer": 1            
+        },
+        {
+            "id": 5,
+            "type": "text",
+            "title": "",
+            "question": "Řidič vozidla jedoucího před vámi zřejmě zapomněl vypnout znamení o změně směru jízdy vlevo, jak se zachováte?",
+            "answers": [ 
+                "Upozorníte jej zvukovým výstražným znamením.", 
+                "Nebudete takové vozidlo předjíždět.",
+                "Upozorníte jej světelným výstražným znamením."
+            ],
+            "correct_answer": 1           
+        },
+        {
+            "id": 5,
+            "type": "text",
+            "title": "",
+            "question": "Při rychlosti 100km/h je délka brzdné dráhy vašeho vozidla oproti brzdné dráze pri rychlosti 50km/h:",
+            "answers": [ 
+                "Přibližně 4x delší", 
+                "Přibližně 3x delší",
+                "Přibližně 2x delší"
+            ],
+            "correct_answer": 0           
+        }
+    ]
 }
+
+
 ]
