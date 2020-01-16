@@ -730,7 +730,7 @@
     "category": {
         "name": "podminky_provozu",
         "count": 10,
-        "count_test": 1,
+        "count_test": 2,
         "points": 1
     },
     "questions": [ 
@@ -911,8 +911,8 @@
     "category": {
         "name": "souvisejici_predpisy",
         "count": 6,
-        "count_test": 1,
-        "points": 1
+        "count_test": 2,
+        "points": 2
     },
     "questions": [ 
         {
@@ -1024,8 +1024,8 @@
     "category": {
         "name": "zasady_bezpecne_jizdy",
         "count": 7,
-        "count_test": 1,
-        "points": 1
+        "count_test": 4,
+        "points": 2
     },
     "questions": [ 
         {
