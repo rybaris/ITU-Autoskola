@@ -1,7 +1,7 @@
 [{
     "category": {
         "name": "pojmy_a_povinnosti",
-        "count": 21,
+        "count": 22,
         "count_test": 21,
         "points": 2
     },
@@ -275,7 +275,7 @@
 {
     "category": {
         "name": "dopravni_znacky",
-        "count": 9,
+        "count": 10,
         "count_test": 3,
         "points":1
     },

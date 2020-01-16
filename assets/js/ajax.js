@@ -23,7 +23,7 @@ function ajaxFunction() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             let p = JSON.parse(xmlHttp.responseText);
             rightAnswer = p[categoryIndex].questions[current].correct_answer;
-            count = p[categoryIndex].category.count;
+            count = p[categoryIndex].category.count - 1;
 
             if(firstLoad === true) {
                 for (let o = 0; o <= count; o++) {
