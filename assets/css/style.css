@@ -147,8 +147,12 @@ main {
     font-size: 18px;
     min-height: 20vh;
 }
+.nofocus {
+    z-index: 999;
+}
 .nofocus:focus {
     outline: none;
+
 }
 .answers p {
     text-align: center;

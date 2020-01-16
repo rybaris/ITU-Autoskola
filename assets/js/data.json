@@ -37,7 +37,7 @@
             "help": {
                 "active": true,
                 "keyword": "alkoholický nápoj",
-                "help_content": "Pozor na některá ovocná piva s obsahem alkoholu 0,1%"
+                "help_content": "Pozor na některá ovocná piva s 'malým' obsahem alkoholu!"
             }            
         },
         {
@@ -65,13 +65,13 @@
             "answers": [
                 "Je místo, kde se úrovňově kříží pozemní komunikace se železnicí, popřípadě s jinou dráhou ležící na samostatném tělese, a označené příslušnou dopravní značkou.", 
                 "Je místo, kde se úrovňově kříží pozemní komunikace se železnicí a příslušnou dopravní značkou se neoznačuje", 
-                "Je místo, kde se úrovňově kříží pozemní komunikace se železnicí a je vždy označeno dopravní značkou 'Stůj, dej přednost v jízdě'"
+                "Je místo, kde se úrovňově kříží pozemní komunikace se železnicí a je vždy označeno dopravní značkou 'Stůj, dej přednost v jízdě!'"
             ],
             "correct_answer": 0,
             "help": {
-                "active": false,
-                "keyword": "",
-                "help_content": ""
+                "active": true,
+                "keyword": "označené příslušnou dopravní značkou",
+                "help_content": "Železniční přejezd je VŽDY označen dopravní značkou"
             }           
         },
         {
