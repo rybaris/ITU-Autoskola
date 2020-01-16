@@ -305,130 +305,52 @@
             "id": 0,
             "type": "img",
             "title": "Tato dopravní značka znamená:",
-            "question": "assets/img/zakaz_vjezdu_vsech_motorovych_vozidel.jpg",
+            "question": "assts/img/smog.jpg",
             "answers": [
-                "Zákaz vjezdu osobních vozidel a motocyklů", 
+                "chrst řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
                 "Zákaz vjezdu všech motorových vozidel", 
-                "Zákaz vjezdu všech motorových i nemotorových vozidel"
+                "Cyklisto, sesedni z kola!"
             ],
-            "correct_answer": 1,
+            "correct_answer": 0,
             "points": 2
         },
         {
             "id": 1,
             "type": "img",
             "title": "Tato dopravní značka znamená:",
-            "question": "https://www.zakruta.cz/img/dopravni-znacky/velke/A1a.jpg",
+            "question": "assets/img/smog.jpg",
             "answers": [
-                "Upozorňuje na zatáčku (směrový oblouk) vpravo, jehož bezpečné projetí vyžaduje výrazné snížení.", 
-                "Přikazuje jízdu ve směru vpravo bezprostředně před značkou", 
-                "Označuje zejména nebezpečnou zatáčku, v níž musí řidič výrazně snížit rychlost jízdy."
+                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
+                "Zákaz vjezdu všech motorových vozidel", 
+                "Cyklisto, sesedni z kola!"
             ],
-            "correct_answer": 0,
+            "correct_answer": 1,
             "points": 2
         },
         {
             "id": 2,
             "type": "img",
             "title": "Tato dopravní značka znamená:",
-            "question": "https://static.bezpecne-cesty.cz/data/web/znacky/zakazove/B2.png",
+            "question": "assets/img/smog.jpg",
             "answers": [
-                "Všem druhům vozidel na jednosměrnou pozemní komunikaci, v níž je provoz veden opačným směrem", 
-                "Všem druhům vozidel v obou směrech pozemní komunikace.", 
-                "Nemotorovým vozidlům ze směru, kde je značka umístěna."
+                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
+                "Zákaz vjezdu všech motorových vozidel", 
+                "Cyklisto, sesedni z kola!"
             ],
-            "correct_answer": 0,
+            "correct_answer": 2,
             "points": 2
         },
         {
             "id": 3,
             "type": "img",
             "title": "Tato dopravní značka znamená:",
-            "question": "https://autobible.euro.cz/wp-content/uploads/2017/05/dopravni-znacka-zeleznicni-prejezd-bez-zavor.jpg",
+            "question": "assets/img/smog.jpg",
             "answers": [
-                "Upozorňuje řidiče na železniční přejezd nevybavený závorami", 
-                "Upozorňuje řidiče na železniční přejezd vybavený závorami", 
-                "Upozorňuje řidiče na jednokolejný železniční přejezd."
-            ],
-            "correct_answer": 0,
-            "points": 2
-        },
-        {
-            "id": 4,
-            "type": "img",
-            "title": "Tato dopravní značka znamená:",
-            "question": "https://www.vsechny-autoskoly.cz/images/dopravni_znacky/velke/a19.gif",
-            "answers": [
-                "Upozorňuje na místo, kde cyklisté vjíždějí na vozovku nebo ji přejíždějí, anebo na úsek, kde se cyklisté často vyskytují.", 
-                "Vyznačuje pruh nebo stezku pro cyklisty", 
-                "Označuje místo určené pro cyklisty čekající na světelný signál 'Volno'."
-            ],
-            "correct_answer": 0,
-            "points": 2
-        },
-        {
-            "id": 5,
-            "type": "img",
-            "title": "Tato dopravní značka znamená:",
-            "question": "https://www.zakruta.cz/img/dopravni-znacky/velke/A2a.jpg",
-            "answers": [
-                "Na zatáčku (směrový oblouk) vpravo, jehož bezpečné projetí vyžaduje výrazné snížení rychlosti jízdy.",
-                "Na dvě nebo více po sobě následujících zatáček (směrových oblouků), z nichž první je vpravo, a jejichž bezpečné projetí vyžaduje výrazné snížení rychlosti jízdy",
-                "Na dvě nebo více po sobě následujících zatáček (směrových oblouků), z nichž první je vlevo, a jejichž bezpečné projetí vyžaduje výrazné snížení rychlosti jízdy."
+                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
+                "Zákaz vjezdu všech motorových vozidel", 
+                "Cyklisto, sesedni z kola!"
             ],
             "correct_answer": 1,
-            "points": 2
-        },
-        {
-            "id": 6,
-            "type": "img",
-            "title": "Tato dopravní značka znamená:",
-            "question": "https://autobible.euro.cz/wp-content/uploads/2017/05/dopravni-znacka-konec-vsech-zakazu-1024x683.jpg",
-            "answers": [
-                "Ukončuje platnost všech zákazů, které jsou stanoveny pro jedoucí vozidla.",
-                "Upozorňuje řidiče na blížící se dopravní značku se zákazem nebo omezením jízdy pro jedoucí vozidla.",
-                "Upozorňuje na následující omezení v jízdě pro řidiče nákladních automobilů přepravujících nebezpečný náklad."
-            ],
-            "correct_answer": 0,
-            "points": 2
-        },
-        {
-            "id": 7,
-            "type": "img",
-            "title": "Tato dopravní značka znamená:",
-            "question": "http://www.schroter.cz/optesty/otz11dz/ot06060410_soubory/image001.jpg",
-            "answers": [
-                "Upozorňuje řidiče na nezpevněnou krajnici",
-                "Vymezuje vyústění účelové pozemní komunikace na jinou pozemní komunikaci",
-                "Označuje kluzký úsek pozemní komunikace, kde hrozí smyk vozidla"
-            ],
-            "correct_answer": 1,
-            "points": 2
-        },
-        {
-            "id": 8,
-            "type": "img",
-            "title": "Tato dopravní značka znamená:",
-            "question": "https://autobible.euro.cz/wp-content/uploads/2017/05/dopravni-znacka-zakaz-odbocovani-vpravo-1024x683.jpg",
-            "answers": [
-                "Zakazuje odbočování vpravo na nejbližší křižovatce, na účelovou komunikaci v místě jejího připojení nebo na místo ležící mimo pozemní komunikaci.",
-                "Zakazuje odbočování vlevo na nejbližší křižovatce, na účelovou komunikaci v místě jejího připojení nebo na místo ležící mimo pozemní komunikaci",
-                "Ukončuje platnost zákazu odbočování vpravo na nejbližší křižovatce, na účelovou komunikaci v místě jejího připojení nebo na místo ležící mimo pozemní komunikaci"
-            ],
-            "correct_answer": 0,
-            "points": 2
-        },
-        {
-            "id": 9,
-            "type": "img",
-            "title": "Tato dopravní značka znamená:",
-            "question": "https://www.zakruta.cz/img/dopravni-znacky/velke/B30.jpg",
-            "answers": [
-                "Přikazuje chodcům užít v daném směru takto označené stezky. Ostatním účastníkům provozu na pozemních komunikacích je její užívání zakázáno",
-                "Upozorňuje na místo nebo úsek pozemní komunikace s možností zvýšeného výskytu chodců anebo častého přecházení chodců přes pozemní komunikaci v místě, kde není zřízen přechod pro chodce.",
-                "Zakazuje chodcům vstoupit na pozemní komunikaci nacházející se v prostoru za značkou"
-            ],
-            "correct_answer": 2,
             "points": 2
         }
     ]
@@ -492,6 +414,124 @@
             ],
             "correct_answer": 1,
             "points": 2
+        }
+    ]
+},
+{
+    "category": {
+        "name": "zdravotnicka_priprava",
+        "count": 4,
+        "count_test": 2,
+        "points": 2
+    },
+    "questions": [ 
+        {
+            "id": 0,
+            "type": "text",
+            "title": "",
+            "question": "Pří zevní srdeční masáži",
+            "answers": [
+                "zahájím nepřímou srdeční masáž i v nevýhodné poloze (např. v sedu při zaklínění ve voze), pokud nelze poraněného rychle vyprostit", 
+                "pokud není poraněný na pevné podložce, srdeční masáž nezahájím",
+                "vždy poraněného přesunu na pevnou podložku"
+            ],
+            "correct_answer": 0           
+        },
+        {
+            "id": 1,
+            "type": "text",
+            "title": "",
+            "question": "Správná frekvence stlačení hrudní kosti při srdeční masáži je u dospělého:",
+            "answers": [
+                "Přibližně 100 stlačení za minutu.", 
+                "Přibližně 20 stlačení za minutu.", 
+                "Přibližně 60 stlačení za minutu."
+            ],
+            "correct_answer": 0            
+        },
+        {
+            "id": 2,
+            "type": "text",
+            "title": "",
+            "question": "Jak zjistíte stav vědomí pacienta:",
+            "answers": [
+                "oslovím ho, zkusím bolestivý podnět (štípnutí do ušního lalůčku)", 
+                "zkusím bolestivý podnět ostrým předmětem", 
+                "poraněného hlasitě oslovím a zkusím posadit"
+            ],
+            "correct_answer": 0            
+        },
+        {
+            "id": 3,
+            "type": "text",
+            "title": "",
+            "question": "Jak jednoznačně zjistíte, že poraněný dýchá:",
+            "answers": [
+                "je růžový", 
+                "při sklonění se k ústům poraněného slyším jeho dech a cítím ho na své tváři", 
+                "nemá příznaky cyanózy"
+            ],
+            "correct_answer": 1            
+        },
+        {
+            "id": 4,
+            "type": "text",
+            "title": "",
+            "question": "Při provádění zevní srdeční masáže je správné stlačení hrudní kosti asi o:",
+            "answers": [
+                "4-5 cm u dospělého tj. na šířku dvou palců zachraňovaného", 
+                "stačí 1-2 cm", 
+                "8-10 cm"
+            ],
+            "correct_answer": 0            
+        },
+        {
+            "id": 5,
+            "type": "text",
+            "title": "",
+            "question": "Pokud vidíte, že účastník nehody masivně krvácí:",
+            "answers": [
+                "vrátím se k vlastnímu vozu a začnu hledat v lékárničce obvazový materiál", 
+                "neprodleně krvácející místo stlačím prsty, dlaní nebo složeným kusem oděvu", 
+                "krvácející místo nebudu ošetřovat, začnu poraněnému zajišťovat životní funkce tj. umělé dýchání, zevní srdeční masáž"
+            ],
+            "correct_answer": 1            
+        },
+        {
+            "id": 6,
+            "type": "text",
+            "title": "",
+            "question": "U poraněného v hlubokém bezvědomí a bezdeší nastávají nezvratné změny mozkové tkáně do:",
+            "answers": [
+                "5 min.", 
+                "10 min.", 
+                "20 min."
+            ],
+            "correct_answer": 0         
+        },
+        {
+            "id": 7,
+            "type": "text",
+            "title": "",
+            "question": "Při úrazu hlavy s drobnějším viditelným krvácením nejvíce poraněného ohrožuje:",
+            "answers": [
+                "krvácení", 
+                "následné bezvědomí při poranění mozkové tkáně", 
+                "zlomeniny kostí lebky"
+            ],
+            "correct_answer": 1            
+        },
+        {
+            "id": 5,
+            "type": "text",
+            "title": "",
+            "question": "Kdy zahájíte zevní srdeční masáž:",
+            "answers": [
+                "jen pokud u poraněného nehmatám pulz", 
+                "pokud je poraněný v hlubokém bezvědomí a nedýchá", 
+                "pokud masivně krvácí"
+            ],
+            "correct_answer": 1            
         }
     ]
 }
