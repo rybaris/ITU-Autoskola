@@ -1,7 +1,7 @@
 [{
     "category": {
         "name": "pojmy_a_povinnosti",
-        "count": 20,
+        "count": 22,
         "count_test": 10
     },
     "questions": [ 
@@ -84,7 +84,7 @@
             "points": 0
         },
         {
-            "id": 5,
+            "id": 6,
             "type": "text",
             "title": "",
             "question": "'Stát' znamená:",
@@ -97,7 +97,7 @@
             "points": 0
         },
         {
-            "id": 6,
+            "id": 7,
             "type": "text",
             "title": "",
             "question": "'Řidič' je:",
@@ -110,7 +110,7 @@
             "points": 0
         },
         {
-            "id": 7,
+            "id": 8,
             "type": "text",
             "title": "",
             "question": "Řidič smí v provozu na pozemních komunikacích užít:",
@@ -123,7 +123,7 @@
             "points": 0
         },
         {
-            "id": 8,
+            "id": 9,
             "type": "text",
             "title": "",
             "question": "'Obec':",
@@ -136,7 +136,7 @@
             "points": 0
         },
         {
-            "id": 9,
+            "id": 10,
             "type": "text",
             "title": "",
             "question": "'Zastavit vozidlo znamená':",
@@ -149,7 +149,7 @@
             "points": 0
         },
         {
-            "id": 10,
+            "id": 11,
             "type": "text",
             "title": "",
             "question": "Po pozemní komunikaci jde osoba, která vede psa. Vztahují se na ni povinnosti průvodce vedených zvířat?",
@@ -162,7 +162,7 @@
             "points": 0
         },
         {
-            "id": 11,
+            "id": 12,
             "type": "text",
             "title": "",
             "question": "'Křižovatka':",
@@ -175,7 +175,7 @@
             "points": 0
         },
         {
-            "id": 12,
+            "id": 13,
             "type": "text",
             "title": "",
             "question": "Patří k povinnostem účastníka provozu na pozemních komunikacích řídit se pokyny strážníků obecní policie?",
@@ -188,7 +188,7 @@
             "points": 0
         },
         {
-            "id": 13,
+            "id": 14,
             "type": "text",
             "title": "",
             "question": "Řidič motorového vozidla je povinen:",
@@ -201,7 +201,7 @@
             "points": 0
         },
         {
-            "id": 14,
+            "id": 15,
             "type": "text",
             "title": "",
             "question": "'Řidič' je:",
@@ -214,7 +214,7 @@
             "points": 0
         },
         {
-            "id": 15,
+            "id": 16,
             "type": "text",
             "title": "",
             "question": "'Krajnice':",
@@ -227,7 +227,7 @@
             "points": 0
         },
         {
-            "id": 16,
+            "id": 17,
             "type": "text",
             "title": "",
             "question": "'Přechod pro chodce':",
@@ -240,7 +240,7 @@
             "points": 0
         },
         {
-            "id": 17,
+            "id": 18,
             "type": "text",
             "title": "",
             "question": "'Stát' znamená:",
@@ -253,7 +253,7 @@
             "points": 0
         },
         {
-            "id": 17,
+            "id": 19,
             "type": "text",
             "title": "",
             "question": "Je jezdec na koni, který se pohybuje po pozemní komunikaci, řidičem a platí pro něj povinnosti a práva účastníků provozu na pozemních komunikacích?",
@@ -266,7 +266,7 @@
             "points": 0
         },
         {
-            "id": 18,
+            "id": 20,
             "type": "text",
             "title": "",
             "question": "'Účastník provozu na pozemních komunikacích':",
@@ -279,7 +279,7 @@
             "points": 0
         },
         {
-            "id": 19,
+            "id": 21,
             "type": "text",
             "title": "",
             "question": "'Jízdní souprava':",
@@ -293,11 +293,10 @@
         }
     ]
 },
-
 {
     "category": {
         "name": "dopravni_znacky",
-        "count": 4,
+        "count": 10,
         "count_test": 3
     },
     "questions": [ 
@@ -305,114 +304,130 @@
             "id": 0,
             "type": "img",
             "title": "Tato dopravní značka znamená:",
-            "question": "assts/img/smog.jpg",
+            "question": "assets/img/zakaz_vjezdu_vsech_motorovych_vozidel.jpg",
             "answers": [
-                "chrst řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
+                "Zákaz vjezdu osobních vozidel a motocyklů", 
                 "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
+                "Zákaz vjezdu všech motorových i nemotorových vozidel"
             ],
-            "correct_answer": 0,
+            "correct_answer": 1,
             "points": 2
         },
         {
             "id": 1,
             "type": "img",
             "title": "Tato dopravní značka znamená:",
-            "question": "assets/img/smog.jpg",
+            "question": "https://www.zakruta.cz/img/dopravni-znacky/velke/A1a.jpg",
             "answers": [
-                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-                "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
-            ],
-            "correct_answer": 1,
-            "points": 2
-        },
-        {
-            "id": 2,
-            "type": "img",
-            "title": "Tato dopravní značka znamená:",
-            "question": "assets/img/smog.jpg",
-            "answers": [
-                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-                "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
-            ],
-            "correct_answer": 2,
-            "points": 2
-        },
-        {
-            "id": 3,
-            "type": "img",
-            "title": "Tato dopravní značka znamená:",
-            "question": "assets/img/smog.jpg",
-            "answers": [
-                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-                "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
-            ],
-            "correct_answer": 1,
-            "points": 2
-        }
-    ]
-},
-
-{
-    "category": {
-        "name": "dopravni_znacky",
-        "count": 4,
-        "count_test": 2
-    },
-    "questions": [ 
-        {
-            "id": 0,
-            "type": "img",
-            "title": "Tato dopravní značka znamená:",
-            "question": "assts/img/smog.jpg",
-            "answers": [
-                "chrst řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-                "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
+                "Upozorňuje na zatáčku (směrový oblouk) vpravo, jehož bezpečné projetí vyžaduje výrazné snížení.", 
+                "Přikazuje jízdu ve směru vpravo bezprostředně před značkou", 
+                "Označuje zejména nebezpečnou zatáčku, v níž musí řidič výrazně snížit rychlost jízdy."
             ],
             "correct_answer": 0,
             "points": 2
         },
         {
-            "id": 1,
-            "type": "img",
-            "title": "Tato dopravní značka znamená:",
-            "question": "assets/img/smog.jpg",
-            "answers": [
-                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-                "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
-            ],
-            "correct_answer": 1,
-            "points": 2
-        },
-        {
             "id": 2,
             "type": "img",
             "title": "Tato dopravní značka znamená:",
-            "question": "assets/img/smog.jpg",
+            "question": "https://static.bezpecne-cesty.cz/data/web/znacky/zakazove/B2.png",
             "answers": [
-                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-                "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
+                "Všem druhům vozidel na jednosměrnou pozemní komunikaci, v níž je provoz veden opačným směrem", 
+                "Všem druhům vozidel v obou směrech pozemní komunikace.", 
+                "Nemotorovým vozidlům ze směru, kde je značka umístěna."
             ],
-            "correct_answer": 2,
+            "correct_answer": 0,
             "points": 2
         },
         {
             "id": 3,
             "type": "img",
             "title": "Tato dopravní značka znamená:",
-            "question": "assets/img/smog.jpg",
+            "question": "https://autobible.euro.cz/wp-content/uploads/2017/05/dopravni-znacka-zeleznicni-prejezd-bez-zavor.jpg",
             "answers": [
-                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-                "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
+                "Upozorňuje řidiče na železniční přejezd nevybavený závorami", 
+                "Upozorňuje řidiče na železniční přejezd vybavený závorami", 
+                "Upozorňuje řidiče na jednokolejný železniční přejezd."
+            ],
+            "correct_answer": 0,
+            "points": 2
+        },
+        {
+            "id": 4,
+            "type": "img",
+            "title": "Tato dopravní značka znamená:",
+            "question": "https://www.vsechny-autoskoly.cz/images/dopravni_znacky/velke/a19.gif",
+            "answers": [
+                "Upozorňuje na místo, kde cyklisté vjíždějí na vozovku nebo ji přejíždějí, anebo na úsek, kde se cyklisté často vyskytují.", 
+                "Vyznačuje pruh nebo stezku pro cyklisty", 
+                "Označuje místo určené pro cyklisty čekající na světelný signál 'Volno'."
+            ],
+            "correct_answer": 0,
+            "points": 2
+        },
+        {
+            "id": 5,
+            "type": "img",
+            "title": "Tato dopravní značka znamená:",
+            "question": "https://www.zakruta.cz/img/dopravni-znacky/velke/A2a.jpg",
+            "answers": [
+                "Na zatáčku (směrový oblouk) vpravo, jehož bezpečné projetí vyžaduje výrazné snížení rychlosti jízdy.",
+                "Na dvě nebo více po sobě následujících zatáček (směrových oblouků), z nichž první je vpravo, a jejichž bezpečné projetí vyžaduje výrazné snížení rychlosti jízdy",
+                "Na dvě nebo více po sobě následujících zatáček (směrových oblouků), z nichž první je vlevo, a jejichž bezpečné projetí vyžaduje výrazné snížení rychlosti jízdy."
             ],
             "correct_answer": 1,
+            "points": 2
+        },
+        {
+            "id": 6,
+            "type": "img",
+            "title": "Tato dopravní značka znamená:",
+            "question": "https://autobible.euro.cz/wp-content/uploads/2017/05/dopravni-znacka-konec-vsech-zakazu-1024x683.jpg",
+            "answers": [
+                "Ukončuje platnost všech zákazů, které jsou stanoveny pro jedoucí vozidla.",
+                "Upozorňuje řidiče na blížící se dopravní značku se zákazem nebo omezením jízdy pro jedoucí vozidla.",
+                "Upozorňuje na následující omezení v jízdě pro řidiče nákladních automobilů přepravujících nebezpečný náklad."
+            ],
+            "correct_answer": 0,
+            "points": 2
+        },
+        {
+            "id": 7,
+            "type": "img",
+            "title": "Tato dopravní značka znamená:",
+            "question": "http://www.schroter.cz/optesty/otz11dz/ot06060410_soubory/image001.jpg",
+            "answers": [
+                "Upozorňuje řidiče na nezpevněnou krajnici",
+                "Vymezuje vyústění účelové pozemní komunikace na jinou pozemní komunikaci",
+                "Označuje kluzký úsek pozemní komunikace, kde hrozí smyk vozidla"
+            ],
+            "correct_answer": 1,
+            "points": 2
+        },
+        {
+            "id": 8,
+            "type": "img",
+            "title": "Tato dopravní značka znamená:",
+            "question": "https://autobible.euro.cz/wp-content/uploads/2017/05/dopravni-znacka-zakaz-odbocovani-vpravo-1024x683.jpg",
+            "answers": [
+                "Zakazuje odbočování vpravo na nejbližší křižovatce, na účelovou komunikaci v místě jejího připojení nebo na místo ležící mimo pozemní komunikaci.",
+                "Zakazuje odbočování vlevo na nejbližší křižovatce, na účelovou komunikaci v místě jejího připojení nebo na místo ležící mimo pozemní komunikaci",
+                "Ukončuje platnost zákazu odbočování vpravo na nejbližší křižovatce, na účelovou komunikaci v místě jejího připojení nebo na místo ležící mimo pozemní komunikaci"
+            ],
+            "correct_answer": 0,
+            "points": 2
+        },
+        {
+            "id": 9,
+            "type": "img",
+            "title": "Tato dopravní značka znamená:",
+            "question": "https://www.zakruta.cz/img/dopravni-znacky/velke/B30.jpg",
+            "answers": [
+                "Přikazuje chodcům užít v daném směru takto označené stezky. Ostatním účastníkům provozu na pozemních komunikacích je její užívání zakázáno",
+                "Upozorňuje na místo nebo úsek pozemní komunikace s možností zvýšeného výskytu chodců anebo častého přecházení chodců přes pozemní komunikaci v místě, kde není zřízen přechod pro chodce.",
+                "Zakazuje chodcům vstoupit na pozemní komunikaci nacházející se v prostoru za značkou"
+            ],
+            "correct_answer": 2,
             "points": 2
         }
     ]
@@ -420,7 +435,7 @@
 {
     "category": {
         "name": "zdravotnicka_priprava",
-        "count": 4,
+        "count": 9,
         "count_test": 2,
         "points": 1
     },
