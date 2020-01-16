@@ -35,9 +35,9 @@
             ],
             "correct_answer": 2,
             "help": {
-                "active": false,
-                "keyword": "",
-                "help_content": ""
+                "active": true,
+                "keyword": "jízdy",
+                "help_content": "Zvyrayneno vsecko"
             }            
         },
         {

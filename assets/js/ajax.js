@@ -48,6 +48,11 @@ function ajaxFunction() {
 
             document.getElementById('current-index').innerHTML = current;
             document.getElementById('count-index').innerHTML = count - 1;
+
+            $('[data-toggle="popover"]').popover({
+                trigger: 'focus'
+            }); 
+
         }
     }
     xmlHttp.send()
@@ -179,24 +184,31 @@ function addHelp (item, index) {
 
     if (isActive === true) {
 
+        let replaceKeyword;
+
         // Otazka obsahuje napovedni klicove slovo
         if(textData.includes(keyWord)) {
-            console.log("Q obsahuje: " + keyWord)
+            //let replaceKeyword = textData.replace(keyWord, '<a data-toggle="popover" data-content="'+helpContent+'">'+keyWord+'</a>');
+            replaceKeyword = textData.replace(keyWord, `<a tabindex="0" class="nofocus" data-toggle="popover" data-content="${helpContent}" data-placement="top" data-trigger="focus">${keyWord}</a>`);
+            document.getElementById('text-data').innerHTML = replaceKeyword;
         }
 
         // Odpoved 0 obsahuje napovedni klicove slovo
         if(answer0Data.includes(keyWord)) {
-            console.log("A0 obsahuje: " + keyWord)
+            replaceKeyword = answer0Data.replace(keyWord, `<a tabindex="0" class="nofocus" data-toggle="popover" data-content="${helpContent}" data-placement="top" data-trigger="focus">${keyWord}</a>`);
+            answer0.innerHTML = replaceKeyword;
         }
 
         // Odpoved 1 obsahuje napovedni klicove slovo
         if(answer1Data.includes(keyWord)) {
-            console.log("A1 obsahuje: " + keyWord)
+            replaceKeyword = answer1Data.replace(keyWord, `<a tabindex="0" class="nofocus" data-toggle="popover" data-content="${helpContent}" data-placement="top" data-trigger="focus">${keyWord}</a>`);
+            answer1.innerHTML = replaceKeyword;
         }
 
         // Odpoved 2 obsahuje napovedni klicove slovo
         if(answer2Data.includes(keyWord)) {
-            console.log("A2 obsahuje: " + keyWord)
+            replaceKeyword = answer2Data.replace(keyWord, `<a tabindex="0" class="nofocus" data-toggle="popover" data-content="${helpContent}" data-placement="top" data-trigger="focus">${keyWord}</a>`);
+            answer2.innerHTML = replaceKeyword;
         }
         
     }
