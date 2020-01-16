@@ -2,7 +2,8 @@
     "category": {
         "name": "pojmy_a_povinnosti",
         "count": 21,
-        "count_test": 10
+        "count_test": 21,
+        "points": 2
     },
     "questions": [ 
         {
@@ -15,8 +16,7 @@
                 "Široká nejméně 3.5m.", 
                 "Dovolující jízdu vozidel v jednom jízdním pruhu za sebou"
             ],
-            "correct_answer": 2,
-            "points": 0
+            "correct_answer": 2            
         },
         {
             "id": 1,
@@ -28,8 +28,7 @@
                 "Ještě hodinu po skončení jízdy", 
                 "Během jízdy"
             ],
-            "correct_answer": 2,
-            "points": 0
+            "correct_answer": 2            
         },
         {
             "id": 2,
@@ -41,8 +40,7 @@
                 "Povinnost řidiče nezahájit jízdní úkon nebo v něm nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy", 
                 "Přerušit jízdu z důvodu nezávislého na vůli řidiče, například při poruše vozidla."
             ],
-            "correct_answer": 0,
-            "points": 0
+            "correct_answer": 0        
         },
         {
             "id": 3,
@@ -54,8 +52,7 @@
                 "Je místo, kde se úrovňově kříží pozemní komunikace se železnicí a příslušnou dopravní značkou se neoznačuje", 
                 "Je místo, kde se úrovňově kříží pozemní komunikace se železnicí a je vždy označeno dopravní značkou 'Stůj, dej přednost v jízdě'"
             ],
-            "correct_answer": 0,
-            "points": 0
+            "correct_answer": 0            
         },
         {
             "id": 4,
@@ -67,8 +64,7 @@
                 "Prudce zrychlovat", 
                 "Držet v ruce nebo jiným způsobem telefonní přístroj nebo jiné hovorové nebo záznamové zařízení"
             ],
-            "correct_answer": 2,
-            "points": 0
+            "correct_answer": 2            
         },
         {
             "id": 5,
@@ -80,8 +76,7 @@
                 "Zastavit vozidlo na vyhrazeném parkovišti", 
                 "Uvést vozidlo do klidu nad dobu povolenou pro zastavení"
             ],
-            "correct_answer": 2,
-            "points": 0
+            "correct_answer": 2            
         },
         {
             "id": 6,
@@ -93,8 +88,7 @@
                 "Zastavit vozidlo na vyhrazeném parkovišti", 
                 "Uvést vozidlo do klidu nad dobu povolenou pro zastavení"
             ],
-            "correct_answer": 2,
-            "points": 0
+            "correct_answer": 2            
         },
         {
             "id": 7,
@@ -106,8 +100,7 @@
                 "Ten, kdo řídí motorové nebo nemotorové vozidlo, ne však tramvaj.",
                 "Ten, kdo řídí motorové nebo nemotorové vozidlo anebo tramvaj."
             ],
-            "correct_answer": 2,
-            "points": 0
+            "correct_answer": 2            
         },
         {
             "id": 8,
@@ -119,8 +112,7 @@
                 "I vozidlo, které sice nesplňuje technické podmínky, ale majitel vozidla dovolí vozidlo užít nebo jeho užití přikáže.",
                 "I vozidlo, které splňuje jen některé technické podmínky stanovené zvláštním předpisem, pokud řidič dbá při jízdě zvýšené opatrnosti."
             ],
-            "correct_answer": 0,
-            "points": 0
+            "correct_answer": 0            
         },
         {
             "id": 9,
@@ -132,8 +124,7 @@
                 "Je zastavěné území, jehož začátek a konec je na pozemní komunikaci označen příslušnými dopravními značkami, které se vždy umisťují na účelových komunikacích.",
                 "Je zastavěné území, jehož začátek a konec je na pozemní komunikaci označen příslušnými dopravními značkami. Na účelových komunikacích se značky neosazují."
             ],
-            "correct_answer": 2,
-            "points": 0
+            "correct_answer": 2
         },
         {
             "id": 10,
@@ -145,8 +136,7 @@
                 "Přerušit jízdu z důvodu nezávislého na vůli řidiče.",
                 "Uvést vozidlo do klidu nad dobu povolenou pro stání."
             ],
-            "correct_answer": 1,
-            "points": 0
+            "correct_answer": 1
         },
         {
             "id": 11,
@@ -158,8 +148,7 @@
                 "Ne",
                 ""
             ],
-            "correct_answer": 1,
-            "points": 0
+            "correct_answer": 1            
         },
         {
             "id": 12,
@@ -171,8 +160,7 @@
                 "Je místo, v němž se pozemní komunikace protínají nebo spojují, za křižovatku se nepovažuje vyústění polní nebo lesní cesty nebo jiné účelové komunikace na jinou pozemní komunikaci",
                 "Je místo, v němž se protínají nebo spojují dvě pozemní komunikace. Za křižovatku se nepovažuje místo, které není označeno dopravní značkou 'Křižovatka'"
             ],
-            "correct_answer": 1,
-            "points": 0
+            "correct_answer": 1            
         },
         {
             "id": 13,
@@ -184,8 +172,7 @@
                 "Ne",
                 ""
             ],
-            "correct_answer": 0,
-            "points": 0
+            "correct_answer": 0            
         },
         {
             "id": 14,
@@ -197,8 +184,7 @@
                 "Být připoután na sedadle bezpečnostním pásem, pokud jím je sedadlo povinně vybaveno podle zvláštního právního předpisu, jen za jízdy mimo obec.",
                 "Se za jízdy připoutat bezpečnostními pásy"
             ],
-            "correct_answer": 0,
-            "points": 0
+            "correct_answer": 0            
         },
         {
             "id": 15,
@@ -210,8 +196,7 @@
                 "Ten, kdo řídí pouze motorové vozidlo a trolejbus",
                 "Ten, kdo řídí motorové nebo nemotorové vozidlo, ne však tramvaj nebo trolejbus"
             ],
-            "correct_answer": 0,
-            "points": 0
+            "correct_answer": 0            
         },
         {
             "id": 16,
@@ -223,8 +208,7 @@
                 "Je část povrchu pozemní komunikace ležící mezi okrajem přilehlého jízdního pruhu a hranou koruny pozemní komunikace, skládá se zpravidla ze zpevněné a nezpevněné části.",
                 "Je vždy zpevněná část vozovky mezi okrajem přilehlého jízdního pruhu a hranou koruny vozovky, určená pro zastavení, otáčení a předjíždění vpravo"
             ],
-            "correct_answer": 1,
-            "points": 0
+            "correct_answer": 1            
         },
         {
             "id": 17,
@@ -236,8 +220,7 @@
                 "Je místo na pozemní komunikaci určené pro přecházení chodců, které nesmí být řízeno akustickými signály",
                 "Je místo na pozemní komunikaci určené pro přecházení chodců, které musí být vždy označeno přerušovaně svítícím světelným signálem ve tvaru kráčejícího chodce."
             ],
-            "correct_answer": 0,
-            "points": 0
+            "correct_answer": 0            
         },
         {
             "id": 18,
@@ -249,8 +232,7 @@
                 "Uvést vozidlo do klidu na dobu neurčitou",
                 "Uvést vozidlo do klidu nad dobu povolenou pro zastavení."
             ],
-            "correct_answer": 2,
-            "points": 0
+            "correct_answer": 2            
         },
         {
             "id": 19,
@@ -262,8 +244,7 @@
                 "Ne",
                 ""
             ],
-            "correct_answer": 0,
-            "points": 0
+            "correct_answer": 0            
         },
         {
             "id": 20,
@@ -275,8 +256,7 @@
                 "Je každý, kdo se přímým způsobem účastní provozu na pozemních komunikacích.",
                 "Je každý, kdo se účastní provozu na pozemních komunikacích s výjimkou dětí"
             ],
-            "correct_answer": 1,
-            "points": 0
+            "correct_answer": 1            
         },
         {
             "id": 21,
@@ -288,8 +268,7 @@
                 "Je složená z jednoho motorového vozidla s tažným zařízením.",
                 "Je souprava více přípojných vozidel"
             ],
-            "correct_answer": 0,
-            "points": 0
+            "correct_answer": 0            
         }
     ]
 },
@@ -297,7 +276,8 @@
     "category": {
         "name": "dopravni_znacky",
         "count": 9,
-        "count_test": 3
+        "count_test": 3,
+        "points":1
     },
     "questions": [ 
         {
@@ -310,8 +290,7 @@
                 "Zákaz vjezdu všech motorových vozidel", 
                 "Zákaz vjezdu všech motorových i nemotorových vozidel"
             ],
-            "correct_answer": 1,
-            "points": 2
+            "correct_answer": 1           
         },
         {
             "id": 1,
@@ -323,8 +302,7 @@
                 "Přikazuje jízdu ve směru vpravo bezprostředně před značkou", 
                 "Označuje zejména nebezpečnou zatáčku, v níž musí řidič výrazně snížit rychlost jízdy."
             ],
-            "correct_answer": 0,
-            "points": 2
+            "correct_answer": 0            
         },
         {
             "id": 2,
@@ -336,8 +314,7 @@
                 "Všem druhům vozidel v obou směrech pozemní komunikace.", 
                 "Nemotorovým vozidlům ze směru, kde je značka umístěna."
             ],
-            "correct_answer": 0,
-            "points": 2
+            "correct_answer": 0            
         },
         {
             "id": 3,
@@ -349,8 +326,7 @@
                 "Upozorňuje řidiče na železniční přejezd vybavený závorami", 
                 "Upozorňuje řidiče na jednokolejný železniční přejezd."
             ],
-            "correct_answer": 0,
-            "points": 2
+            "correct_answer": 0            
         },
         {
             "id": 4,
@@ -362,8 +338,7 @@
                 "Vyznačuje pruh nebo stezku pro cyklisty", 
                 "Označuje místo určené pro cyklisty čekající na světelný signál 'Volno'."
             ],
-            "correct_answer": 0,
-            "points": 2
+            "correct_answer": 0            
         },
         {
             "id": 5,
@@ -375,8 +350,7 @@
                 "Na dvě nebo více po sobě následujících zatáček (směrových oblouků), z nichž první je vpravo, a jejichž bezpečné projetí vyžaduje výrazné snížení rychlosti jízdy",
                 "Na dvě nebo více po sobě následujících zatáček (směrových oblouků), z nichž první je vlevo, a jejichž bezpečné projetí vyžaduje výrazné snížení rychlosti jízdy."
             ],
-            "correct_answer": 1,
-            "points": 2
+            "correct_answer": 1            
         },
         {
             "id": 6,
@@ -388,8 +362,7 @@
                 "Upozorňuje řidiče na blížící se dopravní značku se zákazem nebo omezením jízdy pro jedoucí vozidla.",
                 "Upozorňuje na následující omezení v jízdě pro řidiče nákladních automobilů přepravujících nebezpečný náklad."
             ],
-            "correct_answer": 0,
-            "points": 2
+            "correct_answer": 0            
         },
         {
             "id": 7,
@@ -401,8 +374,7 @@
                 "Vymezuje vyústění účelové pozemní komunikace na jinou pozemní komunikaci",
                 "Označuje kluzký úsek pozemní komunikace, kde hrozí smyk vozidla"
             ],
-            "correct_answer": 1,
-            "points": 2
+            "correct_answer": 1            
         },
         {
             "id": 8,
@@ -414,8 +386,7 @@
                 "Zakazuje odbočování vlevo na nejbližší křižovatce, na účelovou komunikaci v místě jejího připojení nebo na místo ležící mimo pozemní komunikaci",
                 "Ukončuje platnost zákazu odbočování vpravo na nejbližší křižovatce, na účelovou komunikaci v místě jejího připojení nebo na místo ležící mimo pozemní komunikaci"
             ],
-            "correct_answer": 0,
-            "points": 2
+            "correct_answer": 0            
         },
         {
             "id": 9,
@@ -427,8 +398,7 @@
                 "Upozorňuje na místo nebo úsek pozemní komunikace s možností zvýšeného výskytu chodců anebo častého přecházení chodců přes pozemní komunikaci v místě, kde není zřízen přechod pro chodce.",
                 "Zakazuje chodcům vstoupit na pozemní komunikaci nacházející se v prostoru za značkou"
             ],
-            "correct_answer": 2,
-            "points": 2
+            "correct_answer": 2            
         }
     ]
 },
@@ -436,7 +406,7 @@
     "category": {
         "name": "zdravotnicka_priprava",
         "count": 9,
-        "count_test": 2,
+        "count_test": 1,
         "points": 1
     },
     "questions": [ 
