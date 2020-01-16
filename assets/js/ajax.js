@@ -27,12 +27,13 @@ function ajaxFunction() {
 
             if(firstLoad === true) {
                 for (let o = 0; o < count; o++) {
-                    let linka = document.createElement("a");
-                    let linkd = document.createTextNode(o);
-                    linka.className = "navigation-link";
-                    linka.setAttribute("onclick", "jumpFunc(this.textContent)")
-                    linka.appendChild(linkd)
-                    document.getElementById('navigation-down').appendChild(linka)
+                    let navigationLink = document.createElement("a");
+                    let linkContent = document.createTextNode(o);
+
+                    navigationLink.className = "navigation-link";
+                    navigationLink.setAttribute("onclick", "jumpFunc(this.textContent)")
+                    navigationLink.appendChild(linkContent)
+                    document.getElementById('navigation-down').appendChild(navigationLink)
                 }
                 firstLoad = false;
             }
@@ -46,7 +47,6 @@ function ajaxFunction() {
 
             document.getElementById('current-index').innerHTML = current;
             document.getElementById('count-index').innerHTML = count - 1;
-            console.log(current)
         }
     }
     xmlHttp.send()
@@ -81,7 +81,7 @@ function getChoices(item, index) {
 
 }
 
-// Funkce porovna spravnou odpoved a dle ni zbarvi vsechny odpovedi
+// Funkce porovna spravnou odpoved a zobrazi spravne reseni
 function checkAnswer() {
 
     if (rightAnswer == 0) {
@@ -148,14 +148,17 @@ function reset() {
 
 // Zobrazeni / Skryti tlacitek "Dalsi" a "Predchozi"
 function buttonDisabler(item, index) {
+
     let normalizedCount = item[categoryIndex].category.count - 1;
 
     if (index == 0) {
         document.getElementById('prevTheory').style.display = "none";
         document.getElementById('nextTheory').style.display = "block";
+
     } else if (index == normalizedCount) {
         document.getElementById('nextTheory').style.display = "none";
         document.getElementById('prevTheory').style.display = "block";
+
     } else {
         document.getElementById('prevTheory').style.display = "block";
         document.getElementById('nextTheory').style.display = "block";

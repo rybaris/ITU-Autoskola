@@ -16,7 +16,11 @@
                 "Široká nejméně 3.5m.", 
                 "Dovolující jízdu vozidel v jednom jízdním pruhu za sebou"
             ],
-            "correct_answer": 2            
+            "correct_answer": 2,
+            "help": {
+                "keyword": "vozovky",
+                "help_content": "vozovka jest ahoj"
+            }
         },
         {
             "id": 1,
