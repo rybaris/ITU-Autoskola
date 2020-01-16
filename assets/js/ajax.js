@@ -169,8 +169,36 @@ function buttonDisabler(item, index) {
 
 function addHelp (item, index) {
 
-    if (item[categoryIndex].questions[index].help !== "") {
-        console.log("ahoj");
+    let isActive = item[categoryIndex].questions[index].help.active;
+    let keyWord = item[categoryIndex].questions[index].help.keyword;
+    let helpContent = item[categoryIndex].questions[index].help.help_content;
+    let textData = document.getElementById('text-data').textContent;
+    let answer0Data = answer0.textContent;
+    let answer1Data = answer1.textContent;
+    let answer2Data = answer2.textContent;
+
+    if (isActive === true) {
+
+        // Otazka obsahuje napovedni klicove slovo
+        if(textData.includes(keyWord)) {
+            console.log("Q obsahuje: " + keyWord)
+        }
+
+        // Odpoved 0 obsahuje napovedni klicove slovo
+        if(answer0Data.includes(keyWord)) {
+            console.log("A0 obsahuje: " + keyWord)
+        }
+
+        // Odpoved 1 obsahuje napovedni klicove slovo
+        if(answer1Data.includes(keyWord)) {
+            console.log("A1 obsahuje: " + keyWord)
+        }
+
+        // Odpoved 2 obsahuje napovedni klicove slovo
+        if(answer2Data.includes(keyWord)) {
+            console.log("A2 obsahuje: " + keyWord)
+        }
+        
     }
 
 }

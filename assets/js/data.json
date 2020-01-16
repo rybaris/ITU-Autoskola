@@ -50,7 +50,12 @@
                 "Povinnost řidiče nezahájit jízdní úkon nebo v něm nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy", 
                 "Přerušit jízdu z důvodu nezávislého na vůli řidiče, například při poruše vozidla."
             ],
-            "correct_answer": 0        
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }       
         },
         {
             "id": 3,
@@ -62,7 +67,12 @@
                 "Je místo, kde se úrovňově kříží pozemní komunikace se železnicí a příslušnou dopravní značkou se neoznačuje", 
                 "Je místo, kde se úrovňově kříží pozemní komunikace se železnicí a je vždy označeno dopravní značkou 'Stůj, dej přednost v jízdě'"
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }           
         },
         {
             "id": 4,
@@ -74,7 +84,12 @@
                 "Prudce zrychlovat", 
                 "Držet v ruce nebo jiným způsobem telefonní přístroj nebo jiné hovorové nebo záznamové zařízení"
             ],
-            "correct_answer": 2            
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 5,
@@ -86,7 +101,12 @@
                 "Zastavit vozidlo na vyhrazeném parkovišti", 
                 "Uvést vozidlo do klidu nad dobu povolenou pro zastavení"
             ],
-            "correct_answer": 2            
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 6,
@@ -98,7 +118,12 @@
                 "Zastavit vozidlo na vyhrazeném parkovišti", 
                 "Uvést vozidlo do klidu nad dobu povolenou pro zastavení"
             ],
-            "correct_answer": 2            
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 7,
@@ -110,7 +135,12 @@
                 "Ten, kdo řídí motorové nebo nemotorové vozidlo, ne však tramvaj.",
                 "Ten, kdo řídí motorové nebo nemotorové vozidlo anebo tramvaj."
             ],
-            "correct_answer": 2            
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 8,
@@ -122,7 +152,12 @@
                 "I vozidlo, které sice nesplňuje technické podmínky, ale majitel vozidla dovolí vozidlo užít nebo jeho užití přikáže.",
                 "I vozidlo, které splňuje jen některé technické podmínky stanovené zvláštním předpisem, pokud řidič dbá při jízdě zvýšené opatrnosti."
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 9,
@@ -134,7 +169,12 @@
                 "Je zastavěné území, jehož začátek a konec je na pozemní komunikaci označen příslušnými dopravními značkami, které se vždy umisťují na účelových komunikacích.",
                 "Je zastavěné území, jehož začátek a konec je na pozemní komunikaci označen příslušnými dopravními značkami. Na účelových komunikacích se značky neosazují."
             ],
-            "correct_answer": 2
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }
         },
         {
             "id": 10,
@@ -146,7 +186,12 @@
                 "Přerušit jízdu z důvodu nezávislého na vůli řidiče.",
                 "Uvést vozidlo do klidu nad dobu povolenou pro stání."
             ],
-            "correct_answer": 1
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }
         },
         {
             "id": 11,
@@ -158,7 +203,12 @@
                 "Ne",
                 ""
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 12,
@@ -170,7 +220,12 @@
                 "Je místo, v němž se pozemní komunikace protínají nebo spojují, za křižovatku se nepovažuje vyústění polní nebo lesní cesty nebo jiné účelové komunikace na jinou pozemní komunikaci",
                 "Je místo, v němž se protínají nebo spojují dvě pozemní komunikace. Za křižovatku se nepovažuje místo, které není označeno dopravní značkou 'Křižovatka'"
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 13,
@@ -182,7 +237,12 @@
                 "Ne",
                 ""
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 14,
@@ -194,7 +254,12 @@
                 "Být připoután na sedadle bezpečnostním pásem, pokud jím je sedadlo povinně vybaveno podle zvláštního právního předpisu, jen za jízdy mimo obec.",
                 "Se za jízdy připoutat bezpečnostními pásy"
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 15,
@@ -206,7 +271,12 @@
                 "Ten, kdo řídí pouze motorové vozidlo a trolejbus",
                 "Ten, kdo řídí motorové nebo nemotorové vozidlo, ne však tramvaj nebo trolejbus"
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 16,
@@ -218,7 +288,12 @@
                 "Je část povrchu pozemní komunikace ležící mezi okrajem přilehlého jízdního pruhu a hranou koruny pozemní komunikace, skládá se zpravidla ze zpevněné a nezpevněné části.",
                 "Je vždy zpevněná část vozovky mezi okrajem přilehlého jízdního pruhu a hranou koruny vozovky, určená pro zastavení, otáčení a předjíždění vpravo"
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 17,
@@ -230,7 +305,12 @@
                 "Je místo na pozemní komunikaci určené pro přecházení chodců, které nesmí být řízeno akustickými signály",
                 "Je místo na pozemní komunikaci určené pro přecházení chodců, které musí být vždy označeno přerušovaně svítícím světelným signálem ve tvaru kráčejícího chodce."
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 18,
@@ -242,7 +322,12 @@
                 "Uvést vozidlo do klidu na dobu neurčitou",
                 "Uvést vozidlo do klidu nad dobu povolenou pro zastavení."
             ],
-            "correct_answer": 2            
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 19,
@@ -254,7 +339,12 @@
                 "Ne",
                 ""
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 20,
@@ -266,7 +356,12 @@
                 "Je každý, kdo se přímým způsobem účastní provozu na pozemních komunikacích.",
                 "Je každý, kdo se účastní provozu na pozemních komunikacích s výjimkou dětí"
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 21,
@@ -278,7 +373,12 @@
                 "Je složená z jednoho motorového vozidla s tažným zařízením.",
                 "Je souprava více přípojných vozidel"
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         }
     ]
 },
@@ -300,7 +400,12 @@
                 "Zákaz vjezdu všech motorových vozidel", 
                 "Zákaz vjezdu všech motorových i nemotorových vozidel"
             ],
-            "correct_answer": 1           
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }           
         },
         {
             "id": 1,
@@ -312,7 +417,12 @@
                 "Přikazuje jízdu ve směru vpravo bezprostředně před značkou", 
                 "Označuje zejména nebezpečnou zatáčku, v níž musí řidič výrazně snížit rychlost jízdy."
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 2,
@@ -324,7 +434,12 @@
                 "Všem druhům vozidel v obou směrech pozemní komunikace.", 
                 "Nemotorovým vozidlům ze směru, kde je značka umístěna."
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 3,
@@ -336,7 +451,12 @@
                 "Upozorňuje řidiče na železniční přejezd vybavený závorami", 
                 "Upozorňuje řidiče na jednokolejný železniční přejezd."
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 4,
@@ -348,7 +468,12 @@
                 "Vyznačuje pruh nebo stezku pro cyklisty", 
                 "Označuje místo určené pro cyklisty čekající na světelný signál 'Volno'."
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 5,
@@ -360,7 +485,12 @@
                 "Na dvě nebo více po sobě následujících zatáček (směrových oblouků), z nichž první je vpravo, a jejichž bezpečné projetí vyžaduje výrazné snížení rychlosti jízdy",
                 "Na dvě nebo více po sobě následujících zatáček (směrových oblouků), z nichž první je vlevo, a jejichž bezpečné projetí vyžaduje výrazné snížení rychlosti jízdy."
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 6,
@@ -372,7 +502,12 @@
                 "Upozorňuje řidiče na blížící se dopravní značku se zákazem nebo omezením jízdy pro jedoucí vozidla.",
                 "Upozorňuje na následující omezení v jízdě pro řidiče nákladních automobilů přepravujících nebezpečný náklad."
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 7,
@@ -384,7 +519,12 @@
                 "Vymezuje vyústění účelové pozemní komunikace na jinou pozemní komunikaci",
                 "Označuje kluzký úsek pozemní komunikace, kde hrozí smyk vozidla"
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 8,
@@ -396,7 +536,12 @@
                 "Zakazuje odbočování vlevo na nejbližší křižovatce, na účelovou komunikaci v místě jejího připojení nebo na místo ležící mimo pozemní komunikaci",
                 "Ukončuje platnost zákazu odbočování vpravo na nejbližší křižovatce, na účelovou komunikaci v místě jejího připojení nebo na místo ležící mimo pozemní komunikaci"
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 9,
@@ -408,7 +553,12 @@
                 "Upozorňuje na místo nebo úsek pozemní komunikace s možností zvýšeného výskytu chodců anebo častého přecházení chodců přes pozemní komunikaci v místě, kde není zřízen přechod pro chodce.",
                 "Zakazuje chodcům vstoupit na pozemní komunikaci nacházející se v prostoru za značkou"
             ],
-            "correct_answer": 2            
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         }
     ]
 },
@@ -430,7 +580,12 @@
                 "pokud není poraněný na pevné podložce, srdeční masáž nezahájím",
                 "vždy poraněného přesunu na pevnou podložku"
             ],
-            "correct_answer": 0           
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }           
         },
         {
             "id": 1,
@@ -442,7 +597,12 @@
                 "Přibližně 20 stlačení za minutu.", 
                 "Přibližně 60 stlačení za minutu."
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 2,
@@ -454,7 +614,12 @@
                 "zkusím bolestivý podnět ostrým předmětem", 
                 "poraněného hlasitě oslovím a zkusím posadit"
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 3,
@@ -466,7 +631,12 @@
                 "při sklonění se k ústům poraněného slyším jeho dech a cítím ho na své tváři", 
                 "nemá příznaky cyanózy"
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 4,
@@ -478,7 +648,12 @@
                 "stačí 1-2 cm", 
                 "8-10 cm"
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 5,
@@ -490,7 +665,12 @@
                 "neprodleně krvácející místo stlačím prsty, dlaní nebo složeným kusem oděvu", 
                 "krvácející místo nebudu ošetřovat, začnu poraněnému zajišťovat životní funkce tj. umělé dýchání, zevní srdeční masáž"
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 6,
@@ -502,7 +682,12 @@
                 "10 min.", 
                 "20 min."
             ],
-            "correct_answer": 0         
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }         
         },
         {
             "id": 7,
@@ -514,7 +699,12 @@
                 "následné bezvědomí při poranění mozkové tkáně", 
                 "zlomeniny kostí lebky"
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 8,
@@ -526,7 +716,12 @@
                 "pokud je poraněný v hlubokém bezvědomí a nedýchá", 
                 "pokud masivně krvácí"
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         }
     ]
 },
@@ -549,7 +744,12 @@
                 "Vozidlo, nesmí být užito v provozu na pozemních komunikacích",
                 "Vozidlo smí být užito pouze za nesnížené viditelnosti"
             ],
-            "correct_answer": 1      
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }      
         },
         {
             "id": 1,
@@ -561,7 +761,12 @@
                 "Povolena pouze záměnou žárovky jiné barvy", 
                 "Je možná změna jiným způsobem, například přestříkáním"
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 2,
@@ -573,7 +778,12 @@
                 "Nepodléhají registraci", 
                 "Podléhají registraci pouze na žádost jejich vlastníka"
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 3,
@@ -585,7 +795,12 @@
                 "Nesmí být na vozidle použita",
                 "Smí být použita pouze při tuningové úpravě vozidla"
             ],
-            "correct_answer": 1      
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }      
         },
         {
             "id": 4,
@@ -597,7 +812,12 @@
                 "Seřizovat řídící funkce motoru u motorů s řízeným emisním systémem.", 
                 "Seřizovat brzdovou soustavu, řízení a nápravu"
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 5,
@@ -609,7 +829,12 @@
                 "Pouze pohonné hmoty předepsané výrobcem těchto motorů nebo pohonné hmoty s nižším oktanovým číslem",
                 "Pouze pohonné hmoty předepsané výrobcem těchto motorů."
             ],
-            "correct_answer": 2            
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 6,
@@ -621,7 +846,12 @@
                 "U osobních vozidel 1,5mm a u nákladních vozidel 2,0mm", 
                 "U mopedů nejméně 1,0mm a u vozidel ostatních kategorií nejméně 1,6mm"
             ],
-            "correct_answer": 2         
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }         
         },
         {
             "id": 7,
@@ -633,7 +863,12 @@
                 "Je povoleno pouze v zimním období", 
                 "Je povoleno pouze v zimním období a jen v horských oblastech"
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 8,
@@ -645,7 +880,12 @@
                 "Rok a měsíc, do kterého platí osvědčení o technické způsobilosti vozidla", 
                 "Rok, měsíc a den provedení příští pravidelné technické prohlídky"
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 9,
@@ -657,7 +897,12 @@
                 "Vozidlo smí být užito v silničním provozu bez omezení", 
                 "Vozidlo nesmí být užito v provozu na pozemních komunikacích, s výjimkou nouzového dojetí."
             ],
-            "correct_answer": 2            
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         }
     ]
 },
@@ -680,7 +925,12 @@
                 "Osobě, která je odborně způsobilá, i když je ve výkonu sankce zákazu činnosti spočívajícího v zákazu řízení motorových vozidel.",
                 "Osobě, která je starší 18 let, pokud o udělení řidičského oprávnění požádá."
             ],
-            "correct_answer": 0      
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }      
         },
         {
             "id": 1,
@@ -692,7 +942,12 @@
                 "Schopnostem řidiče reagovat na nenadálé situace v silničním provozu", 
                 "Jízdním vlastnostem vozidla užitého řidičem v silničním provozu."
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 2,
@@ -704,7 +959,12 @@
                 "Pouze v případě, že řidič požil před jízdou alkohol nebo jinou návykovou látku.", 
                 "Pouze v případech daných zákonem"
             ],
-            "correct_answer": 2            
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 3,
@@ -716,7 +976,12 @@
                 "Na vozidle není umístěna státní poznávací značka",
                 "Řidič při kontrole nepředloží osvědčení o registraci vozidla a doklad o pojištění odpovědnosti z provozu vozidla."
             ],
-            "correct_answer": 0      
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }      
         },
         {
             "id": 4,
@@ -728,7 +993,12 @@
                 "1 roku ode dne pozbytí řidičského oprávnění", 
                 "1 roku ode dne právní moci rozhodnutí o zákazu činnosti spočívající v zákazu řízení všech motorových vozidel."
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 5,
@@ -740,7 +1010,12 @@
                 "Na škodu způsobenou pouze provozovatelem tohoto vozidla a jeho rodinnými příslušníky.",
                 "Na škodu způsobenou výlučně provozovatelem tohoto vozidla."
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         }
     ]
 },
@@ -763,7 +1038,12 @@
                 "Protože jsou děti na chodníku, nemáte důvod ke zvýšení opatrnosti ani ke změne způsobu jízdy.",
                 "Z dostatečné vzdálenosti upozorníte hrající si děti na možné nebezpečí zvukovým výstražným znamením."
             ],
-            "correct_answer": 0      
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }      
         },
         {
             "id": 1,
@@ -775,7 +1055,12 @@
                 "Není nutno dbát zvýšené opatrnosti.", 
                 "Musí být uvedeno v činnost výstražné světelné zařízení"
             ],
-            "correct_answer": 0            
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 2,
@@ -787,7 +1072,12 @@
                 "Vlastnosti vozidla minimalizující příčiny vzniku dopravní nehody.", 
                 "Vlastnosti vozidla minimalizující následky dopravní nehody po jejím vzniku"
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 3,
@@ -799,7 +1089,12 @@
                 "K maximálnímu brzdému účinku, při němž vozidlo zastaví s nejkratší brzdnou dráhou",
                 "K zablokování kol zadní nápravy vozidla, při němž vozidlo zůstává říditelným."
             ],
-            "correct_answer": 0      
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }      
         },
         {
             "id": 4,
@@ -811,7 +1106,12 @@
                 "Nízký tlak v pneumatikách.", 
                 "Nedostatečná rychlost jízdy."
             ],
-            "correct_answer": 1            
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 5,
@@ -823,7 +1123,12 @@
                 "Nebudete takové vozidlo předjíždět.",
                 "Upozorníte jej světelným výstražným znamením."
             ],
-            "correct_answer": 1           
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }           
         },
         {
             "id": 5,
@@ -835,7 +1140,12 @@
                 "Přibližně 3x delší",
                 "Přibližně 2x delší"
             ],
-            "correct_answer": 0           
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }           
         }
     ]
 }
