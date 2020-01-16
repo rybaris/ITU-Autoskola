@@ -18,6 +18,7 @@
             ],
             "correct_answer": 2,
             "help": {
+                "active": true,
                 "keyword": "vozovky",
                 "help_content": "vozovka jest ahoj"
             }
@@ -34,6 +35,7 @@
             ],
             "correct_answer": 2,
             "help": {
+                "active": false,
                 "keyword": "",
                 "help_content": ""
             }            
