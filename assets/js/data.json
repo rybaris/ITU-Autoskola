@@ -305,26 +305,26 @@
             "id": 0,
             "type": "img",
             "title": "Tato dopravní značka znamená:",
-            "question": "assts/img/smog.jpg",
+            "question": "assets/img/zakaz_vjezdu_vsech_motorovych_vozidel.jpg",
             "answers": [
-                "chrst řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
+                "Zákaz vjezdu osobních vozidel a motocyklů", 
                 "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
+                "Zákaz vjezdu všech motorových i nemotorových vozidel"
             ],
-            "correct_answer": 0,
+            "correct_answer": 1,
             "points": 2
         },
         {
             "id": 1,
             "type": "img",
             "title": "Tato dopravní značka znamená:",
-            "question": "assets/img/smog.jpg",
+            "question": "https://www.zakruta.cz/img/dopravni-znacky/velke/A1a.jpg",
             "answers": [
-                "Dát přednost v jízdě znamená povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.", 
-                "Zákaz vjezdu všech motorových vozidel", 
-                "Cyklisto, sesedni z kola!"
+                "Upozorňuje na zatáčku (směrový oblouk) vpravo, jehož bezpečné projetí vyžaduje výrazné snížení.", 
+                "Přikazuje jízdu ve směru vpravo bezprostředně před značkou", 
+                "Označuje zejména nebezpečnou zatáčku, v níž musí řidič výrazně snížit rychlost jízdy."
             ],
-            "correct_answer": 1,
+            "correct_answer": 0,
             "points": 2
         },
         {
