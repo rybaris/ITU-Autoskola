@@ -1,7 +1,9 @@
 let current = 0;
 let categoryIndex = 0;
+let currentDisplay;
 let rightAnswer;
 let thirdAnswerEmpty = false;
+let firstLoad = true;
 let count;
 
 //let answers = document.getElementById('answers');
@@ -24,12 +26,17 @@ function ajaxFunction() {
             rightAnswer = p[categoryIndex].questions[current].correct_answer;
             count = p[categoryIndex].category.count;
 
-            //for (let o = 0; o <= count; o++) {
-            //    let linka = document.createElement("a");
-            //    let linkd = document.createTextNode(o);
-            //    linka.appendChild(linkd)
-            //    document.getElementById('sidebar').appendChild(linka)
-            //}
+            if(firstLoad === true) {
+                for (let o = 0; o <= count; o++) {
+                    let linka = document.createElement("a");
+                    let linkd = document.createTextNode(o);
+                    linka.className = "navigation-link";
+                    linka.setAttribute("onclick", "jumpFunc(this.textContent)")
+                    linka.appendChild(linkd)
+                    document.getElementById('navigation-down').appendChild(linka)
+                }
+                firstLoad = false;
+            }
 
             getQuestionByType(p, current);
             getChoices(p, current);
@@ -37,6 +44,10 @@ function ajaxFunction() {
 
             let progress = 100 / (p[categoryIndex].category.count - 1);
             $('#progress-bar').width((current * progress) + "%");
+
+            document.getElementById('current-index').innerHTML = current;
+            document.getElementById('count-index').innerHTML = count;
+            console.log(current)
         }
     }
     xmlHttp.send()
@@ -137,11 +148,24 @@ function buttonDisabler(item, index) {
 
     if (index === 0) {
         document.getElementById('prevTheory').style.display = "none";
-    } else if (index === item[categoryIndex].category.count-1) {
+    } else if (index === item[categoryIndex].category.count) {
         document.getElementById('nextTheory').style.display = "none";
     } else {
         document.getElementById('prevTheory').style.display = "block";
         document.getElementById('nextTheory').style.display = "block";
     }
 
+}
+
+$(".navigation-dropdown").click( function(e) {
+    //e.preventDefault();
+    $("#navigation-down").toggleClass("flex");
+    //return false; 
+});
+
+function jumpFunc(hodnota) {
+    //event.preventDefault();
+    current = Number(hodnota);
+    $("#navigation-down").toggleClass("flex");
+    ajaxFunction();
 }
