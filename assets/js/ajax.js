@@ -18,7 +18,7 @@ $("#nextTheory").click(nextRender);
 function ajaxFunction() {
     let xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", "https://raw.githubusercontent.com/rybaris/ITU-Autoskola/master/assets/js/data.json", true)
-    xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+    xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlHttp.onreadystatechange = () => {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             let p = JSON.parse(xmlHttp.responseText);
@@ -177,7 +177,6 @@ function addHelp (item, index) {
     let isActive = item[categoryIndex].questions[index].help.active;
     let keyWord = item[categoryIndex].questions[index].help.keyword;
     let helpContent = item[categoryIndex].questions[index].help.help_content;
-    let textData = document.getElementById('text-data').textContent;
     let answer0Data = answer0.textContent;
     let answer1Data = answer1.textContent;
     let answer2Data = answer2.textContent;
@@ -187,10 +186,13 @@ function addHelp (item, index) {
         let replaceKeyword;
 
         // Otazka obsahuje napovedni klicove slovo
-        if(textData.includes(keyWord)) {
-            //let replaceKeyword = textData.replace(keyWord, '<a data-toggle="popover" data-content="'+helpContent+'">'+keyWord+'</a>');
-            replaceKeyword = textData.replace(keyWord, `<a tabindex="0" class="nofocus" data-toggle="popover" data-content="${helpContent}" data-placement="top" data-trigger="focus">${keyWord}</a>`);
-            document.getElementById('text-data').innerHTML = replaceKeyword;
+        if(item[categoryIndex].questions[index].type !== "img") {
+            let textData = document.getElementById('text-data').textContent;
+            if(textData.includes(keyWord)) {
+                //let replaceKeyword = textData.replace(keyWord, '<a data-toggle="popover" data-content="'+helpContent+'">'+keyWord+'</a>');
+                replaceKeyword = textData.replace(keyWord, `<a tabindex="0" class="nofocus" data-toggle="popover" data-content="${helpContent}" data-placement="top" data-trigger="focus">${keyWord}</a>`);
+                document.getElementById('text-data').innerHTML = replaceKeyword;
+            }
         }
 
         // Odpoved 0 obsahuje napovedni klicove slovo

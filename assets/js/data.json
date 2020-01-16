@@ -20,7 +20,7 @@
             "help": {
                 "active": true,
                 "keyword": "vozovky",
-                "help_content": "svozovka jest ahoj"
+                "help_content": "Vozovka je horní část silnice, ta, které se dotýkají pneumatiky"
             }
         },
         {
@@ -36,8 +36,8 @@
             "correct_answer": 2,
             "help": {
                 "active": true,
-                "keyword": "jízdy",
-                "help_content": "Zvyrayneno vsecko"
+                "keyword": "alkoholický nápoj",
+                "help_content": "Pozor na některá ovocná piva s obsahem alkoholu 0,1%"
             }            
         },
         {
