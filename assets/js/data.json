@@ -32,7 +32,11 @@
                 "Ještě hodinu po skončení jízdy", 
                 "Během jízdy"
             ],
-            "correct_answer": 2            
+            "correct_answer": 2,
+            "help": {
+                "keyword": "",
+                "help_content": ""
+            }            
         },
         {
             "id": 2,

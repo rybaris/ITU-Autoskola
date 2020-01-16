@@ -40,6 +40,7 @@ function ajaxFunction() {
 
             getQuestionByType(p, current);
             getChoices(p, current);
+            addHelp(p, current);
             buttonDisabler(p, current);
 
             let progress = 100 / (p[categoryIndex].category.count - 1);
@@ -166,6 +167,14 @@ function buttonDisabler(item, index) {
 
 }
 
+function addHelp (item, index) {
+
+    if (item[categoryIndex].questions[index].help !== "") {
+        console.log("ahoj");
+    }
+
+}
+
 // Zobrazeni / Skryti navigace otazek
 $(".navigation-dropdown").click( () => {
 
@@ -174,9 +183,9 @@ $(".navigation-dropdown").click( () => {
 });
 
 // Funkce skoku na zvoleny index
-function jumpFunc(hodnota) {
+function jumpFunc(value) {
 
-    current = Number(hodnota);
+    current = Number(value);
     $("#navigation-down").toggleClass("flex");
     ajaxFunction();
 
