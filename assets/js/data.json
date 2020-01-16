@@ -507,7 +507,7 @@
             "correct_answer": 1            
         },
         {
-            "id": 5,
+            "id": 8,
             "type": "text",
             "title": "",
             "question": "Kdy zahájíte zevní srdeční masáž:",
@@ -517,6 +517,137 @@
                 "pokud masivně krvácí"
             ],
             "correct_answer": 1            
+        }
+    ]
+},
+
+{
+    "category": {
+        "name": "podminky_provozu",
+        "count": 10,
+        "count_test": 1,
+        "points": 1
+    },
+    "questions": [ 
+        {
+            "id": 0,
+            "type": "text",
+            "title": "",
+            "question": "Nelze-li přepnout dálková světla na potkávací nebo způsobují-li světlomety oslnění:",
+            "answers": [
+                "Vozidlo smí být užito při zapnutých obrysových světlech",
+                "Vozidlo, nesmí být užito v provozu na pozemních komunikacích",
+                "Vozidlo smí být užito pouze za nesnížené viditelnosti"
+            ],
+            "correct_answer": 1      
+        },
+        {
+            "id": 1,
+            "type": "text",
+            "title": "",
+            "question": "Úprava barvy světla vyzařovaného světelným zařízením vozidla je:",
+            "answers": [
+                "Zakázána", 
+                "Povolena pouze záměnou žárovky jiné barvy", 
+                "Je možná změna jiným způsobem, například přestříkáním"
+            ],
+            "correct_answer": 0            
+        },
+        {
+            "id": 2,
+            "type": "text",
+            "title": "",
+            "question": "Nová přípojná vozidla za osobní automobil:",
+            "answers": [
+                "Podléhají registraci", 
+                "Nepodléhají registraci", 
+                "Podléhají registraci pouze na žádost jejich vlastníka"
+            ],
+            "correct_answer": 0            
+        },
+        {
+            "id": 3,
+            "type": "text",
+            "title": "",
+            "question": "Jiná než předepsaná nebo povolená světelná zařízení:",
+            "answers": [ 
+                "Smí být na vozidle použita pouze za předpokladu, že jejich užití nebude obtěžovat ostatní účastníky provozu na pozemních komunikacích", 
+                "Nesmí být na vozidle použita",
+                "Smí být použita pouze při tuningové úpravě vozidla"
+            ],
+            "correct_answer": 1      
+        },
+        {
+            "id": 4,
+            "type": "text",
+            "title": "",
+            "question": "Stanice technické kontroly může při pravidelné technické prohlídce:",
+            "answers": [
+                "Seřizovat světlomety, pokud se jedná o jednoduché seřízení.", 
+                "Seřizovat řídící funkce motoru u motorů s řízeným emisním systémem.", 
+                "Seřizovat brzdovou soustavu, řízení a nápravu"
+            ],
+            "correct_answer": 0            
+        },
+        {
+            "id": 5,
+            "type": "text",
+            "title": "",
+            "question": "K pohonu motorů vozidel se smí používat:",
+            "answers": [ 
+                "Pohonné hmozy nespoňující požadavky na jakost, umožní-li spolehlivý provoz těchto motorů", 
+                "Pouze pohonné hmoty předepsané výrobcem těchto motorů nebo pohonné hmoty s nižším oktanovým číslem",
+                "Pouze pohonné hmoty předepsané výrobcem těchto motorů."
+            ],
+            "correct_answer": 2            
+        },
+        {
+            "id": 6,
+            "type": "text",
+            "title": "",
+            "question": "Činná plocha pláště pneumatiky v provozu musí mít po celém obvodu a v celé šíři vrchního běhounu jasně viditelný dezén s hloubkou hlavních dezénových drážek:",
+            "answers": [
+                "U všech vozidel nejméně 1,0mm", 
+                "U osobních vozidel 1,5mm a u nákladních vozidel 2,0mm", 
+                "U mopedů nejméně 1,0mm a u vozidel ostatních kategorií nejméně 1,6mm"
+            ],
+            "correct_answer": 2         
+        },
+        {
+            "id": 7,
+            "type": "text",
+            "title": "",
+            "question": "Používání pneumatik s protiskluzovými hroty:",
+            "answers": [
+                "Je zakázáno pro všechna vozidla, s výjimkou vozidel záchranné služby.", 
+                "Je povoleno pouze v zimním období", 
+                "Je povoleno pouze v zimním období a jen v horských oblastech"
+            ],
+            "correct_answer": 0            
+        },
+        {
+            "id": 8,
+            "type": "text",
+            "title": "",
+            "question": "Proděravěním kontrolní nálepky, osvědčující technickou způsobilost vozidla se vyznačuje:",
+            "answers": [
+                "Rok provedení příští pravidelné technické prohlídky",
+                "Rok a měsíc, do kterého platí osvědčení o technické způsobilosti vozidla", 
+                "Rok, měsíc a den provedení příští pravidelné technické prohlídky"
+            ],
+            "correct_answer": 1            
+        },
+        {
+            "id": 9,
+            "type": "text",
+            "title": "",
+            "question": "Nesvítí-li potkávací světlo na straně přivrácené do středu vozovky:",
+            "answers": [
+                "Vozidlo smí být užito v provozu pouze při rychlosti jízdy maximálně 40km/h",
+                "Vozidlo smí být užito v silničním provozu bez omezení", 
+                "Vozidlo nesmí být užito v provozu na pozemních komunikacích, s výjimkou nouzového dojetí."
+            ],
+            "correct_answer": 2            
         }
     ]
 }

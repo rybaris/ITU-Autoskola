@@ -23,10 +23,10 @@ function ajaxFunction() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             let p = JSON.parse(xmlHttp.responseText);
             rightAnswer = p[categoryIndex].questions[current].correct_answer;
-            count = p[categoryIndex].category.count - 1;
+            count = p[categoryIndex].category.count;
 
             if(firstLoad === true) {
-                for (let o = 0; o <= count; o++) {
+                for (let o = 0; o < count; o++) {
                     let linka = document.createElement("a");
                     let linkd = document.createTextNode(o);
                     linka.className = "navigation-link";
@@ -45,7 +45,7 @@ function ajaxFunction() {
             $('#progress-bar').width((current * progress) + "%");
 
             document.getElementById('current-index').innerHTML = current;
-            document.getElementById('count-index').innerHTML = count;
+            document.getElementById('count-index').innerHTML = count - 1;
             console.log(current)
         }
     }
@@ -148,11 +148,14 @@ function reset() {
 
 // Zobrazeni / Skryti tlacitek "Dalsi" a "Predchozi"
 function buttonDisabler(item, index) {
+    let normalizedCount = item[categoryIndex].category.count - 1;
 
-    if (index === 0) {
+    if (index == 0) {
         document.getElementById('prevTheory').style.display = "none";
-    } else if (index === item[categoryIndex].category.count) {
+        document.getElementById('nextTheory').style.display = "block";
+    } else if (index == normalizedCount) {
         document.getElementById('nextTheory').style.display = "none";
+        document.getElementById('prevTheory').style.display = "block";
     } else {
         document.getElementById('prevTheory').style.display = "block";
         document.getElementById('nextTheory').style.display = "block";
