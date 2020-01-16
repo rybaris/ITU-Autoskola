@@ -1,12 +1,11 @@
 let current = 0;
 let categoryIndex = 0;
-let currentDisplay;
 let rightAnswer;
-let thirdAnswerEmpty = false;
-let firstLoad = true;
 let count;
 
-//let answers = document.getElementById('answers');
+let thirdAnswerEmpty = false;
+let firstLoad = true;
+
 let question = document.getElementById('question');
 let answer0 = document.getElementById('answer0');
 let answer1 = document.getElementById('answer1');
@@ -53,7 +52,7 @@ function ajaxFunction() {
     xmlHttp.send()
 }
 
-// OK Funkce porovna datovy typ a dle nej sestavi HTML otazky
+//  Funkce porovna datovy typ a dle nej sestavi HTML otazky
 function getQuestionByType(item, index) {
 
     if(item[categoryIndex].questions[index].type == "img") {
@@ -66,7 +65,7 @@ function getQuestionByType(item, index) {
 
 }
 
-// Funkce vlozi mozne odpovedi na otazku
+// Funkce vlozi moznosti [odpovedi] na otazku do DOM
 function getChoices(item, index) {
 
     answer0.innerHTML = item[categoryIndex].questions[index].answers[0];
@@ -82,6 +81,7 @@ function getChoices(item, index) {
 
 }
 
+// Funkce porovna spravnou odpoved a dle ni zbarvi vsechny odpovedi
 function checkAnswer() {
 
     if (rightAnswer == 0) {
@@ -117,7 +117,7 @@ function checkAnswer() {
 
 }
 
-// OK Funkce tlacitka "Predchozi"
+// Funkce tlacitka "Predchozi", pozice - 1
 function prevRender() {
 
     event.preventDefault();
@@ -127,7 +127,7 @@ function prevRender() {
 
 }
 
-// OK Funkce tlacitka "Dalsi"
+// Funkce tlacitka "Dalsi", pozice + 1
 function nextRender() {
 
     event.preventDefault();
@@ -137,13 +137,16 @@ function nextRender() {
 
 }
 
+// Reset stylu odpovedi
 function reset() {
+
     answer0.style.backgroundColor = "#f7f7f7";
     answer1.style.backgroundColor = "#f7f7f7";
     answer2.style.backgroundColor = "#f7f7f7";
+
 }
 
-// Funkce skryva/zobrazuje navigacni tlacitka dle hodnoty indexu
+// Zobrazeni / Skryti tlacitek "Dalsi" a "Predchozi"
 function buttonDisabler(item, index) {
 
     if (index === 0) {
@@ -157,15 +160,18 @@ function buttonDisabler(item, index) {
 
 }
 
-$(".navigation-dropdown").click( function(e) {
-    //e.preventDefault();
+// Zobrazeni / Skryti navigace otazek
+$(".navigation-dropdown").click( () => {
+
     $("#navigation-down").toggleClass("flex");
-    //return false; 
+
 });
 
+// Funkce skoku na zvoleny index
 function jumpFunc(hodnota) {
-    //event.preventDefault();
+
     current = Number(hodnota);
     $("#navigation-down").toggleClass("flex");
     ajaxFunction();
+
 }
