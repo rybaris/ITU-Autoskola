@@ -11,7 +11,7 @@
     <script src="assets/js/testy.js"></script>
     <title>Document</title>
 </head>
-<body onload="end_time2(),size_img(),history()">
+<body onload="end_time2(),size_img(),color_answers()">
     <!-- HEADER -->
     <header>
         <h1>
@@ -29,34 +29,43 @@
                             <div class="time usp">Čas: <span class="final_time"></span></div>
                             <div class="usp">Úspěšnost: <span class="red_c">Neprošel</span></div>
                             <div class="odp">Správné odpovědi</span></div>
-                            <div class="odpovedi">
-                                <a href="#" id="o0">1</a>
-                                <a href="#" id="o1">2</a>
-                                <a href="#" id="o2">3</a>
-                                <a href="#" id="o3">4</a>
-                                <a href="#" id="o4">5</a>
-                                <a href="#" id="o5">6</a>
-                                <a href="#" id="o6">7</a> 
-                                <a href="#" id="o7">8</a>
-                                <a href="#" id="o8">9</a>
-                                <a href="#" id="o9">10</a>
-                                <a href="#" id="o10">11</a>
-                                <a href="#" id="o11">12</a>
-                                <a href="#" id="o12">13</a>
-                                <a href="#" id="o13">14</a>
-                                <a href="#" id="o14">15</a>
-                                <a href="#" id="o15">16</a>
-                                <a href="#" id="o16">17</a>
-                                <a href="#" id="o17">18</a>
-                                <a href="#" id="o18">19</a>
-                                <a href="#" id="o19">20</a>
-                                <a href="#" id="o20">21</a>
-                                <a href="#" id="o21">22</a>
-                                <a href="#" id="o22">23</a>
-                                <a href="#" id="o23">24</a>
-                                <a href="#" id="o24">25</a>       
+                            <div class="odpovedi">                                
+                                <a href="#" id="o0" onmouseover="display_q(1)" onmouseout="vanish(1)">1
+                                    <div class="disp_q">
+                                        <div class="otazka"></div>
+                                        <div class="odpovedi2">
+                                            <div class="first"></div>
+                                            <div class="second"></div>
+                                            <div class="third"></div>
+                                        </div>
+                                    </div>
+                                </a>                                
+                                <a href="#" id="o1" onmouseover="display_q(2)" onmouseout="vanish(2)">2</a>
+                                <a href="#" id="o2" onmouseover="display_q(3)" onmouseout="vanish(3)">3</a>
+                                <a href="#" id="o3" onmouseover="display_q(4)" onmouseout="vanish(4)">4</a>
+                                <a href="#" id="o4" onmouseover="display_q(5)" onmouseout="vanish(5)">5</a>
+                                <a href="#" id="o5" onmouseover="display_q(6)" onmouseout="vanish(6)">6</a>
+                                <a href="#" id="o6" onmouseover="display_q(7)" onmouseout="vanish(7)">7</a> 
+                                <a href="#" id="o7" onmouseover="display_q(8)" onmouseout="vanish(8)">8</a>
+                                <a href="#" id="o8" onmouseover="display_q(9)" onmouseout="vanish(9)">9</a>
+                                <a href="#" id="o9" onmouseover="display_q(10)"onmouseout="vanish(10)">10</a>
+                                <a href="#" id="o10" onmouseover="display_q(11)" onmouseout="vanish(11)">11</a>
+                                <a href="#" id="o11" onmouseover="display_q(12)" onmouseout="vanish(12)">12</a>
+                                <a href="#" id="o12" onmouseover="display_q(13)" onmouseout="vanish(13)">13</a>
+                                <a href="#" id="o13" onmouseover="display_q(14)" onmouseout="vanish(14)">14</a>
+                                <a href="#" id="o14" onmouseover="display_q(15)" onmouseout="vanish(15)">15</a>
+                                <a href="#" id="o15" onmouseover="display_q(16)" onmouseout="vanish(16)">16</a>
+                                <a href="#" id="o16" onmouseover="display_q(17)" onmouseout="vanish(17)">17</a>
+                                <a href="#" id="o17" onmouseover="display_q(18)" onmouseout="vanish(18)">18</a>
+                                <a href="#" id="o18" onmouseover="display_q(19)" onmouseout="vanish(19)">19</a>
+                                <a href="#" id="o19" onmouseover="display_q(20)" onmouseout="vanish(20)">20</a>
+                                <a href="#" id="o20" onmouseover="display_q(21)" onmouseout="vanish(21)">21</a>
+                                <a href="#" id="o21" onmouseover="display_q(22)" onmouseout="vanish(22)">22</a>
+                                <a href="#" id="o22" onmouseover="display_q(23)" onmouseout="vanish(23)">23</a>
+                                <a href="#" id="o23" onmouseover="display_q(24)" onmouseout="vanish(24)">24</a>
+                                <a href="#" id="o24" onmouseover="display_q(25)" onmouseout="vanish(25)">25</a>       
                             </div>
-                            
+
                         </div>                        
                         <div class="nav-btn">                            
                             <a href="index.html" class="prev nodec"><div>Přejít na hlavní stránku</div></a>                            

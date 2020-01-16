@@ -13,6 +13,15 @@ let categ_index; //index kategorie
 let q_index=0 //index otazky
 let q_param=[];
 let q_used=0;
+let rand_categ;
+let rand_q;
+let correct_answer;
+let points;
+
+//////NEWEST//////
+let json_data2;
+
+
 for(let i = 0; i < categ_count;i++)
 {
   q_param[i]=[]; 
@@ -26,11 +35,6 @@ for(let i = 0; i < categ_count;i++)
 
 
 /////////////////////////
-let o0="V provozu na pozemních komunikacích je zakázáno";
-let a0_a="Troubit";
-let a0_b="Neoprávněně užívat zvláštních výstražných světel a zvláštního zvukového výstražného znamení, které užívá vozidlo s právem přednostní jízdy.";
-let a0_c="Svítit za nesnížené viditelnosti.";
-
 function next_q(){ 
   
   if (pom>7)
@@ -43,61 +47,15 @@ function next_q(){
     konec();
   }
   else{
-    /*
-    let conc_o = "o"+pom;
-    let conc_a= "a"+pom+"_a";
-    let conc_b= "a"+pom+"_b";
-    let conc_c= "a"+pom+"_c";*/
+    get_random_q(); //generovani random indexu otazky        
+    console.log("Otazka z kategorie "+(rand_categ+1)+":"+(rand_q+1));    
+    let otazka = json_data[rand_categ].questions[rand_q].question;    
+    points = json_data[rand_categ].category.points;    
 
-    /// GENEROVANI RANDOM KATEGORIE ///
-
-    let rand_categ = getRandomIndex(0,categ_count-1);
-    //console.log(json_data[0].category.count_test);
-    while(q_param[rand_categ][0] == "full")
-    {
-      //repeat generovani, když jsou už všechny otazky z dane kategorie vygenerovany
-      rand_categ = getRandomIndex(0,categ_count-1);
-      //console.log(q_param[rand_index][0]+"--rand_index");      
-    }
-    q_param[rand_categ][1]++;
-    console.log(json_data[0].category.count_test);
-    //console.log("Pocet v kategorii "+rand_index+":"+q_param[rand_index][1]);
-    if(q_param[rand_categ][1]==json_data[rand_categ].category.count_test){
-      q_param[rand_categ][0]="full";
-    }
-    
-
-    //// GENEROVANI RANDOM OTAZKY //////
-    let used = false;
-    let rand_q = getRandomIndex(0,json_data[rand_categ].category.count-1);
-    for(let i = 0; i < q_used; i++){
-      if(q_param[rand_categ][2][i]==rand_q){
-        used = true;
-      }
-    }
-    while(used == true)
-    {
-      used=false;
-      let rand_q = getRandomIndex(0,json_data[rand_categ].category.count-1);
-      for(let i = 0; i < q_used; i++){
-        if(q_param[rand_categ][2][i]==rand_q){
-          used = true;
-        }
-      }
-    }
-    q_param[rand_categ][2][q_used]=rand_q;
-    console.log("Otazka z kategorie "+rand_categ+":"+rand_q);
-    q_used++;
-    let otazka = json_data[rand_categ].questions[rand_q].question;
-    console.log(otazka);
-    console.log(otazka[0]);
-    console.log(otazka[1]);
-    console.log(otazka[2]);
-    console.log(otazka[3]);
     $(".otazka").empty();
-    if (otazka[0]=='a' && otazka[1]=='s' && otazka[2]=='s' && otazka[3]=='e')
+    if (json_data[rand_categ].questions[rand_q].type=="img")
     {      
-      $(".otazka").prepend('<img class="q_img" src="assets/img/smog.jpg" style="width:100%;"/>')
+      $(".otazka").prepend('<img class="q_img" src="' + otazka+ '" style="max-width:470px;"/>')
     }
     else{
       $(".otazka").html(otazka);
@@ -128,8 +86,7 @@ function ajaxFunction() {
           json_data = JSON.parse(xmlHttp.responseText);
           //rightAnswer = json_data[categoryIndex].questions[current].correct_answer;  
           //console.log(json_data[0].questions[1].question); 
-          next_q();
-          console.log(json_data);
+          next_q();          
       }      
   }
   
@@ -139,49 +96,79 @@ function ajaxFunction() {
   //next_q();
 }
 
-function first()
-{
-  $(".otazka").html(o0);  
-  $(".change1").html(a0_a);
-  $(".change2").html(a0_b);
-  $(".change3").html(a0_c);
+function get_random_q(){
+
+      /// GENEROVANI RANDOM INDEXU KATEGORIE ///
+
+      rand_categ = getRandomIndex(0,categ_count-1);
+      //console.log(json_data[0].category.count_test);
+      while(q_param[rand_categ][0] == "full")
+      {
+        //repeat generovani, když jsou už všechny otazky z dane kategorie vygenerovany
+        rand_categ = getRandomIndex(0,categ_count-1);    
+      }
+      q_param[rand_categ][1]++;    
+      if(q_param[rand_categ][1]==json_data[rand_categ].category.count_test){
+        q_param[rand_categ][0]="full";        
+      }
+
+      //// GENEROVANI RANDOM INDEXU OTAZKY //////
+      let used = false;
+      rand_q = getRandomIndex(0,json_data[rand_categ].category.count-1);
+      for(let i = 0; i < q_used; i++){
+        if(q_param[rand_categ][2][i]==rand_q){
+          used = true;
+        }
+      }
+      while(used == true)
+      {
+        used=false;
+        rand_q = getRandomIndex(0,json_data[rand_categ].category.count-1);
+        for(let i = 0; i < q_used; i++){
+          if(q_param[rand_categ][2][i]==rand_q){
+            used = true;
+          }
+        }
+      }
+      localStorage.setItem("index"+(counter-1),rand_categ+" "+rand_q); //uložení indexu otázky (rand_categ rand_q) 
+      correct_answer = json_data[rand_categ].questions[rand_q].correct_answer;
+      q_param[rand_categ][2][q_used]=rand_q;
+      q_used++;
 }
+
+
 function odp1(){
-  let odpoved = "spravna" + (pom-1);
-  let odpoved1_eval = eval(odpoved);  
-  if(odpoved1_eval == "a"+(pom-1)+"_a"){    
-    body++;
-    localStorage.setItem("o"+(pom-2), "1");
-    console.log("o"+(pom-2));
+  localStorage.setItem("index_answ"+(counter-2), correct_answer+" "+"0"); //uložení indexu odpovědí
+  console.log("LOCAL STORAGE: "+correct_answer+" "+"0")
+  console.log(counter-2+"<------------");
+  if(correct_answer==0){
+    body+=points;
+    localStorage.setItem("o"+(pom-2), "1");    
   }
   else{
     localStorage.setItem("o"+(pom-2), "0");
-  }    
+  }       
 }
 function odp2(){
-  let odpoved2 = "spravna" +(pom-1);
-  let odpoved2_eval = eval(odpoved2);
-  
-  if(odpoved2_eval == "a"+(pom-1)+"_b"){
-    body++;
-    localStorage.setItem("o"+(pom-2), "1");
-    console.log("o"+(pom-2));
+  localStorage.setItem("index_answ"+(counter-2), correct_answer+" "+"1");
+
+  if(correct_answer==1){
+    body+=points;
+    localStorage.setItem("o"+(pom-2), "1");   
   }
   else{
     localStorage.setItem("o"+(pom-2), "0");
-  }    
+  }      
 }
 function odp3(){
-  let odpoved3 = "spravna"+(pom-2);
-  let odpoved3_eval = eval(odpoved3);
+  localStorage.setItem("index_answ"+(counter-2), correct_answer+" "+"2");
 
-  if(odpoved3_eval == "a"+(pom-2)+"_c"){
-    body++;
+  if(correct_answer==2){
+    body+=points;
     localStorage.setItem("o"+(pom-2), "1");
-    console.log("o"+(pom-2));
   }
   else{
-    localStorage.setItem("o"+(pom-2), "0");
+    localStorage.setItem("o"+(pom-2), "0");    
   }   
 }
 function konec(){
@@ -190,6 +177,14 @@ function konec(){
   konec_cas=end_time(konec_cas);
   localStorage.setItem("konec_cas2", konec_cas); //uložení času
   localStorage.setItem("konec_body", body); //uložení bodů
+
+  ///DOGENERAVANI INDEXU///
+
+  while(counter <= 25){
+    get_random_q();
+    counter++
+  }
+  
   ///NACTENI STRANKY S HODNOCENIM
   window.location.replace("test-end.html");  
 
@@ -210,6 +205,9 @@ function end_time(konec_cas){
 function end_time2(){
   let konec_cas = localStorage.getItem("konec_cas2");
   let konec_body = localStorage.getItem("konec_body");
+
+
+
   $(".final_time").html(konec_cas);  
   $(".final_points").html(konec_body);
   if(konec_body >= 43)
@@ -226,7 +224,7 @@ function modal_konec(){
 function modal_close(){
   $(".modal_w").css("display","none");
 }
-function timer(){
+function timer(){  
   let minute = parseInt(count/60);
   let sec = count % 60;
     count=count-1;
@@ -280,4 +278,64 @@ function history(){
       console.log("#o"+i+" RED");
     }
   }
+}
+function color_answers(){
+  let x,y;
+  for(let i = 0; i < 25;i++)
+  {
+    x = localStorage.getItem("index_answ"+i);
+    //console.log("INDEX: "+i+" CISLO: "+x);
+    if(x==undefined || x==null){
+      $("#o"+i).css('background-color', 'red');
+    }
+    else if(x[0]==x[2])
+    {
+      $("#o"+i).css('background-color', 'green');
+    }
+    else{
+      $("#o"+i).css('background-color', 'red');
+    }
+  }
+}
+function display_q(numb){  
+  $(".disp_q").css("display", "flex");
+    
+  //console.log(index);
+  ajax_end(numb); 
+  //console.log("ZOBRAZIT: "+index[0]+" "+index[2]);
+
+    
+  
+}
+function vanish(numb){
+  $(".disp_q").css("display", "none");
+}
+function clear_storage(){
+  localStorage.clear();
+}
+
+function ajax_end(numb){
+  let xmlHttp = new XMLHttpRequest();
+  xmlHttp.open("GET", "https://raw.githubusercontent.com/rybaris/ITU-Autoskola/master/assets/js/data.json", true)
+  xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+  xmlHttp.onreadystatechange = () => {
+      if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+          json_data2 = JSON.parse(xmlHttp.responseText); 
+          
+          let index = localStorage.getItem("index"+(numb-1));
+          let html_q;
+          
+          if (index[3]!=undefined || index[3]!=null)
+          {
+            html_q = json_data2[index[0]].questions[index[2]+index[3]].question;
+          }
+          else{
+            html_q = json_data2[index[0]].questions[index[2]].question;
+          } 
+          console.log(html_q);
+          $(".otazka").html(html_q);  
+      }      
+  }
+  
+  xmlHttp.send();
 }
