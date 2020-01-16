@@ -92,8 +92,15 @@ a{
     color: black;
     
  }
-#o2,#o4{
-    
+.q_img{
+    width: 50% !important;
+    box-sizing: border-box !important;
+}
+.otazka img{
+    width: 50% !important;
+}
+.otazka{
+    box-sizing: border-box !important;
 }
  .wrapper{
     align-content: flex-start !important;

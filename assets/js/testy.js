@@ -1,89 +1,144 @@
 let count=1800;
 let pom=1;
-let counter=2;
+let counter=1;
 let body=0;
 let spravna0,spravna1,spravna2,spravna3,spravna4,spravna5,spravna6,spravna7;
 let stopka = false;
 let uspech = false;
 let q_count=24;
+////////NOVE PROMENE////////////
+let json_data;
+let categ_count=3;
+let categ_index; //index kategorie
+let q_index=0 //index otazky
+let q_param=[];
+let q_used=0;
+for(let i = 0; i < categ_count;i++)
+{
+  q_param[i]=[]; 
+  q_param[i][0]="";
+  q_param[i][1]=0; //počet použitých otázek z dané kategorie
+  q_param[i][2]=[];
+}
 
+
+
+
+
+/////////////////////////
 let o0="V provozu na pozemních komunikacích je zakázáno";
 let a0_a="Troubit";
 let a0_b="Neoprávněně užívat zvláštních výstražných světel a zvláštního zvukového výstražného znamení, které užívá vozidlo s právem přednostní jízdy.";
 let a0_c="Svítit za nesnížené viditelnosti.";
 
-function next_q(){  
-  spravna0="a0_c";
-
-  let o1="Místo, v němž se pozemní komunikace protínají nebo spojují, nejde-li o vyústění účelové pozemní komunikace na jinou pozemní komunikaci, se nazývá:";
-  let a1_a="Křižovatka.";
-  let a1_b="Hranice křižovatky.";
-  let a1_c="Spojnice pozemních komunikací.";
-  spravna1 = "a1_c";
-
-  let o2= "V obytné a pěší zóně smí řidič jet rychlostí nejvýše:";
-  let a2_a= "40 km/h.";
-  let a2_b= "20 km/h.";
-  let a2_c= "30 km/h.";
-  spravna2 = "a2_c";
-
-  let o3= "Dát přednost v jízdě znamená:";
-  let a3_a= "Povinnost řidiče vždy zastavit vozidlo, jestliže do křižovatky přijíždí po hlavní pozemní komunikaci motorové vozidlo nebo tramvaj; nemotorovým vozidlům přednost v jízdě nedává.";
-  let a3_b= "Povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat pouze na křižovatkách rozlišených dopravními značkami.";
-  let a3_c= "Povinnost řidiče nezahájit jízdu nebo jízdní úkon nebo v nich nepokračovat, jestliže by řidič, který má přednost v jízdě, musel náhle změnit směr nebo rychlost jízdy.";
-  spravna3 = "a3_c";
-
-  let o4="Při řízení provozu na křižovatce policistou je řidič vozidla, pro kterého z pokynu policisty taková povinnost vyplývá, povinen zastavit vozidlo:";
-  let a4_a="Před hranicí křižovatky.";
-  let a4_b="Na takovém místě, kde bude mít dobrý výhled do křižovatky.";
-  let a4_c="V křižovatce a v takové vzdálenosti od policisty, aby nebyla ohrožena jeho bezpečnost.";
-  spravna4 = "a4_c";
-
-  let o5="Křižovatka:"
-  let a5_a="Je místo, v němž se pozemní komunikace protínají nebo spojují; za křižovatku se nepovažuje kruhový objezd.";
-  let a5_b="Je místo, v němž se pozemní komunikace protínají nebo spojují; za křižovatku se nepovažuje vyústění polní nebo lesní cesty nebo jiné účelové komunikace na jinou pozemní komunikaci.";
-  let a5_c="Je místo, v němž se spojují nejvýše dvě pozemní komunikace; za křižovatku se nepovažuje místo, kde se pozemní komunikace protínají.";
-  spravna5 = "a5_c";
-
-  let o6="Řidič motorového vozidla o maximální přípustné hmotnosti nepřevyšující 3 500 kg a autobusu smí jet:";
-  let a6_a="Na silnici pro motorová vozidla a na dálnici rychlostí nejvýše 130 km.h-1.";
-  let a6_b="Na silnici pro motorová vozidla rychlostí nejvýše 110 km.h-1 a na dálnici rychlostí nejvýše 130 km.h-1.";
-  let a6_c="Na silnici pro motorová vozidla rychlostí nejvýše 110 km.h-1 a na dálnici rychlostí nejvýše 130 km.h-1, s výjimkou řidiče autobusu, který na dálnici smí jet rychlostí nejvýše 110 km.h-1.";
-  spravna6 = "a6_c";
-  let o7="Řidič motorového vozidla je povinen na výzvu policisty nebo celníka:";
-  let a7_a="Podrobit vozidlo kontrole největší přípustné hmotnosti vozidla.";
-  let a7_b="Doplnit nádrž vozidla pohonnými látkami.";
-  let a7_c="Přibrat jako spolujezdce osobu, které ujelo vozidlo hromadné dopravy osob.";
-  spravna7 = "a7_c";
+function next_q(){ 
+  
   if (pom>7)
   {
     pom=1;
   }
 
-  if(counter>=50)
+  if(counter>=25)
   {
     konec();
   }
   else{
+    /*
     let conc_o = "o"+pom;
     let conc_a= "a"+pom+"_a";
     let conc_b= "a"+pom+"_b";
-    let conc_c= "a"+pom+"_c";
-    $(".otazka").html(eval(conc_o));
-    $(".change1").html(eval(conc_a));
-    $(".change2").html(eval(conc_b));
-    $(".change3").html(eval(conc_c));
+    let conc_c= "a"+pom+"_c";*/
 
-  
-  $(".counter").html("Otázka: "+counter+"/50");
-  pom++;
-  counter++;
+    /// GENEROVANI RANDOM KATEGORIE ///
+
+    let rand_categ = getRandomIndex(0,categ_count-1);
+    //console.log(json_data[0].category.count_test);
+    while(q_param[rand_categ][0] == "full")
+    {
+      //repeat generovani, když jsou už všechny otazky z dane kategorie vygenerovany
+      rand_categ = getRandomIndex(0,categ_count-1);
+      //console.log(q_param[rand_index][0]+"--rand_index");      
+    }
+    q_param[rand_categ][1]++;
+    console.log(json_data[0].category.count_test);
+    //console.log("Pocet v kategorii "+rand_index+":"+q_param[rand_index][1]);
+    if(q_param[rand_categ][1]==json_data[rand_categ].category.count_test){
+      q_param[rand_categ][0]="full";
+    }
+    
+
+    //// GENEROVANI RANDOM OTAZKY //////
+    let used = false;
+    let rand_q = getRandomIndex(0,json_data[rand_categ].category.count-1);
+    for(let i = 0; i < q_used; i++){
+      if(q_param[rand_categ][2][i]==rand_q){
+        used = true;
+      }
+    }
+    while(used == true)
+    {
+      used=false;
+      let rand_q = getRandomIndex(0,json_data[rand_categ].category.count-1);
+      for(let i = 0; i < q_used; i++){
+        if(q_param[rand_categ][2][i]==rand_q){
+          used = true;
+        }
+      }
+    }
+    q_param[rand_categ][2][q_used]=rand_q;
+    console.log("Otazka z kategorie "+rand_categ+":"+rand_q);
+    q_used++;
+    let otazka = json_data[rand_categ].questions[rand_q].question;
+    console.log(otazka);
+    console.log(otazka[0]);
+    console.log(otazka[1]);
+    console.log(otazka[2]);
+    console.log(otazka[3]);
+    $(".otazka").empty();
+    if (otazka[0]=='a' && otazka[1]=='s' && otazka[2]=='s' && otazka[3]=='e')
+    {      
+      $(".otazka").prepend('<img class="q_img" src="assets/img/smog.jpg" style="width:100%;"/>')
+    }
+    else{
+      $(".otazka").html(otazka);
+    }        
+    $(".change1").html(json_data[rand_categ].questions[rand_q].answers[0]);
+    $(".change2").html(json_data[rand_categ].questions[rand_q].answers[1]);
+    $(".change3").html(json_data[rand_categ].questions[rand_q].answers[2]);
+    $(".counter").html("Otázka: "+counter+"/25");
+    pom++;
+    counter++;
   }
   
   //console.log(q_counter);
 
 
 }
+function getRandomIndex(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function ajaxFunction() {  
+  let xmlHttp = new XMLHttpRequest();
+  xmlHttp.open("GET", "https://raw.githubusercontent.com/rybaris/ITU-Autoskola/master/assets/js/data.json", true)
+  xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+  xmlHttp.onreadystatechange = () => {
+      if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+          json_data = JSON.parse(xmlHttp.responseText);
+          //rightAnswer = json_data[categoryIndex].questions[current].correct_answer;  
+          //console.log(json_data[0].questions[1].question); 
+          next_q();
+          console.log(json_data);
+      }      
+  }
+  
+  xmlHttp.send();
+
+  
+  //next_q();
+}
+
 function first()
 {
   $(".otazka").html(o0);  
