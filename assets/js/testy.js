@@ -324,16 +324,145 @@ function ajax_end(numb){
           
           let index = localStorage.getItem("index"+(numb-1));
           let html_q;
-          
+          $(".otazka2").empty();
+          $(".first").empty();
+          $(".second").empty();
+          $(".third").empty(); 
+          $(".first").css('background-color','white');
+          $(".second").css('background-color','white');
+          $(".third").css('background-color','white');       
           if (index[3]!=undefined || index[3]!=null)
           {
             html_q = json_data2[index[0]].questions[index[2]+index[3]].question;
+            if(json_data2[index[0]].questions[index[2]+index[3]].type=="img")
+            {
+              $(".otazka2").prepend('<img class="q_img" src="' +html_q+ '" style="max-width:100px;"/>');
+            }
+            else{
+              $(".otazka2").html(html_q);
+            }
+
+            html_q = json_data2[index[0]].questions[index[2]+index[3]].answers[0];
+            $(".first").html(html_q);
+            html_q = json_data2[index[0]].questions[index[2]+index[3]].answers[1];
+            $(".second").html(html_q);
+            html_q = json_data2[index[0]].questions[index[2]+index[3]].answers[2];
+            $(".third").html(html_q);
+
+            if(json_data2[index[0]].questions[index[2]+index[3]].correct_answer==0)
+            {
+              $(".first").css('background-color','green');
+            }
+            else if(json_data2[index[0]].questions[index[2]+index[3]].correct_answer==1)
+            {
+              $(".second").css('background-color','green');
+            }
+            else{
+              $(".third").css('background-color','green');
+            }
           }
           else{
             html_q = json_data2[index[0]].questions[index[2]].question;
+
+            if(json_data2[index[0]].questions[index[2]].type=="img")
+            {
+              $(".otazka2").prepend('<img class="q_img" src="' +html_q+ '" style="max-width:100px;"/>');
+            }
+            else{
+              $(".otazka2").html(html_q);
+            }
+            html_q = json_data2[index[0]].questions[index[2]].answers[0];
+            $(".first").html(html_q);
+            html_q = json_data2[index[0]].questions[index[2]].answers[1];
+            $(".second").html(html_q);
+            html_q = json_data2[index[0]].questions[index[2]].answers[2];
+            $(".third").html(html_q);
+            if(json_data2[index[0]].questions[index[2]].correct_answer==0)
+            {
+              $(".first").css('background-color','green');
+            }
+            else if(json_data2[index[0]].questions[index[2]].correct_answer==1)
+            {
+              $(".second").css('background-color','green');
+            }
+            else{
+              $(".third").css('background-color','green');
+            }
           } 
-          console.log(html_q);
-          $(".otazka").html(html_q);  
+
+          
+          let x = localStorage.getItem("index_answ"+(numb-1));
+          if(x!=undefined || x!=null){
+            if(x[2]=="0" && x[0]!=x[2])
+            {
+              $(".first").css('background-color','red');
+            }
+            else if(x[2]=="1" && x[0]!=x[2])
+            {
+              $(".second").css('background-color','red');
+            }
+            else if(x[2]=="2" && x[0]!=x[2])
+            {
+              $(".third").css('background-color','red');
+            }
+          }
+          /*
+          let x = localStorage.getItem("index_answ"+(numb-1));
+          console.log("LOOOOOG: "+json_data2[index[0]].questions[index[2]].correct_answer);
+          if(x==undefined){
+            if(json_data2[index[0]].questions[index[2]].correct_answer==0)
+            {
+              $(".first").css('background-color','green');
+            }
+            else if(json_data2[index[0]].questions[index[2]].correct_answer==1)
+            {
+              $(".second").css('background-color','green');
+            }
+            else{
+              $(".third").css('background-color','green');
+            }
+          }
+          else if(x[0]==x[2])
+          {
+            if(x[0]=="0")
+            {
+              $(".first").css('background-color','green');
+            }
+            else if(x[0]=="1")
+            {
+              $(".second").css('background-color','green');
+            }
+            else{
+              $(".third").css('background-color','green');
+            }            
+          }
+          else{
+            if(x[0]=="0")
+            {
+              $(".first").css('background-color','green');
+            }
+            else if(x[0]=="1")
+            {
+              $(".second").css('background-color','green');
+            }
+            else{
+              $(".third").css('background-color','green');
+            }
+            if(x[2]!=undefined || x[2]!=null){
+              if(x[2]=="0")
+              {
+                $(".first").css('background-color','red');
+              }
+              else if(x[0]=="1")
+              {
+                $(".second").css('background-color','red');
+              }
+              else{
+                $(".third").css('background-color','red');
+              }
+            }
+          }
+          */
       }      
   }
   

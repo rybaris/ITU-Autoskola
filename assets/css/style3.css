@@ -89,7 +89,7 @@ a{
     width: 30px;
     border: solid 1px black;
     text-decoration: none !important;
-    color: black;
+    color: black !important;
     
  }
 .q_img{
@@ -99,8 +99,11 @@ a{
 .otazka img{
     width: 50% !important;
 }
-.otazka{
+.otazka2{
     box-sizing: border-box !important;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.2em;
 }
  .wrapper{
     align-content: flex-start !important;
@@ -111,22 +114,30 @@ a{
     }
 }
 
-.disp_q{
-    display: none;
+.disp_qq{
+    
     position: absolute;
-    width: auto;
-    height: 200px;
-    top: -300px;
+    width: 600px;
+    height: auto;
+    top: -500px;
     left: -50;
     background: white;
     padding: 20px;
     -webkit-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 6px 7px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.75);
+    text-align: center;
 }
 .testos{
     position: relative;    
 }
 #o0{
     position: relative;
+}
+.first{
+    border: solid 1xpx black !important;
+    margin-bottom: 5px;
+}
+.second{
+    margin-bottom: 5px;
 }
