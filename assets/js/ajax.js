@@ -18,7 +18,7 @@ $("#nextTheory").click(nextRender);
 function ajaxFunction() {
     let xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", "https://raw.githubusercontent.com/rybaris/ITU-Autoskola/master/assets/js/data.json", true)
-    xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+    xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlHttp.onreadystatechange = () => {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             let p = JSON.parse(xmlHttp.responseText);
@@ -26,27 +26,33 @@ function ajaxFunction() {
             count = p[categoryIndex].category.count;
 
             if(firstLoad === true) {
-                for (let o = 0; o <= count; o++) {
-                    let linka = document.createElement("a");
-                    let linkd = document.createTextNode(o);
-                    linka.className = "navigation-link";
-                    linka.setAttribute("onclick", "jumpFunc(this.textContent)")
-                    linka.appendChild(linkd)
-                    document.getElementById('navigation-down').appendChild(linka)
+                for (let o = 0; o < count; o++) {
+                    let navigationLink = document.createElement("a");
+                    let linkContent = document.createTextNode(o);
+
+                    navigationLink.className = "navigation-link";
+                    navigationLink.setAttribute("onclick", "jumpFunc(this.textContent)")
+                    navigationLink.appendChild(linkContent)
+                    document.getElementById('navigation-down').appendChild(navigationLink)
                 }
                 firstLoad = false;
             }
 
             getQuestionByType(p, current);
             getChoices(p, current);
+            addHelp(p, current);
             buttonDisabler(p, current);
 
             let progress = 100 / (p[categoryIndex].category.count - 1);
             $('#progress-bar').width((current * progress) + "%");
 
             document.getElementById('current-index').innerHTML = current;
-            document.getElementById('count-index').innerHTML = count;
-            console.log(current)
+            document.getElementById('count-index').innerHTML = count - 1;
+
+            $('[data-toggle="popover"]').popover({
+                trigger: 'focus'
+            }); 
+
         }
     }
     xmlHttp.send()
@@ -81,7 +87,7 @@ function getChoices(item, index) {
 
 }
 
-// Funkce porovna spravnou odpoved a dle ni zbarvi vsechny odpovedi
+// Funkce porovna spravnou odpoved a zobrazi spravne reseni
 function checkAnswer() {
 
     if (rightAnswer == 0) {
@@ -149,13 +155,64 @@ function reset() {
 // Zobrazeni / Skryti tlacitek "Dalsi" a "Predchozi"
 function buttonDisabler(item, index) {
 
-    if (index === 0) {
+    let normalizedCount = item[categoryIndex].category.count - 1;
+
+    if (index == 0) {
         document.getElementById('prevTheory').style.display = "none";
-    } else if (index === item[categoryIndex].category.count) {
+        document.getElementById('nextTheory').style.display = "block";
+
+    } else if (index == normalizedCount) {
         document.getElementById('nextTheory').style.display = "none";
+        document.getElementById('prevTheory').style.display = "block";
+
     } else {
         document.getElementById('prevTheory').style.display = "block";
         document.getElementById('nextTheory').style.display = "block";
+    }
+
+}
+
+function addHelp (item, index) {
+
+    let isActive = item[categoryIndex].questions[index].help.active;
+    let keyWord = item[categoryIndex].questions[index].help.keyword;
+    let helpContent = item[categoryIndex].questions[index].help.help_content;
+    let answer0Data = answer0.textContent;
+    let answer1Data = answer1.textContent;
+    let answer2Data = answer2.textContent;
+
+    if (isActive === true) {
+
+        let replaceKeyword;
+
+        // Otazka obsahuje napovedni klicove slovo
+        if(item[categoryIndex].questions[index].type !== "img") {
+            let textData = document.getElementById('text-data').textContent;
+            if(textData.includes(keyWord)) {
+                //let replaceKeyword = textData.replace(keyWord, '<a data-toggle="popover" data-content="'+helpContent+'">'+keyWord+'</a>');
+                replaceKeyword = textData.replace(keyWord, `<a tabindex="0" class="nofocus" data-toggle="popover" data-content="${helpContent}" data-placement="top" data-trigger="focus">${keyWord}</a>`);
+                document.getElementById('text-data').innerHTML = replaceKeyword;
+            }
+        }
+
+        // Odpoved 0 obsahuje napovedni klicove slovo
+        if(answer0Data.includes(keyWord)) {
+            replaceKeyword = answer0Data.replace(keyWord, `<a tabindex="0" class="nofocus" data-toggle="popover" data-content="${helpContent}" data-placement="top" data-trigger="focus">${keyWord}</a>`);
+            answer0.innerHTML = replaceKeyword;
+        }
+
+        // Odpoved 1 obsahuje napovedni klicove slovo
+        if(answer1Data.includes(keyWord)) {
+            replaceKeyword = answer1Data.replace(keyWord, `<a tabindex="0" class="nofocus" data-toggle="popover" data-content="${helpContent}" data-placement="top" data-trigger="focus">${keyWord}</a>`);
+            answer1.innerHTML = replaceKeyword;
+        }
+
+        // Odpoved 2 obsahuje napovedni klicove slovo
+        if(answer2Data.includes(keyWord)) {
+            replaceKeyword = answer2Data.replace(keyWord, `<a tabindex="0" class="nofocus" data-toggle="popover" data-content="${helpContent}" data-placement="top" data-trigger="focus">${keyWord}</a>`);
+            answer2.innerHTML = replaceKeyword;
+        }
+        
     }
 
 }
@@ -168,9 +225,9 @@ $(".navigation-dropdown").click( () => {
 });
 
 // Funkce skoku na zvoleny index
-function jumpFunc(hodnota) {
+function jumpFunc(value) {
 
-    current = Number(hodnota);
+    current = Number(value);
     $("#navigation-down").toggleClass("flex");
     ajaxFunction();
 

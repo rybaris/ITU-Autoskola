@@ -146,6 +146,12 @@ main {
     flex-direction: column;
     font-size: 18px;
     min-height: 20vh;
+}
+.nofocus {
+    z-index: 999;
+}
+.nofocus:focus {
+    outline: none;
 
 }
 .answers p {
@@ -194,7 +200,7 @@ main {
 }
 .navigation-down {
     display: none;
-    background-color: white;
+    background-color: #313131;
     position: absolute;
     width: 50%;
     left: 50%;
@@ -208,13 +214,17 @@ main {
     padding: 10px;
     box-sizing: border-box;
 }
+.navigation-dropdown:hover {
+    background-color: #f7f7f7;
+}
 .navigation-down a {
     border: 1px solid lightgray;
     padding: 6px 16px;
     cursor: pointer;
+    background-color: white;
 }
 .navigation-down a:hover {
-    background-color: #ffc107;
+    background-color: lightgray;
 }
 .none {
     display: none;
