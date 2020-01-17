@@ -1,16 +1,12 @@
 let count=1800;
-let pom=1;
 let counter=1;
 let body=0;
-let spravna0,spravna1,spravna2,spravna3,spravna4,spravna5,spravna6,spravna7;
-let stopka = false;
-let uspech = false;
-let q_count=24;
-////////NOVE PROMENE////////////
+let q_count=24; // počet otázek (indexace od 0)
+
 let json_data;
-let categ_count=3;
-let categ_index; //index kategorie
-let q_index=0 //index otazky
+let categ_count=9; // počet kategorií
+let categ_index; // index kategorie
+let q_index=0 // index otazky
 let q_param=[];
 let q_used=0;
 let rand_categ;
@@ -18,16 +14,15 @@ let rand_q;
 let correct_answer;
 let points;
 
-//////NEWEST//////
 let json_data2;
 
 
 for(let i = 0; i < categ_count;i++)
 {
   q_param[i]=[]; 
-  q_param[i][0]="";
+  q_param[i][0]=""; //pro uložení "full", když máme danou kategorii plnou
   q_param[i][1]=0; //počet použitých otázek z dané kategorie
-  q_param[i][2]=[];
+  q_param[i][2]=[]; //indexy použitých otázek
 }
 
 
@@ -36,13 +31,8 @@ for(let i = 0; i < categ_count;i++)
 
 /////////////////////////
 function next_q(){ 
-  
-  if (pom>7)
-  {
-    pom=1;
-  }
 
-  if(counter>=25)
+  if(counter>25)
   {
     konec();
   }
@@ -63,12 +53,9 @@ function next_q(){
     $(".change1").html(json_data[rand_categ].questions[rand_q].answers[0]);
     $(".change2").html(json_data[rand_categ].questions[rand_q].answers[1]);
     $(".change3").html(json_data[rand_categ].questions[rand_q].answers[2]);
-    $(".counter").html("Otázka: "+counter+"/25");
-    pom++;
+    $(".counter").html("Otázka: "+counter+"/25");    
     counter++;
-  }
-  
-  //console.log(q_counter);
+  }    
 
 
 }
@@ -84,8 +71,6 @@ function ajaxFunction() {
   xmlHttp.onreadystatechange = () => {
       if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
           json_data = JSON.parse(xmlHttp.responseText);
-          //rightAnswer = json_data[categoryIndex].questions[current].correct_answer;  
-          //console.log(json_data[0].questions[1].question); 
           next_q();          
       }      
   }
@@ -93,15 +78,13 @@ function ajaxFunction() {
   xmlHttp.send();
 
   
-  //next_q();
 }
 
 function get_random_q(){
 
       /// GENEROVANI RANDOM INDEXU KATEGORIE ///
 
-      rand_categ = getRandomIndex(0,categ_count-1);
-      //console.log(json_data[0].category.count_test);
+      rand_categ = getRandomIndex(0,categ_count-1);      
       while(q_param[rand_categ][0] == "full")
       {
         //repeat generovani, když jsou už všechny otazky z dane kategorie vygenerovany
@@ -138,38 +121,26 @@ function get_random_q(){
 
 
 function odp1(){
-  localStorage.setItem("index_answ"+(counter-2), correct_answer+" "+"0"); //uložení indexu odpovědí
-  console.log("LOCAL STORAGE: "+correct_answer+" "+"0")
-  console.log(counter-2+"<------------");
+  localStorage.setItem("index_answ"+(counter-2), correct_answer+" "+"0"); //uložení indexu odpovědí 
+
   if(correct_answer==0){
-    body+=points;
-    localStorage.setItem("o"+(pom-2), "1");    
-  }
-  else{
-    localStorage.setItem("o"+(pom-2), "0");
-  }       
+    body+=points;   
+  }     
 }
 function odp2(){
   localStorage.setItem("index_answ"+(counter-2), correct_answer+" "+"1");
 
   if(correct_answer==1){
-    body+=points;
-    localStorage.setItem("o"+(pom-2), "1");   
-  }
-  else{
-    localStorage.setItem("o"+(pom-2), "0");
-  }      
+    body+=points;      
+  }   
 }
 function odp3(){
   localStorage.setItem("index_answ"+(counter-2), correct_answer+" "+"2");
 
   if(correct_answer==2){
-    body+=points;
-    localStorage.setItem("o"+(pom-2), "1");
+    body+=points;    
   }
-  else{
-    localStorage.setItem("o"+(pom-2), "0");    
-  }   
+  
 }
 function konec(){
   let konec_cas,konec_cas2;
@@ -178,14 +149,14 @@ function konec(){
   localStorage.setItem("konec_cas2", konec_cas); //uložení času
   localStorage.setItem("konec_body", body); //uložení bodů
 
-  ///DOGENERAVANI INDEXU///
+  /// DOGENERAVANI INDEXŮ ///
 
   while(counter <= 25){
     get_random_q();
     counter++
   }
   
-  ///NACTENI STRANKY S HODNOCENIM
+  /// NACTENI STRANKY S HODNOCENIM ///
   window.location.replace("test-end.html");  
 
 }
@@ -213,9 +184,13 @@ function end_time2(){
   if(konec_body >= 43)
   {
     $(".obr").attr('src', 'assets/img/success.png');
+    $(".usp2").html("Prošel");
+    $(".usp2").css('color','green');
   }
   else{
     $(".obr").attr('src', 'assets/img/stop.png');
+    $(".usp2").html("Neprošel");
+    $(".usp2").css('color','red');
   }
 }
 function modal_konec(){
@@ -265,20 +240,6 @@ function size_img(){
   setTimeout(size_img, 10);
 }
 
-function history(){
-  for(let i = 0; i <= q_count; i++){    
-    let answer = localStorage.getItem("o"+i);
-    if(answer=="1")
-    {
-      $("#o"+i).css('background-color', 'green');
-      console.log("#o"+i+" GREEN");
-    }
-    else{
-      $("#o"+i).css('background-color', 'red');
-      console.log("#o"+i+" RED");
-    }
-  }
-}
 function color_answers(){
   let x,y;
   for(let i = 0; i < 25;i++)
@@ -336,7 +297,7 @@ function ajax_end(numb){
             html_q = json_data2[index[0]].questions[index[2]+index[3]].question;
             if(json_data2[index[0]].questions[index[2]+index[3]].type=="img")
             {
-              $(".otazka2").prepend('<img class="q_img" src="' +html_q+ '" style="max-width:100px;"/>');
+              $(".otazka2").prepend('<img class="q_img" src="' +html_q+ '" style="max-width:200px;"/>');
             }
             else{
               $(".otazka2").html(html_q);
@@ -366,7 +327,7 @@ function ajax_end(numb){
 
             if(json_data2[index[0]].questions[index[2]].type=="img")
             {
-              $(".otazka2").prepend('<img class="q_img" src="' +html_q+ '" style="max-width:100px;"/>');
+              $(".otazka2").prepend('<img class="q_img" src="' +html_q+ '" style="max-width:200px;"/>');
             }
             else{
               $(".otazka2").html(html_q);
