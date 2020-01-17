@@ -1476,7 +1476,7 @@
             "answers": [
                 "Ne, protože autobus vyjíždí od okraje pozemní komunikace.", 
                 "Ano, avšak pouze snížením rychlosti nebo změnou směru jízdy, nikoli zastavením vozidla.", 
-                "Ano, a to snížením rychlosti jízdy nebo i zastavením vozidla."
+                "Ano, a to snížením rychlosti jízdy nebo i zastavením vozidla. "
             ],
             "correct_answer": 2,
             "help": {
