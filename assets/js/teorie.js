@@ -16,25 +16,23 @@ let answer0 = document.getElementById('answer0');
 let answer1 = document.getElementById('answer1');
 let answer2 = document.getElementById('answer2');
 
-$("#prevTheory").click(prevRender);
-$("#nextTheory").click(nextRender);
-
 // Vytvoreni AJAX pozadavku
 function ajaxFunction() {
     let xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", "https://raw.githubusercontent.com/rybaris/ITU-Autoskola/master/assets/js/data.json", true)
     xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlHttp.send()
     xmlHttp.onreadystatechange = () => {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             let p = JSON.parse(xmlHttp.responseText);
             rightAnswer = p[categoryIndex].questions[current].correct_answer;
             count = p[categoryIndex].category.count;
 
+            // Jedna-li se o prvni nacteni stranky, jsou vygenerovany a nasledne vlozeny odkazy na konkretni otazky
             if(firstLoad === true) {
                 for (let o = 0; o < count; o++) {
                     let navigationLink = document.createElement("a");
                     let linkContent = document.createTextNode(o);
-
                     navigationLink.className = "navigation-link";
                     navigationLink.setAttribute("onclick", "jumpFunc(this.textContent)")
                     navigationLink.appendChild(linkContent)
@@ -43,6 +41,7 @@ function ajaxFunction() {
                 firstLoad = false;
             }
 
+            // Volani pomocnych vykreslovacich funkci
             getQuestionByType(p, current);
             getChoices(p, current);
             addHelp(p, current);
@@ -54,13 +53,13 @@ function ajaxFunction() {
             document.getElementById('current-index').innerHTML = current;
             document.getElementById('count-index').innerHTML = count - 1;
 
+            // Zobrazeni napovedy [Bootstrap.js a Popover.js]
             $('[data-toggle="popover"]').popover({
                 trigger: 'focus'
             }); 
 
         }
     }
-    xmlHttp.send()
 }
 
 //  Funkce porovna datovy typ a dle nej sestavi HTML otazky
@@ -92,6 +91,7 @@ function getChoices(item, index) {
 
 }
 
+// Funkce oznaceni kliknute odpovedi
 function markIt(same) {
     $(same).addClass("checked");
 }
@@ -184,7 +184,8 @@ function buttonDisabler(item, index) {
 
 }
 
-function addHelp (item, index) {
+// Pokud napoveda existuje, je vlozena do stringu
+function addHelp(item, index) {
 
     let isActive = item[categoryIndex].questions[index].help.active;
     let keyWord = item[categoryIndex].questions[index].help.keyword;
@@ -229,14 +230,6 @@ function addHelp (item, index) {
 
 }
 
-// Zobrazeni / Skryti navigace otazek
-$(".navigation-dropdown").click( () => {
-
-    $(".navigation-dropdown img").toggleClass("rotation");
-    $("#navigation-down").toggleClass("flex");
-
-});
-
 // Funkce skoku na zvoleny index
 function jumpFunc(value) {
 
@@ -252,3 +245,15 @@ function jumpFunc(value) {
 function goBack() {
     window.history.back();
 }
+
+// Zobrazeni / Skryti navigace otazek
+$(".navigation-dropdown").click( () => {
+
+    $(".navigation-dropdown img").toggleClass("rotation");
+    $("#navigation-down").toggleClass("flex");
+
+});
+
+// Event pro tlacitka "Predchozi" a "Dalsi"
+$("#prevTheory").click(prevRender);
+$("#nextTheory").click(nextRender);
