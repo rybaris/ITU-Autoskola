@@ -259,14 +259,8 @@ function color_answers(){
   }
 }
 function display_q(numb){  
-  $(".disp_q").css("display", "block");
-    
-  //console.log(index);
-  ajax_end(numb); 
-  //console.log("ZOBRAZIT: "+index[0]+" "+index[2]);
-
-    
-  
+  $(".disp_q").css("display", "block");      
+  ajax_end(numb);         
 }
 function vanish(numb){
   $(".disp_q").css("display", "none");
@@ -297,7 +291,7 @@ function ajax_end(numb){
             html_q = json_data2[index[0]].questions[index[2]+index[3]].question;
             if(json_data2[index[0]].questions[index[2]+index[3]].type=="img")
             {
-              $(".otazka2").prepend('<img class="q_img" src="' +html_q+ '" style="max-width:200px;"/>');
+              $(".otazka2").prepend('<img class="q_img" src="' +html_q+ '" style="max-width:300px;max-height:200px"/>');
             }
             else{
               $(".otazka2").html(html_q);
@@ -327,7 +321,7 @@ function ajax_end(numb){
 
             if(json_data2[index[0]].questions[index[2]].type=="img")
             {
-              $(".otazka2").prepend('<img class="q_img" src="' +html_q+ '" style="max-width:200px;"/>');
+              $(".otazka2").prepend('<img class="q_img" src="' +html_q+ '" style="max-width:300px;max-height:200px"/>');
             }
             else{
               $(".otazka2").html(html_q);
