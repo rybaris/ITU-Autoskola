@@ -2,7 +2,7 @@
     "category": {
         "name": "pojmy_a_povinnosti",
         "count": 22,
-        "count_test": 21,
+        "count_test": 4,
         "points": 2
     },
     "questions": [ 
@@ -1154,7 +1154,7 @@
     "category": {
         "name": "ostatni_ustanoveni",
         "count": 7,
-        "count_test": 4,
+        "count_test": 3,
         "points": 2
     },
     "questions": [ 
@@ -1284,7 +1284,7 @@
     "category": {
         "name": "jizda_vozidlem",
         "count": 7,
-        "count_test": 4,
+        "count_test": 3,
         "points": 2
     },
     "questions": [ 
