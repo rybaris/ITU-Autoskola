@@ -115,10 +115,10 @@ a{
 .disp_q{
     display: none;
     position: absolute;
-    width: 600px;
+    width: 750px;
     height: auto;
     top: -500px;
-    left: -50;
+    left: -10px;
     background: white;
     padding: 20px;
     -webkit-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
