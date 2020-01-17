@@ -45,7 +45,7 @@ function next_q(){
     $(".otazka").empty();
     if (json_data[rand_categ].questions[rand_q].type=="img")
     {      
-      $(".otazka").prepend('<img class="q_img" src="' + otazka+ '" style="max-width:470px;"/>')
+      $(".otazka").prepend('<img class="q_img" src="' + otazka+ '" style="max-width:450px;max-height:220px;"/>')
     }
     else{
       $(".otazka").html(otazka);
