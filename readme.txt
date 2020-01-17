@@ -1,4 +1,6 @@
-Ke zprovoznění stačí internet, knihovny jsou nalinkovány pomocí CDN.
+Ke zprovoznění stačí internet. 
+Knihovny jsou nalinkovány pomocí CDN.
+Data jsou stahována pomocí Ajaxu z json souboru
 
 Použité knihovny:
 1) jQuery
