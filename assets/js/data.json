@@ -1148,6 +1148,136 @@
             }           
         }
     ]
+},
+
+{
+    "category": {
+        "name": "ostatni_ustanoveni",
+        "count": 7,
+        "count_test": 4,
+        "points": 2
+    },
+    "questions": [ 
+        {
+            "id": 0,
+            "type": "text",
+            "title": "",
+            "question": "Znamení k zastavení vozidla dává policista ve stejnokroji:",
+            "answers": [
+                "Píšťalkou.",
+                "Vztyčenou paží nebo zastavovacím terčem a za snížené viditelnosti červeným světlem, kterým pohybuje v horním půlkruhu.",
+                "Kýváním směrovkou nahoru a dolů"
+            ],
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }      
+        },
+        {
+            "id": 1,
+            "type": "text",
+            "title": "",
+            "question": "Řidič nesmí připustit, aby počet přepravovaných osob starších 12 let překročil:",
+            "answers": [
+                "Počet povolených míst určených k přepravě osob.", 
+                "Počet povolených míst určených k přepravě osob, jen pokud jsou vybavena zádržným bezpečnostním systémem.", 
+                "Dvojnásobek počtu povolených míst určených k přepravě osob."
+            ],
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
+        },
+        {
+            "id": 2,
+            "type": "text",
+            "title": "",
+            "question": "Při řízení provozu na křižovatce znamená pro řidiče signál se současně svítícím červeným a žlutým světlem 'Pozor!':",
+            "answers": [
+                "Upozornění, že řízení provozu světelnými signály bude ukončeno.", 
+                "Povinnost zastavit vozidlo před světelným signalizačním zařízením, neboť bude následovat signál 'Stůj!'", 
+                "Povinnost připravit se k jízdě."
+            ],
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
+        },
+        {
+            "id": 3,
+            "type": "text",
+            "title": "",
+            "question": "Vozidlům s právem přednostní jízdy a vozidlům jimi dopravázeným musí řidiči ostatních vozidel:",
+            "answers": [ 
+                "Umožnit bezpečné předjetí, nejsou však povinni jim umožnit bezpečný a plynulý průjezd.", 
+                "Umožnit bezpečný a plynulý průjezd, a jestliže je to nutné i zastavit vozidlo na takovém místě, aby jim nepřekážela.",
+                "Umožnit bezpečný a plynulý průjezd okamžitým zastavením vozidla."
+            ],
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }      
+        },
+        {
+            "id": 4,
+            "type": "text",
+            "title": "",
+            "question": "V obytné a pěší zóně je stání dovoleno:",
+            "answers": [
+                "Jen na místech označených jako parkoviště.", 
+                "Kdekoliv, s výjimkou míst označenách dopravní značkou 'Zákaz zastavení' nebo 'Zákaz stání'.", 
+                "Jen na krajnici nebo na chodníku, i když tato místa nejsou označena jako parkoviště."
+            ],
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
+        },
+        {
+            "id": 5,
+            "type": "text",
+            "title": "",
+            "question": "Dojde-li při dopravní nehodě k poškození pozemní komunikace, jsou účastníci dopravní nehody povinni:",
+            "answers": [ 
+                "Neprodleně ohlásit tuto událost vlastníkovi pozemní komunikace", 
+                "Neprodleně ohlásit tuto událost příslušnému obecnímu úřadu obce s rozšířenou působností.",
+                "Neprodleně ohlásit tuto událost Policii České republiky"
+            ],
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }           
+        },
+        {
+            "id": 5,
+            "type": "text",
+            "title": "",
+            "question": "Nakládání či skládání nákladu na pozemní komunikaci:",
+            "answers": [ 
+                "Nesmí ohrozit bezpečnost provozu na pozemních komunikacích.", 
+                "Nesmí omezit plynulost provozu na pozemních komunikacích",
+                "Nesmí probíhat za snížené viditelnosti."
+            ],
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }           
+        }
+    ]
 }
 
 
