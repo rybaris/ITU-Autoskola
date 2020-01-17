@@ -237,6 +237,7 @@ function jumpFunc(value) {
     $("#navigation-down").toggleClass("flex");
     $(".navigation-dropdown img").toggleClass("rotation");
     ajaxFunction();
+    reset();
 
 }
 
