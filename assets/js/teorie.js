@@ -47,9 +47,11 @@ function ajaxFunction() {
             addHelp(p, current);
             buttonDisabler(p, current);
 
+            // Vykreslovani progress-baru
             let progress = 100 / (p[categoryIndex].category.count - 1);
             $('#progress-bar').width((current * progress) + "%");
 
+            // Vykreslovani aktualni otazky a celkoveho poctu otazek v kategorii
             document.getElementById('current-index').innerHTML = current;
             document.getElementById('count-index').innerHTML = count - 1;
 
