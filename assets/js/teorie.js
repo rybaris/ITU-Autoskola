@@ -92,6 +92,10 @@ function getChoices(item, index) {
 
 }
 
+function markIt(same) {
+    $(same).addClass("checked");
+}
+
 // Funkce porovna spravnou odpoved a zobrazi spravne reseni
 function checkAnswer() {
 
@@ -154,6 +158,9 @@ function reset() {
     answer0.style.backgroundColor = "#f7f7f7";
     answer1.style.backgroundColor = "#f7f7f7";
     answer2.style.backgroundColor = "#f7f7f7";
+    $("#answer0").removeClass("checked");
+    $("#answer1").removeClass("checked");
+    $("#answer2").removeClass("checked");
 
 }
 
