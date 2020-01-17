@@ -1,3 +1,8 @@
+/***************************
+* Author: Ondrej Sebesta   *
+* Login: xsebes22          *
+***************************/
+
 let current = 0;
 let categoryIndex = 0;
 let rightAnswer;
