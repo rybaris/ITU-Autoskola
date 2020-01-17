@@ -1408,6 +1408,85 @@
             }           
         }
     ]
+},
+{
+    "category": {
+        "name": "Reseni_dopravnich_situaci",
+        "count": 4,
+        "count_test": 3,
+        "points": 4
+    },
+    "questions": [ 
+        {
+            "id": 0,
+            "type": "img",
+            "title": "Ve vyobrazené dopravní situaci jste řidičem vozidla z výhledu. Na křižovatce:",
+            "question": "http://autoskolatesty.xoe.cz/graph/otazky/331.jpg",
+            "answers": [
+                "Dáte přednost v jízdě červenému i zelenému vozidlu. Jako první projede křižovatkou červené vozidlo.",
+                "Dáte přednost v jízdě zelenému i červenému vozidlu. Jako první projede křižovatkou zelené vozidlo.",
+                "Máte přednost v jízdě před červeným vozidlem. Zelené vozidlo projede křižovatkou jako první."
+            ],
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }      
+        },
+        {
+            "id": 1,
+            "type": "img",
+            "title": "Jste řidičem vozidla z výhledu. Na vyobrazené křižovatce:",
+            "question": "http://autoskolatesty.xoe.cz/graph/otazky/332.jpg",
+            "answers": [
+                "Pojedete jako poslední. Jako první pojede zelené vozidlo a po něm červené nákladní vozidlo.", 
+                "Pojedete jako první. Po vás pojede zelené vozidlo a jako poslední červené nákladní vozidlo.", 
+                "Pojedete jako druhý, hned po zeleném vozidle, kterému musíte dát přednost v jízdě."
+            ],
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
+        },
+        {
+            "id": 2,
+            "type": "img",
+            "title": "Jako řidič automobilu z výhledu projedete touto křižovatkou:",
+            "question": "http://autoskolatesty.xoe.cz/graph/otazky/330.jpg",
+            "answers": [
+                "Jako druhý, protože zelené vozidlo, které přijíždí zprava, má přednost v jízdě..", 
+                "Jako první nebo druhý. Vozidla projíždějí křižovatkou v pořadí, v jakém k ní přijela.", 
+                "Jako první, protože zelené vozidlo, které přijíždí zprava, vám musí dát přednost v jízdě."
+            ],
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
+        },
+        {
+            "id": 3,
+            "type": "img",
+            "title": "Jedete v obci jako řidič vozidla z výhledu. Je vaší povinností umožnit autobusu vyjetí ze zastávky?",
+            "question": "http://autoskolatesty.xoe.cz/graph/otazky/329.jpg",
+            "answers": [
+                "Ne, protože autobus vyjíždí od okraje pozemní komunikace.", 
+                "Ano, avšak pouze snížením rychlosti nebo změnou směru jízdy, nikoli zastavením vozidla.", 
+                "Ano, a to snížením rychlosti jízdy nebo i zastavením vozidla."
+            ],
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
+        }
+    ]
+
 }
 
 
