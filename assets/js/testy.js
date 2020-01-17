@@ -32,7 +32,7 @@ for(let i = 0; i < categ_count;i++)
 /////////////////////////
 function next_q(){ 
 
-  if(counter>=25)
+  if(counter>25)
   {
     konec();
   }
@@ -184,9 +184,13 @@ function end_time2(){
   if(konec_body >= 43)
   {
     $(".obr").attr('src', 'assets/img/success.png');
+    $(".usp2").html("Prošel");
+    $(".usp2").css('color','green');
   }
   else{
     $(".obr").attr('src', 'assets/img/stop.png');
+    $(".usp2").html("Neprošel");
+    $(".usp2").css('color','red');
   }
 }
 function modal_konec(){
