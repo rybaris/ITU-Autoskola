@@ -8,7 +8,7 @@ let uspech = false;
 let q_count=24;
 ////////NOVE PROMENE////////////
 let json_data;
-let categ_count=3;
+let categ_count=9;
 let categ_index; //index kategorie
 let q_index=0 //index otazky
 let q_param=[];
@@ -25,9 +25,9 @@ let json_data2;
 for(let i = 0; i < categ_count;i++)
 {
   q_param[i]=[]; 
-  q_param[i][0]="";
+  q_param[i][0]=""; //pro uložení "full", když máme danou kategorii plnou
   q_param[i][1]=0; //počet použitých otázek z dané kategorie
-  q_param[i][2]=[];
+  q_param[i][2]=[]; //indexy použitých otázek
 }
 
 
@@ -66,9 +66,7 @@ function next_q(){
     $(".counter").html("Otázka: "+counter+"/25");
     pom++;
     counter++;
-  }
-  
-  //console.log(q_counter);
+  }    
 
 
 }
@@ -84,8 +82,6 @@ function ajaxFunction() {
   xmlHttp.onreadystatechange = () => {
       if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
           json_data = JSON.parse(xmlHttp.responseText);
-          //rightAnswer = json_data[categoryIndex].questions[current].correct_answer;  
-          //console.log(json_data[0].questions[1].question); 
           next_q();          
       }      
   }
@@ -93,15 +89,13 @@ function ajaxFunction() {
   xmlHttp.send();
 
   
-  //next_q();
 }
 
 function get_random_q(){
 
       /// GENEROVANI RANDOM INDEXU KATEGORIE ///
 
-      rand_categ = getRandomIndex(0,categ_count-1);
-      //console.log(json_data[0].category.count_test);
+      rand_categ = getRandomIndex(0,categ_count-1);      
       while(q_param[rand_categ][0] == "full")
       {
         //repeat generovani, když jsou už všechny otazky z dane kategorie vygenerovany
@@ -138,9 +132,7 @@ function get_random_q(){
 
 
 function odp1(){
-  localStorage.setItem("index_answ"+(counter-2), correct_answer+" "+"0"); //uložení indexu odpovědí
-  console.log("LOCAL STORAGE: "+correct_answer+" "+"0")
-  console.log(counter-2+"<------------");
+  localStorage.setItem("index_answ"+(counter-2), correct_answer+" "+"0"); //uložení indexu odpovědí    
   if(correct_answer==0){
     body+=points;
     localStorage.setItem("o"+(pom-2), "1");    
@@ -265,20 +257,6 @@ function size_img(){
   setTimeout(size_img, 10);
 }
 
-function history(){
-  for(let i = 0; i <= q_count; i++){    
-    let answer = localStorage.getItem("o"+i);
-    if(answer=="1")
-    {
-      $("#o"+i).css('background-color', 'green');
-      console.log("#o"+i+" GREEN");
-    }
-    else{
-      $("#o"+i).css('background-color', 'red');
-      console.log("#o"+i+" RED");
-    }
-  }
-}
 function color_answers(){
   let x,y;
   for(let i = 0; i < 25;i++)
