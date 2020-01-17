@@ -201,7 +201,7 @@
             "answers": [
                 "Ano", 
                 "Ne",
-                ""
+                "Ano a navíc se musí řídít podle zvláštního dodatku v zákoně"
             ],
             "correct_answer": 1,
             "help": {
@@ -235,7 +235,7 @@
             "answers": [
                 "Ano", 
                 "Ne",
-                ""
+                "Ano, ale pouze ve zvláštních případech"
             ],
             "correct_answer": 0,
             "help": {
@@ -337,7 +337,7 @@
             "answers": [
                 "Ano",
                 "Ne",
-                ""
+                "Ano, ale pouze v omezeném znění"
             ],
             "correct_answer": 0,
             "help": {
