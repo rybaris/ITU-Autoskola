@@ -2,25 +2,13 @@
 * Author: Ondrej Sebesta  * 
 * Login: xsebes22         *
 **************************/
+
 * {
     margin: 0;
     padding: 0;
 }
-h1 {
-    color: white;
-}
-.row {
-    margin: 0 !important;
-}
-.list-group-item {
-    padding: .5rem 1.25rem !important;
-}
-body {
-    box-sizing: border-box;
-    background-color: #f9fbfd !important;
-}
 
-/* Header style */
+/* Hlavicka */
 header {
     width: 100%;
     min-height: 60px;
@@ -36,10 +24,6 @@ header h1, h2 {
     margin: 0px;
     line-height: 1;
 }
-header h2 {
-    color: white;
-    font-size: 1.2rem;
-}
 header h1 a {
     color: gray;
     font-size: 1.8rem;
@@ -48,8 +32,21 @@ header h1 a:hover {
     color: orange;
     text-decoration: none;
 }
+header h2 {
+    color: white;
+    font-size: 1.2rem;
+}
+.btn-back {
+    position: absolute;
+    top: 12px;
+    left: 0px;
+}
 
-/* Main style */
+/* Hlavni kontejnery */
+body {
+    box-sizing: border-box;
+    background-color: #f9fbfd !important;
+}
 main {
     width: 100%;
     min-height: calc(100vh - 120px);
@@ -59,7 +56,6 @@ main {
     align-items: center;
     flex-wrap: wrap;
 }
-/* Main content container*/
 .wrapper {
     margin: 0 auto;
     display: flex;
@@ -70,13 +66,10 @@ main {
     max-width: 900px !important;
     min-height: calc(100vh - 110px);
     align-content: center;
-}
-.center {
-    align-items: flex-start;
-    align-content: flex-start;
+    background-color: white;
 }
 
-/* Main page styles */
+/* Uvodni stranka */
 .index-block {
     width: 285px;
     height: 285px;
@@ -101,7 +94,7 @@ main {
     font-size: 18px;
 }
 
-/* Styles of theory list page */
+/* Styly rozcestniku teorie */
 .theory h2 {
     margin: 20px 0px;
     color: black;
@@ -113,15 +106,13 @@ main {
 .theory ul {
     margin-top: 20px;
 }
-
 .boxis {
     background-color: white;
     border-radius: 20px;
     border: 1px solid lightgray;
 }
 
-
-/* Theory learning page */
+/* Styly otazek */
 .question {
     padding: 20px;
     background-color: white;
@@ -143,6 +134,8 @@ main {
     align-items: center;
     margin: 0;
 }
+
+/* Styly odpovedi */
 .answers {
     display: flex;
     padding: 0 !important;
@@ -151,13 +144,6 @@ main {
     flex-direction: column;
     font-size: 18px;
     min-height: 20vh;
-}
-.nofocus {
-    z-index: 999;
-    padding: 2px;
-}
-.nofocus:focus {
-    outline: none;
 }
 .answers p {
     text-align: center;
@@ -174,6 +160,8 @@ main {
 .answers p:hover {
     background-color: lightgray !important;
 }
+
+/* Styly navigace */
 .pagination {
     margin: 20px 0px 0px 0px !important;
     width: 100%;
@@ -203,10 +191,6 @@ main {
     width: 200px;
     cursor: pointer;
 }
-.black {
-    background-color: black !important;
-    z-index: 555;
-}
 .navigation-down {
     display: none;
     background-color: #313131;
@@ -228,10 +212,6 @@ main {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-.navigation-dropdown:hover {
-    background-color: #f7f7f7;
-}
-
 .navigation-down a {
     border: 1px solid lightgray;
     width: 10%;
@@ -240,6 +220,14 @@ main {
     cursor: pointer;
     background-color: white;
 }
+.navigation-down a:hover {
+    background-color: #ffc107;
+}
+.navigation-dropdown:hover {
+    background-color: #f7f7f7;
+}
+
+/* Upravy responzivity nagigace */
 @media screen and (max-width: 800px) {
     .navigation-down {
         width: 80%;
@@ -255,10 +243,6 @@ main {
     .navigation-down a {
         width: 20%;
     }
-
-    header h2 {
-        font-size: 20px;
-    }
 }
 @media screen and (max-width: 400px) {
     .navigation-down {
@@ -269,35 +253,15 @@ main {
     }
 }
 
-.navigation-down a:hover {
-    background-color: #ffc107;
-}
-.none {
-    display: none;
-}
-.flex {
-    display: flex;
-}
-.rotation {
-    transform: rotateZ(180deg);
-}
+/* Paticka */
 footer {
     width: 100%;
     background-color: #313131;
     color: white;
     padding: 10px 0px;
 }
-.mygray {
-    background-color: white;
-}
-.napoveda {
-    text-decoration: underline;
-}
-.btn-back {
-    position: absolute;
-    top: 12px;
-    left: 0px;
-}
+
+/* Prepsani nekterych BootStrap stylu */
 .progress {
     border-radius: 0 !important;
     background-color: white !important;
@@ -306,9 +270,27 @@ footer {
     position: absolute;
     top: 80px;
 }
-.napoveda {
-    display: inline;
+.list-group-item {
+    padding: .5rem 1.25rem !important;
+}
+
+/* Pomocne tridy pouzivane v JS */
+.flex {
+    display: flex;
 }
 .checked {
     border: 2px dashed black !important;
+}
+.none {
+    display: none;
+}
+.rotation {
+    transform: rotateZ(180deg);
+}
+.nofocus {
+    z-index: 999;
+    padding: 2px;
+}
+.nofocus:focus {
+    outline: none;
 }
