@@ -1278,6 +1278,136 @@
             }           
         }
     ]
+},
+
+{
+    "category": {
+        "name": "jizda_vozidlem",
+        "count": 7,
+        "count_test": 4,
+        "points": 2
+    },
+    "questions": [ 
+        {
+            "id": 0,
+            "type": "text",
+            "title": "",
+            "question": "Řidič nesmí předjíždět:",
+            "answers": [
+                "Na přechodu pro chodce nebo na přejezdu pro cyklisty a bezprostředně před nimi.",
+                "Bezprostředně za přechodem pro chodce nebo za přejezdem pro cyklisty.",
+                "Na křižovatce s řízeným provozem."
+            ],
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }      
+        },
+        {
+            "id": 1,
+            "type": "text",
+            "title": "",
+            "question": "Před železničním přejezdem:",
+            "answers": [
+                "Řidič nesmí řadit rychlostní stupně.", 
+                "Musí řidič vždy zastavit, aby se přesvědčil, zda může železniční přejezd bezpečně přejet.", 
+                "Si musí řidič počínat zvlášť opatrně, zejména se přesvědčit, zda může železniční přejezd bezpečně přejet."
+            ],
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
+        },
+        {
+            "id": 2,
+            "type": "text",
+            "title": "",
+            "question": "Na silniční vegetaci, pokud to není povoleno místní úpravou na pozemní komunikaci:",
+            "answers": [
+                "Řidič může zastavit na dobu nezbytně nutnou", 
+                "Řidič nesmí zastavit a stát.", 
+                "Řidič může zastavit, nikoli však stát."
+            ],
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
+        },
+        {
+            "id": 3,
+            "type": "text",
+            "title": "",
+            "question": "Na tramvajový pás v úrovni vozovky se smí v podélném směru vjet:",
+            "answers": [ 
+                "Jen při objíždění, předjíždění, odbočování, otáčení, vjíždění na pozemní komunikaci nebo vyžadují-li to zvlášní okolnosti.", 
+                "Jen je-li to nutné při couvání",
+                "Jen při odbočování na místo ležící mimo silnici."
+            ],
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }      
+        },
+        {
+            "id": 4,
+            "type": "text",
+            "title": "",
+            "question": "Řidič, který při objíždění vozidla, jež zastavilo nebo stojí, nebo při objíždění překážky provozu na pozemních komunikacích anebo chodce, vybočuje ze směru své jízdy:",
+            "answers": [
+                "Nemusí dávat znamení o změně směru jízdy.", 
+                "Nesmí ohrozit pouze řidiče jedoucí za ním", 
+                "Nesmí ohrozit ani omezit protijedoucí řidiče a ohrozit ostatní účastníky provozu na pozemních komunikacích"
+            ],
+            "correct_answer": 2,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }            
+        },
+        {
+            "id": 5,
+            "type": "text",
+            "title": "",
+            "question": "Vozidla se před železničním přejezdem řadí:",
+            "answers": [ 
+                "Náhodně", 
+                "Za sebou v pořadí, ve kterém přijela",
+                "Tak, aby všichni řidiči měli náležitý výhled na železniční přejezd"
+            ],
+            "correct_answer": 1,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }           
+        },
+        {
+            "id": 5,
+            "type": "text",
+            "title": "",
+            "question": "Vozidla vjíždějící na pozemní komunikaci:",
+            "answers": [ 
+                "Musí být předem očištěna, aby neznečišťovala pozemní komunikaci.",
+                "Nemusí být předem očištěna, pokud pozemní komunikaci pouze přejíždějí.",
+                "Musí předem dávat světelné výstražné znamení."
+            ],
+            "correct_answer": 0,
+            "help": {
+                "active": false,
+                "keyword": "",
+                "help_content": ""
+            }           
+        }
+    ]
 }
 
 
