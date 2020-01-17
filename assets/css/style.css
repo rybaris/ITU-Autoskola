@@ -149,10 +149,10 @@ main {
 }
 .nofocus {
     z-index: 999;
+    padding: 2px;
 }
 .nofocus:focus {
     outline: none;
-
 }
 .answers p {
     text-align: center;
@@ -198,6 +198,10 @@ main {
     width: 200px;
     cursor: pointer;
 }
+.black {
+    background-color: black !important;
+    z-index: 555;
+}
 .navigation-down {
     display: none;
     background-color: #313131;
@@ -213,24 +217,60 @@ main {
     flex-wrap: wrap;
     padding: 10px;
     box-sizing: border-box;
+    animation: fadein 0.5s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 .navigation-dropdown:hover {
     background-color: #f7f7f7;
 }
+
 .navigation-down a {
     border: 1px solid lightgray;
+    width: 10%;
+    box-sizing: border-box;
     padding: 6px 16px;
     cursor: pointer;
     background-color: white;
 }
+@media screen and (max-width: 800px) {
+    .navigation-down {
+        width: 80%;
+    }
+    .navigation-down a {
+        width: 10%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navigation-down {
+        width: 80%;
+    }
+    .navigation-down a {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .navigation-down {
+        width: 100%;
+    }
+    .navigation-down a {
+        width: 20%;
+    }
+}
+
 .navigation-down a:hover {
-    background-color: lightgray;
+    background-color: #ffc107;
 }
 .none {
     display: none;
 }
 .flex {
     display: flex;
+}
+.rotation {
+    transform: rotateZ(180deg);
 }
 footer {
     width: 100%;

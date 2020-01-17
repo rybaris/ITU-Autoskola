@@ -220,6 +220,7 @@ function addHelp (item, index) {
 // Zobrazeni / Skryti navigace otazek
 $(".navigation-dropdown").click( () => {
 
+    $(".navigation-dropdown img").toggleClass("rotation");
     $("#navigation-down").toggleClass("flex");
 
 });
@@ -229,6 +230,7 @@ function jumpFunc(value) {
 
     current = Number(value);
     $("#navigation-down").toggleClass("flex");
+    $(".navigation-dropdown img").toggleClass("rotation");
     ajaxFunction();
 
 }
