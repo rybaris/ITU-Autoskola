@@ -17,7 +17,7 @@
 <body>
     <!-- HEADER -->
     <header>
-        <a href="teorie_b.html" class="btn btn-warning btn-back">Zpět</a>
+        <button onclick="goBack()" class="btn btn-warning btn-back rounded-right">Zpět</button>
         <h1>
             <a href="index.html">Autoškola</a>
         </h1>
@@ -71,15 +71,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- Custom scripts -->
-    <script src="assets/js/jizda_vozidlem.js"></script>
+    <script src="assets/js/ajax.js"></script>
 
     <!-- Question/Answer init -->
-    <script>
-        $(document).ready( function() {
-            
-            render();
-
-        }); 
+    <script> 
+        categoryIndex = 7;
+        ajaxFunction();
     </script>
 </body>
 

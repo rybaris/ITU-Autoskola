@@ -234,3 +234,8 @@ function jumpFunc(value) {
     ajaxFunction();
 
 }
+
+// Funkce tlacitka zpet
+function goBack() {
+    window.history.back();
+}
